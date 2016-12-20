@@ -2,3 +2,36 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.top {
+	position:relative;
+}
+
+
+
+.logo {
+	color: #404040;
+}
+
+.titre h1{
+	font-size:44px;
+	color: #191919;
+	margin-top:65px;
+}
+
+.titre h2 {
+	font-size: 24px;
+	color: #8F8F8F;
+}
+
+
+.content {
+	background-color:#FAFAFA;
+	font-family: 'Open Sans', sans-serif;
+	height:500px;
+}
