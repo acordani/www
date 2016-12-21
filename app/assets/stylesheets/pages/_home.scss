@@ -35,3 +35,21 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	height:500px;
 }
+
+.no-border {
+    border: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+
+.mt-100 {
+	margin-top:100px;
+}
+
+.pl-80 {
+	padding-left:80px;
+}

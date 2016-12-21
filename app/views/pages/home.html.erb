@@ -4,11 +4,29 @@
 			<div class="col-md-6">
 				<div class="titre">
 					<h1>Entrepreneur </h1>
-					<h2>Agent Immobilier - Developpeur Ruby on Rails </h2>
+					<h2>Agent Immobilier - Developpeur Ruby on Rails Opportunity Manager</h2>
 				</div>
+				<div class="mt-100">
+					<%= simple_form_for(@contact) do |f| %>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-2">
+									<%= f.input :name, label: false, placeholder: 'John Smith ', input_html: { class: 'no-border border-bottom' } %>
+								</div>
+								<div class="col-md-2">
+									<%= f.input :phone, label: false, placeholder: '0698853874', input_html: { class: 'no-border border-bottom' } %>
+								</div>
+								<div class="col-md-2">
+									<%= f.submit 'Me contacter', class:"navbar-wagon-button center " %>
+								</div>
+							</div>
+						</div>
+					<% end %>
+				</div>
+				
 			</div>
-			<div class="col-md-6">
-				<%= image_tag("moi.png") %>
+			<div class="col-md-6 hidden-sm hidden-xs">
+				<%= image_tag(("moi.png"), class:"pl-80") %>
 			</div>
 		</div>
 	</div>
