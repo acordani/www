@@ -53,3 +53,21 @@ body {
 .pl-80 {
 	padding-left:80px;
 }
+
+.image {
+	position:relative;
+}
+
+.text_image {
+	position:absolute;
+	top:90px;
+	right:180px;
+	color:white;
+}
+
+.text_image span{
+    visibility: hidden;
+    }
+ .text_image:hover span{
+    visibility: visible;
+}
