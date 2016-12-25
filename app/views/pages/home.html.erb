@@ -34,18 +34,19 @@
 <div class="content">
 	<div class="container-fluid">
 		<div class="container mt-100">
+			<h3 class="rowHeader">Mes compétences</h3>
 			<div class="row">
 				<div class="col-md-4 col-xs-12 mb-50">
 					<div class="image">
 						<%= link_to root_url do %>
-	 						<%=image_tag("dev.jpg",width: 300, height:200, class:"image_link", alt:"Developper Ruby Junior")%>
+	 						<%=image_tag("dev.jpg", class:"image_link", alt:"Developper Ruby Junior")%>
 	 						<span class="text_image"><span>Developpeur Web Ruby Junior</span></span>
 						<%end%>
 					</div>
 
 				</div>
 				<div class="col-md-4 col-xs-12 mb-50">
-					<%= link_to root_url do %>
+					<%= link_to agent_immobilier_path do %>
  						<%=image_tag("immo.jpg",width: 350, height:200, class:"image_link", alt:"Agent Immobilier Saint Maur Des Fossés")%>
  						<span class="text_image"><span>Agent Immobilier </span></span>
 					<%end%>

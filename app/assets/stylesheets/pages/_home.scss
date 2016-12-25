@@ -33,7 +33,7 @@ body {
 .content {
 	background-color:#FAFAFA;
 	font-family: 'Open Sans', sans-serif;
-	height:500px;
+	height:auto;
 }
 
 .no-border {
@@ -63,12 +63,17 @@ body {
 }
 
 .image {
-	position:relative;
+
 }
 
 .text_image {
 	color:black;
 }
 
-
+.rowHeader {
+	font-size:19px;
+	line-height:24px;
+	color:#484848 !important;
+	margin-bottom: 24px !important;
+}
 
