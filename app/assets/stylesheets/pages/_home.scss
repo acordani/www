@@ -58,20 +58,17 @@ body {
 	padding-left:270px;
 }
 
+.mb-50 {
+	margin-bottom:50px;
+}
+
 .image {
 	position:relative;
 }
 
 .text_image {
-	position:absolute;
-	top:90px;
-	right:180px;
-	color:white;
+	color:black;
 }
 
-.text_image span{
-    visibility: hidden;
-    }
- .text_image:hover span{
-    visibility: visible;
-}
+
+
