@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :contacts, only:[:create], as: 'contacts'
   get 'pages/realtor', as: 'agent_immobilier'
+
+  resources :sales
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routees lay out with "rake routes".
 
