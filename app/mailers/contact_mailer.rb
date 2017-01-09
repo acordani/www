@@ -9,7 +9,7 @@ class ContactMailer < ApplicationMailer
     @contact = contact
 
     mail(
-    	to: ['alcordani@gmail.com'],
+    	to: ['alex@alexandrecordani.com'],
     	subject: "Votre demande a bien été prise en compte"
     	
     )
