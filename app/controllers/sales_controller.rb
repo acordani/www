@@ -21,7 +21,6 @@ class SalesController < ApplicationController
 			end		
 	end
 
-	def 
 
 	private
 
