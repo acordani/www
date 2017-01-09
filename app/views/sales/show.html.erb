@@ -1,15 +1,27 @@
-<div class="container" >
+<div class="container">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 mb-50">
 			<h1><%= @sale.title %></h1>
-
-			<h3>Les infos essentielles</h3>
-			<%= @sale.price %>€
-		</div>
-		<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 text-center">
-			<% @sale.photos.each do |photo| %>
-  				<p><%= cl_image_tag photo.path, width: 800, height: 600, crop: :fill, class:"photo_sale" %></p>
-			<% end %>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<%= cl_image_tag @sale.photos.first.path, width:400, crop: :fill, class:"photo_sale" %>
+		</div>
+		<div class="col-md-6 justify">
+			<%= @sale.description %>
+		</div>
+	</div>
+	<div class="mb-50"></div>
+	<div class="row">
+			<h3>LES INFOS ESSENTIELLES</h3>
+			<%= @sale.price %>€
+	</div>
+	<div class="mb-50"></div>
+	<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 text-center">
+		<% @sale.photos.each do |photo| %>
+  			<p><%= cl_image_tag photo.path, width: 800, height: 600, crop: :fill, class:"photo_sale" %></p>
+		<% end %>
+	</div>
+	
 </div>
