@@ -18,9 +18,10 @@ class SalesController < ApplicationController
 				redirect_to sale_path(@sale)
 			else
 				render :new
-			end
-			
+			end		
 	end
+
+	def 
 
 	private
 
