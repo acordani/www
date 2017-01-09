@@ -4,7 +4,7 @@ class SalesController < ApplicationController
 	end
 
 	def show
-		@sale = Sale.find(params[:id])
+		@sale = Sale.friendly.find(params[:id])
 		#on va chercher la vente âr son id
 	end
 
