@@ -25,7 +25,7 @@ class SalesController < ApplicationController
 	private
 
 	def sale_params
-		params.require(:sale).permit(:title, :price, :description, photos: [])
+		params.require(:sale).permit(:title, :price, :description, :active, photos: [])
 	end
 
 end

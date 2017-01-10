@@ -3,6 +3,7 @@
 	<%= f.input :description %>
 	<%= f.input :price %>
 	<%= f.input :city %>
+	<%= f.input :active,     as: :radio_buttons %>
 	<%= f.input :photos, as: :attachinary %>
 	<%= f.button :submit %>
 <% end %>
