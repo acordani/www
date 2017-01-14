@@ -1,9 +1,18 @@
 <div class="container">
-	<div class="row">
-		<div class="col-md-12 mb-50">
-			<h1><%= @sale.title %></h1>
-		</div>
+	<div class="col-md-10">
+		<h1 class="title"><%= @sale.title %></h1>	
 	</div>
+	<div class="col-md-2">
+		<div class="label">
+			<% if @sale.active == true %>
+				A VENDRE
+			<% else %>
+				VENDU
+			<% end %>
+		</div>	
+	</div>
+		
+	
 	<div class="row">
 		<div class="col-md-6">
 			<%= cl_image_tag @sale.photos.first.path, width:400, crop: :fill, class:"photo_sale" %>
