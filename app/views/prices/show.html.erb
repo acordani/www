@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-offset-3 col-md-6">
+			<p><%= link_to "Prix Immobilier", prices_path%> < <%= link_to @price.city, prices_path %></p>
+			<div class="price_title">
+				<%= @price.type_of_street %>
+				<%= @price.street %>,
+				<%= @price.city %>
+			</div>
+		</div>
+	</div>
+</div>

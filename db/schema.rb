@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170110102720) do
+ActiveRecord::Schema.define(version: 20170119210335) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,21 @@ ActiveRecord::Schema.define(version: 20170110102720) do
   add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
+
+  create_table "prices", force: :cascade do |t|
+    t.integer  "price_min_house"
+    t.integer  "price_average_house"
+    t.integer  "price_max_house"
+    t.integer  "price_min_apartment"
+    t.integer  "price_average_apartment"
+    t.integer  "price_max_apartment"
+    t.string   "street"
+    t.string   "city"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "neighborhood"
+    t.string   "type_of_street"
+  end
 
   create_table "sales", force: :cascade do |t|
     t.integer  "price"

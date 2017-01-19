@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-offset-3 col-md-6">
+			<%= simple_form_for @price do|f| %>
+				<%= f.input :city %>
+				<%= f.input :type_of_street %>
+				<%= f.input :street %>
+				<%= f.input :neighborhood %>
+				<%= f.input :price_min_house %>
+				<%= f.input :price_average_house %>
+				<%= f.input :price_max_house %>
+				<%= f.input :price_min_apartment %>
+				<%= f.input :price_average_apartment %>
+				<%= f.input :price_max_apartment %>
+				<%= f.button :submit %>
+			<% end %>
+		</div>
+	</div>
+</div>
+
