@@ -1,6 +1,6 @@
 
 
-SitemapGenerator::Sitemap.default_host = 'http://alexandrecordani.com'
+SitemapGenerator::Sitemap.default_host = 'http://www.alexandrecordani.com'
 SitemapGenerator::Sitemap.create do
   add '/home', :changefreq => 'weekly', :priority => 0.9
   add '/sales'
