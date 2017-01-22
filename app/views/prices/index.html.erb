@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+		<h1>Prix immobilier à Saint-Maur-Des-Fossés</h1>
+			<%= if @prices @prices.count >=1 %>
+				<table class="table table-striped">
+					<thead>
+						<tr> 
+							<th>Rues </th>
+							<th>Voir<th>
+						</th>
+					</thead>
+					<tbody>
+						<% @prices.each do |price| %>
+							<tr>
+							
+							<td><%= price.type_of_street %>
+							<%= price.street %></td>
+							<td><%= link_to "voir", price_path(price) %></td>
+							
+							</tr>
+
+							</p>
+						<% end %>
+					</tbody>
+				</table>
+			<% else %>
+				<p> Il n' y a pas encore de rues renseignées. </p>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+
