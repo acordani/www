@@ -58,8 +58,24 @@ body {
 	padding-left:270px;
 }
 
+.pt-8 {
+	padding-top:8px;
+}
+
+.pt-20 {
+	padding-top:20px;
+}
+
+.mb-30 {
+	margin-bottom:30px;
+}
+
 .mb-50 {
 	margin-bottom:50px;
+}
+
+.fs-40 {
+	font-size:40px;
 }
 
 .image {
@@ -103,4 +119,38 @@ body {
 
 .price_title {
 	font-size:24px;
+}
+
+.card {
+	border: 1px solid #ddd;
+	padding-top:30px;
+	margin-top:30px;
+	padding-bottom:30px;
+}
+
+.fil_ariane  {
+	font-size:14px;
+	color:#aababb;
+
+	a {
+	color:#ababab;
+	}
+}
+
+.price_mini_maxi {
+	color: #7c7d80;
+	font-size:14px;
+}
+
+.price_average {
+	color: black;
+	font-size:20px;
+}
+
+.fa-home {
+	color:#2380d0;
+}
+
+.fa-building {
+	color:#2380d0;
 }
