@@ -17,7 +17,11 @@
 							<td><%= price.type_of_street %>
 							<%= price.street %></td>
 							<td><%= link_to "voir", price_path(price) %></td>
-							
+							<td>
+								<% if current_user.try(:admin?) %>
+               						<%= link_to "Effacer", price_path(price), method: :delete %>
+              					<% end %>
+              				</td>
 							</tr>
 
 							</p>
