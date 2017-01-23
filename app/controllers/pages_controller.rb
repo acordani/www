@@ -6,6 +6,10 @@ class PagesController < ApplicationController
   end
 
   def realtor
-  	
   end
+
+  def photo
+  end
+
+
 end

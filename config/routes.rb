@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :contacts, only:[:create], as: 'contacts'
   get 'pages/realtor', as: 'agent_immobilier'
+  get 'pages/photo'
 
   resources :prices
 
