@@ -71,3 +71,15 @@
 }
 
 @keyframes scale-fade{0%{opacity:0;transform:scale(.8) rotateX(-40deg);transform:scale(.8) rotateX(-40deg)}50%{opacity:1}70%{transform:scale(1.05) rotateX(0);transform:scale(1.05) rotateX(0)}100%{transform:scale(1) rotateX(0);transform:scale(1) rotateX(0)}}
+
+
+
+.image_rounded {
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:100px;
+  height:100px;
+  box-shadow: 0 0 5px #0989ff;
+}
