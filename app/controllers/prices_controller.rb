@@ -28,6 +28,8 @@ class PricesController < ApplicationController
       		marker.lat price.latitude
       		marker.lng price.longitude
 		end
+
+		@contact = Contact.new
 	end
 
 	def destroy
