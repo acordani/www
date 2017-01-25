@@ -48,7 +48,7 @@ class PricesController < ApplicationController
 	end
 
 	def set_price
-		@price = Price.find(params[:id])
+		@price = Price.friendly.find(params[:id])
 	end
 
 end
