@@ -5,7 +5,7 @@
 				<%= f.input :address %>
 				<%= f.input :zip_code %>
 				<%= f.input :city %>
-				<%= f.input :neighborhood %>
+				<%= f.input :neighborhood, collection: [["Le Vieux Saint-Maur"], ["Le Parc Saint-Maur"], ["Champignol"], ["La Varenne Saint-Hilaire"], ["Les Mûriers"], ["La Pie"], ["Adamville"], ["Saint-Maur Creteil"]] %>
 				<%= f.input :price_min_house %>
 				<%= f.input :price_average_house %>
 				<%= f.input :price_max_house %>
