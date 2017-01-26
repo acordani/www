@@ -15,7 +15,9 @@
 	
 	<div class="row">
 		<div class="col-md-6">
-			<%= cl_image_tag @sale.photos.first.path, width:400, crop: :fill, class:"photo_sale" %>
+			<% if @sale.photos.present? %>
+				<%= cl_image_tag @sale.photos.first.path, width:400, crop: :fill, class:"photo_sale" %>
+			<% end %>
 		</div>
 		<div class="col-md-6 justify">
 			<%= @sale.description %>

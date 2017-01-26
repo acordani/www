@@ -1,10 +1,13 @@
 class SalesController < ApplicationController
+
+	before_action :set_sale, only: [:show, :destroy]
+
 	def index
 		@sales = Sale.all
 	end
 
 	def show
-		@sale = Sale.friendly.find(params[:id])
+		
 		#on va chercher la vente âr son id
 	end
 
@@ -21,11 +24,20 @@ class SalesController < ApplicationController
 			end		
 	end
 
+	def destroy
+		@sale.destroy
+			redirect_to sales_path
+	end
+
 
 	private
 
 	def sale_params
 		params.require(:sale).permit(:title, :price, :description, :active, photos: [])
+	end
+
+	def set_sale
+		@sale = Sale.friendly.find(params[:id])
 	end
 
 end
