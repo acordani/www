@@ -118,12 +118,12 @@
 			<% if @price.price_min_apartment && @price.price_average_apartment && @price.price_max_apartment != nil %>
 				<p>Le prix moyen des appartements <%= @price.address %>
 						 à 
-						<%= @price.city %> est de <%= @price.price_average_apartment %> €, mais le prix moyen de <%= @price.city %> est de <%= @average_price_apartment %>.</p>
+						<%= @price.city %> est de <%= @price.price_average_apartment %> €, mais le prix moyen de <%= @price.city %> est de <%= @average_price_apartment.round() %>.</p>
 			<% end %>
 			<% if @price.price_min_house && @price.price_average_house && @price.price_max_house != nil %>
 				<p>Le prix moyen des maisons <%= @price.type_of_street %>
 						<%= @price.address %> à 
-						<%= @price.city %> est de <%= @price.price_average_house %> €, mais le prix moyen de <%= @price.city %> est de <%= @average_price_house %>.</p>
+						<%= @price.city %> est de <%= @price.price_average_house %> €, mais le prix moyen de <%= @price.city %> est de <%= @average_price_house.round() %>.</p>
 			<% end %>
 		</div>
 	</div>
