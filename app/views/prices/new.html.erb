@@ -2,9 +2,9 @@
 	<div class="row">
 		<div class="col-md-offset-3 col-md-6">
 			<%= simple_form_for @price do|f| %>
+				<%= f.input :address %>
+				<%= f.input :zip_code %>
 				<%= f.input :city %>
-				<%= f.input :type_of_street %>
-				<%= f.input :street %>
 				<%= f.input :neighborhood %>
 				<%= f.input :price_min_house %>
 				<%= f.input :price_average_house %>
@@ -17,4 +17,9 @@
 		</div>
 	</div>
 </div>
+
+
+<%= content_for(:after_js) do %>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyAM4X7NgRcGvTeQDuodHhdS5bgt7vGvcBU"></script>
+<% end %>
 

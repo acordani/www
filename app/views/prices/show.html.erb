@@ -4,123 +4,125 @@
 			<p class="fil_ariane"><%= link_to "Prix Immobilier", prices_path%> >> <%= link_to @price.city, prices_path %></p>
 			<div class="price_title pt-20">
 				Prix immobilier 
-				<%= @price.type_of_street %>
-				<%= @price.street %>,
-				<%= @price.city %>
+				<%= @price.address %>,
+				<%= @price.city %><br>
+				<% if @price.neighborhood != nil %>
+					<%= @price.neighborhood %>
+				<% end %>
 			</div>
+
 		</div>
 	</div>
-	<div class="card">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="col-md-1">					
-				</div>
-				<div class="col-md-3">					
-				</div>
-				<div class="col-md-2 text-center">
-					Prix m2 bas
-				</div>
-				<div class="col-md-2 text-center">
-					Prix m2 moyen
-				</div>
-				<div class="col-md-2 text-center">
-					Prix m2 haut
-				</div>
-			</div>
-		</div>
-		<div class="mb-30"></div>
-		<% if @price.price_min_apartment && @price.price_average_apartment && @price.price_max_apartment != nil %>
+	<% if @price.price_min_apartment || @price.price_average_apartment || @price.price_max_apartment || @price.price_min_house || @price.price_average_house || @price.price_max_house != nil %>
+		<div class="card">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="col-md-1">
-						<i class="fa fa-building fs-40"></i> 
+					<div class="col-md-1">					
 					</div>
-					<div class="col-md-3 pt-8">
-						Prix m2 appartement
+					<div class="col-md-3">					
 					</div>
-					<div class="col-md-2 text-center pt-8 price_mini_maxi">
-						<%= @price.price_min_apartment %> €
+					<div class="col-md-2 text-center">
+						Prix m2 bas
 					</div>
-					<div class="col-md-2 text-center pt-8 price_average">
-						<%= @price.price_average_apartment %> €
+					<div class="col-md-2 text-center">
+						Prix m2 moyen
 					</div>
-					<div class="col-md-2 text-center pt-8 price_mini_maxi">
-						<%= @price.price_max_apartment %> €
+					<div class="col-md-2 text-center">
+						Prix m2 haut
 					</div>
-				
 				</div>
 			</div>
-		<% end %>
-		<div class="mb-30"></div>
-		<% if @price.price_min_house && @price.price_average_house && @price.price_max_house != nil %>
+			<div class="mb-30"></div>
+			<% if @price.price_min_apartment && @price.price_average_apartment && @price.price_max_apartment != nil %>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="col-md-1">
+							<i class="fa fa-building fs-40"></i> 
+						</div>
+						<div class="col-md-3 pt-8">
+							Prix m2 appartement
+						</div>
+						<div class="col-md-2 text-center pt-8 price_mini_maxi">
+							<%= @price.price_min_apartment %> €
+						</div>
+						<div class="col-md-2 text-center pt-8 price_average">
+							<%= @price.price_average_apartment %> €
+						</div>
+						<div class="col-md-2 text-center pt-8 price_mini_maxi">
+							<%= @price.price_max_apartment %> €
+						</div>
+					
+					</div>
+				</div>
+			<% end %>
+			<div class="mb-30"></div>
+			<% if @price.price_min_house && @price.price_average_house && @price.price_max_house != nil %>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 mb-30">
+						<div class="col-md-1">
+							<i class="fa fa-home fs-40"></i> 
+						</div>
+						<div class="col-md-3 pt-8">
+							</i> Prix m2 maison
+						</div>
+						<div class="col-md-2 text-center pt-8 price_mini_maxi">
+							<%= @price.price_min_house %> €
+						</div>
+						<div class="col-md-2 text-center pt-8 price_average">
+							<%= @price.price_average_house %> €
+						</div>
+						<div class="col-md-2 text-center pt-8 price_mini_maxi">
+							<%= @price.price_max_house %> €
+						</div>
+					</div>
+				</div>
+			<% end %>
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1 mb-30">
-					<div class="col-md-1">
-						<i class="fa fa-home fs-40"></i> 
-					</div>
-					<div class="col-md-3 pt-8">
-						</i> Prix m2 maison
-					</div>
-					<div class="col-md-2 text-center pt-8 price_mini_maxi">
-						<%= @price.price_min_house %> €
-					</div>
-					<div class="col-md-2 text-center pt-8 price_average">
-						<%= @price.price_average_house %> €
-					</div>
-					<div class="col-md-2 text-center pt-8 price_mini_maxi">
-						<%= @price.price_max_house %> €
-					</div>
+				<div class="col-md-2 col-md-offset-5">
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+					  Estimer mon bien
+					</button>
 				</div>
 			</div>
-		<% end %>
-		<div class="row">
-			<div class="col-md-2 col-md-offset-5">
-				
-
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-				  Estimer mon bien
-				</button>
-			</div>
-		</div>
-
+		
 		<!-- Button trigger modal -->
 				
 
-				<!-- Modal -->
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				  <div class="modal-dialog" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Je souhaite une estimation de mon bien</h4>
-				      </div>
-				      <div class="modal-body">
-				        <%= simple_form_for @contact do |contact| %>
-				        	<%= contact.input :name %>
-				        	<%= contact.input :phone %>
-				        	<%= contact.input :mail %>
-				        	<%= contact.submit 'Me contacter', class:"navbar-wagon-button center " %>
-				        <% end %>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
-				      </div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+				    	<div class="modal-header">
+				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        	<h4 class="modal-title" id="myModalLabel">Je souhaite une estimation de mon bien</h4>
+				      	</div>
+				      	<div class="modal-body">
+				        	<%= simple_form_for @contact do |contact| %>
+				        		<%= contact.input :name %>
+				        		<%= contact.input :phone %>
+				        		<%= contact.input :mail %>
+				        		<%= contact.submit 'Me contacter', class:"navbar-wagon-button center " %>
+				        	<% end %>
+				      	</div>
+				      	<div class="modal-footer">
+				        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        	<button type="button" class="btn btn-primary">Save changes</button>
+				      	</div>
 				    </div>
-				  </div>
 				</div>
-
-	</div>
+			</div>
+		</div>
+	<% end %>
 	<div class="row">
 		<div class="col-md-12 mt-30">
 			<% if @price.price_min_apartment && @price.price_average_apartment && @price.price_max_apartment != nil %>
-				<p>Le prix moyen des appartements <%= @price.type_of_street %>
-						<%= @price.street %> à 
+				<p>Le prix moyen des appartements <%= @price.address %>
+						 à 
 						<%= @price.city %> est de <%= @price.price_average_apartment %> €, mais le prix moyen de <%= @price.city %> est de <%= @average_price_apartment %>.</p>
 			<% end %>
 			<% if @price.price_min_house && @price.price_average_house && @price.price_max_house != nil %>
 				<p>Le prix moyen des maisons <%= @price.type_of_street %>
-						<%= @price.street %> à 
+						<%= @price.address %> à 
 						<%= @price.city %> est de <%= @price.price_average_house %> €, mais le prix moyen de <%= @price.city %> est de <%= @average_price_house %>.</p>
 			<% end %>
 		</div>
@@ -136,6 +138,8 @@
 <% content_for(:after_js) do %>
   <%= javascript_tag do %>
     $(document).ready(function() {
+
+
       var handler = Gmaps.build('Google');
       handler.buildMap({ internal: { id: 'map' } }, function() {
         markers = handler.addMarkers(<%= raw @marker.to_json %>);

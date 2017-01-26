@@ -15,7 +15,7 @@
 							<tr>
 							
 							<td><%= price.type_of_street %>
-							<%= price.street %></td>
+							<%= price.address %></td>
 							<td><%= link_to "voir", price_path(price) %></td>
 							<td>
 								<% if current_user.try(:admin?) %>
@@ -31,6 +31,11 @@
 			<% else %>
 				<p> Il n' y a pas encore de rues renseignées. </p>
 			<% end %>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 col-md-offset-5">
+			<%= link_to "Ajouter une rue" , new_price_path, class:"btn btn-danger mb-30"%>
 		</div>
 	</div>
 </div>

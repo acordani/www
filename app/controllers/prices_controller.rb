@@ -44,7 +44,7 @@ class PricesController < ApplicationController
 	private
 
 	def price_params
-		params.require(:price).permit(:price_min_house, :price_average_house, :price_max_house, :price_min_apartment, :price_average_apartment, :price_max_apartment, :street, :city, :neighborhood, :type_of_street, :latitude, :longitude)
+		params.require(:price).permit(:price_min_house, :price_average_house, :price_max_house, :price_min_apartment, :price_average_apartment, :price_max_apartment, :street, :city, :neighborhood, :type_of_street, :latitude, :longitude, :address, :zip_code)
 	end
 
 	def set_price
