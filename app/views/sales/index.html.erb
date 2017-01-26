@@ -10,6 +10,7 @@
 					<thead>
 						<tr> 
 							<th>Biens Immobilier </th>
+							
 							<th>Voir<th>
 						</th>
 					</thead>
@@ -20,6 +21,7 @@
 							<td><%= sale.title %>
 							<%= sale.city %></td>
 							<td><%= link_to "voir", sale_path(sale) %></td>
+							
 							<td>
 								<% if current_user.try(:admin?) %>
                						<%= link_to "Effacer", sale_path(sale), method: :delete %>

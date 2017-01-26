@@ -7,6 +7,7 @@
 					<thead>
 						<tr> 
 							<th>Rues </th>
+							<th>Quartiers
 							<th>Voir<th>
 						</th>
 					</thead>
@@ -16,6 +17,7 @@
 							
 							<td><%= price.type_of_street %>
 							<%= price.address %></td>
+							<td><%= price.neighborhood %></td>
 							<td><%= link_to "voir", price_path(price) %></td>
 							<td>
 								<% if current_user.try(:admin?) %>
