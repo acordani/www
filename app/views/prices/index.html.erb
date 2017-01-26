@@ -9,6 +9,7 @@
 							<th>Rues </th>
 							<th>Quartiers
 							<th>Voir<th>
+							<th>Modifier</th>
 						</th>
 					</thead>
 					<tbody>
@@ -22,6 +23,7 @@
 							<td>
 								<% if current_user.try(:admin?) %>
                						<%= link_to "Effacer", price_path(price), method: :delete %>
+               						<%= link_to "Modifier", edit_price_path(price) %>
               					<% end %>
               				</td>
 							</tr>

@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-offset-3 col-md-6">
+			<%= simple_form_for @price do|f| %>
+				<%= f.input :address %>
+				<%= f.input :zip_code %>
+				<%= f.input :city %>
+				<%= f.select :neighborhood, collection: [["Le Vieux Saint-Maur"], ["Le Parc Saint-Maur"], ["Champignol"], ["La Varenne Saint-Hilaire"], ["Les Mûriers"], ["La Pie"], ["Adamville"], ["Saint-Maur Creteil"]] %>
+				<%= f.input :price_min_house %>
+				<%= f.input :price_average_house %>
+				<%= f.input :price_max_house %>
+				<%= f.input :price_min_apartment %>
+				<%= f.input :price_average_apartment %>
+				<%= f.input :price_max_apartment %>
+				<%= f.button :submit %>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+
+<%= content_for(:after_js) do %>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyAM4X7NgRcGvTeQDuodHhdS5bgt7vGvcBU"></script>
+<% end %>
+

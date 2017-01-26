@@ -1,6 +1,6 @@
 class PricesController < ApplicationController
 
-	before_action :set_price, only: [:show, :destroy]
+	before_action :set_price, only: [:show, :destroy, :update, :edit]
 	before_action :authenticate_user!, only: [ :new ]
 	def index
 		@prices = Price.all
@@ -35,6 +35,16 @@ class PricesController < ApplicationController
 	def destroy
 		@price.destroy
 			redirect_to prices_path
+	end
+
+
+
+	def update
+		@price.update(price_params)
+			redirect_to price_path(@price)
+	end
+
+	def edit
 	end
 
 	
