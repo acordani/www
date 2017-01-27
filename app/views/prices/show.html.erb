@@ -131,11 +131,22 @@
 	<div id="map" class="mb-30 mt-30" style="width: 100%; height: 600px;"></div>
 
 	<div id="map2" class="mb-30" style="width: 100%; height: 600px;"></div>
+	
+	<div class="row">
+		<h2 class="price-title">D'autres rues de <%= @price.city %></h2>
+		<div class="col-md-6">
 
-	<h2 class="price-title">D'autres rues de <%= @price.city %></h2>
-	<% @random.each do |random| %>
-		<p><%= link_to random.address, price_path(random) %></p>
-	<% end %>
+			
+			<% @random.each do |random| %>
+				<p><%= link_to random.address, price_path(random) %></p>
+			<% end %>
+		</div>
+		<div class="col-md-6">
+			<% @random.each do |random| %>
+				<p><%= link_to random.address, price_path(random) %></p>
+			<% end %>
+		</div>
+	</div>
 	
 
 </div>
