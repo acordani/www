@@ -134,18 +134,15 @@
 	
 	<div class="row">
 		<h2 class="price-title">D'autres rues de <%= @price.city %></h2>
-		<div class="col-md-6">
-
-			
+		<% if @random.count >= 5 %>	
 			<% @random.each do |random| %>
-				<p><%= link_to random.address, price_path(random) %></p>
+				<div class="col-md-6">
+					<p><%= link_to random.address, price_path(random) %></p>
+				</div>
 			<% end %>
-		</div>
-		<div class="col-md-6">
-			<% @random.each do |random| %>
-				<p><%= link_to random.address, price_path(random) %></p>
-			<% end %>
-		</div>
+		<% end %>
+	</div>
+		
 	</div>
 	
 

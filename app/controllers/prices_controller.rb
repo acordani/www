@@ -31,7 +31,7 @@ class PricesController < ApplicationController
 
 		@contact = Contact.new
 
-		@random = Price.all.shuffle[0..4]
+		@random = Price.all.shuffle[0..9]
 
 	end
 
