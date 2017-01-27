@@ -3,11 +3,11 @@
 		<div class="col-md-12">
 		<h1>Prix immobilier à Saint-Maur-Des-Fossés</h1>
 			<% if @prices.count >=1 %>
-				<table class="table table-striped">
+				<table data-toggle="table" class="table table-striped">
 					<thead>
 						<tr> 
-							<th>Rues </th>
-							<th>Quartiers
+							<th data-field="street" data-sortable="true">Rues </th>
+							<th data-sortable="true">Quartiers
 							<th>Voir<th>
 							
 						</th>
@@ -39,7 +39,7 @@
 	</div>
 	<% if current_user.try(:admin?) %>
 		<div class="row">
-			<div class="col-md-2 col-md-offset-5">
+			<div class="col-md-2 col-md-offset-5 mt-30">
 				<%= link_to "Ajouter une rue" , new_price_path, class:"btn btn-danger mb-30"%>
 			</div>
 		</div>
