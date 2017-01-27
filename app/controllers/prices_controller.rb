@@ -30,6 +30,9 @@ class PricesController < ApplicationController
 		end
 
 		@contact = Contact.new
+
+		@random = Price.all.shuffle[0..9]
+
 	end
 
 	def destroy
