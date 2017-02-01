@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-12 pt-20 text-center">
 			<p class="fil_ariane"><%= link_to "Prix Immobilier", prices_path%> >> <%= link_to @price.city, prices_path %></p>
-			<div class="price_title pt-20">
+			<div class="price-title pt-20">
 				Prix immobilier 
 				<%= @price.address %>,
 				<%= @price.city %><br>
@@ -133,7 +133,7 @@
 	<div id="map2" class="mb-30" style="width: 100%; height: 600px;"></div>
 	
 	<div class="row">
-		<h2 class="price-title mb-30">D'autres rues de <%= @price.city %></h2>
+		<h2 class="price-title mb-30">D'autres rues de <%= link_to @price.city, prices_path %></h2>
 		<% if @random.count >= 5 %>	
 			<% @random.each do |random| %>
 				<div class="col-md-4">

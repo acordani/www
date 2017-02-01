@@ -129,8 +129,12 @@ body {
 }
 
 
-.price_title {
+.price-title {
 	font-size:24px;
+
+	a:link {
+		color:black !important;
+	}
 }
 
 .card {

@@ -11,10 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170125103216) do
+ActiveRecord::Schema.define(version: 20170131121137) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "actions", force: :cascade do |t|
+    t.string   "appointment"
+    t.string   "Contexte"
+    t.string   "action"
+    t.text     "comment"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "attachinary_files", force: :cascade do |t|
     t.integer  "attachinariable_id"
@@ -31,6 +40,21 @@ ActiveRecord::Schema.define(version: 20170125103216) do
   end
 
   add_index "attachinary_files", ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent", using: :btree
+
+  create_table "clients", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "mail"
+    t.string   "phone_number"
+    t.string   "portable"
+    t.string   "skype"
+    t.string   "website"
+    t.string   "facebook"
+    t.string   "linkedin"
+    t.string   "job"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
