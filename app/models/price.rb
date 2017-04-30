@@ -1,4 +1,4 @@
-class Price < ActiveRecord::Base
+class Price < ApplicationRecord
 
 	def full_street_address
     	"#{address} #{zip_code}"

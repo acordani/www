@@ -1,4 +1,4 @@
-class Contact < ActiveRecord::Base
+class Contact < ApplicationRecord
 	after_create :send_welcome_email
 	self.inheritance_column = nil
 
