@@ -21,6 +21,10 @@ gem "geocoder"
 gem "coffee-rails"
 gem "gmaps4rails"
 
+
+gem 'pygmentize'
+gem 'redcarpet'
+
 gem 'bootstrap-table-rails'
 
 source 'https://rails-assets.org' do

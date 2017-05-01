@@ -1,0 +1,28 @@
+<% content_for(:title) do %>
+  Le Wagon - <%= @post.metadata[:title] %>
+<% end %>
+
+<% content_for(:description) do %>
+  <%= @post.metadata[:description] %>
+<% end %>
+
+<% content_for(:image_url) do %>
+  <%= asset_path "blog/#{@post.metadata[:thumbnail]}" if @post.metadata[:thumbnail] %>
+<% end %>
+
+<div style="overflow: hidden;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <article class="blog-post">
+          <h1><%= @post.metadata[:title].html_safe %></h1>
+         
+
+          <hr>
+
+          <%= raw @post.content %>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
