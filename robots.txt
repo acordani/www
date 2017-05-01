@@ -1,1 +1,1 @@
-Sitemap: http://www.alexandrecordani.com/sitemap_index.xml.gz
+Sitemap: http://www.alexandrecordani.com/sitemap.xml.gz
