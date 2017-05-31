@@ -23,5 +23,7 @@ Rails.application.routes.draw do
 
   resources :sales
 
+  resources :clients
+
 
 end

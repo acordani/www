@@ -1,5 +1,5 @@
-<% content_for(:title) do %>
-  Alexandre Cordani - <%= @post.metadata[:title] %>
+<% content_for(:meta_title) do %>
+  Alexandre Cordani - <%= @post.metadata[:meta_title] %>
 <% end %>
 
 <% content_for(:description) do %>
@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         <article class="blog-post">
-          <h1><%= @post.metadata[:title].html_safe %></h1>
+          <h1><%= @post.metadata[:meta_title].html_safe %></h1>
          <p><%= @post.metadata[:author].html_safe %>  écrit le <%= @post.metadata[:date].html_safe %>
 
           <hr>

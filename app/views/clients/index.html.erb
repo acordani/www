@@ -1,0 +1,6 @@
+<h1>Les clients</h1>
+<% @clients.each do |client|%>
+<h2><%= client.firstname %></h2>
+<p><%= client.lastname %></p>
+<p><%= client.mail %></p>
+<% end %>
