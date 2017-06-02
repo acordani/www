@@ -1,16 +1,23 @@
+
+<% content_for :meta_title, "Liste des prix des rues de Saint-Maur-Des-Fossés} " %>
+
+<% content_for :meta_description, "Vous trouverez sur cette page toutes les rues de Saint-Maur-Des-Fossés avec leur quartiers}"%>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-		<h1>Prix immobilier à Saint-Maur-Des-Fossés</h1>
+		<h1 class="mb-50 mt-50">Liste des Rues de Saint-Maur-Des-Fossés</h1>
+
+		
+
 			<% if @prices.count >=1 %>
 				<table data-toggle="table" class="table table-striped">
 					<thead>
 						<tr> 
 							<th data-field="street" data-sortable="true">Rues </th>
-							<th data-sortable="true">Quartiers
+							<th data-sortable="true">Quartiers</th>
 							<th>Voir<th>
 							
-						</th>
+						</tr>
 					</thead>
 					<tbody>
 						<% @prices.each do |price| %>
@@ -44,6 +51,7 @@
 			</div>
 		</div>
 	<% end %>
+	<div class="mt-50"></div>
 </div>
 
 

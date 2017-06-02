@@ -4,6 +4,7 @@ class PricesController < ApplicationController
 	before_action :authenticate_user!, only: [ :new ]
 	def index
 		@prices = Price.all
+		
 	end
 
 	def new
