@@ -1,109 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>http://www.alexandrecordani.com/</loc>
-  <changefreq>daily</changefreq>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/users/sign_in</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/pages/realtor</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/pages/photo</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-rue-des-2-boulevards-94100-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-rue-des-trois-yvonne-94100-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-avenue-du-4-septembre-94100-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-rue-de-l-abbaye-94100-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-rue-adrien-jacques-94100-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-rue-adam-94210-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-avenue-des-ailantes-94100-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-rue-albert-94100-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-avenue-albert-1er-94210-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-rue-albert-de-mun-94100-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-rue-alexandre-dumas-94210-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-avenue-alexis-pessot-94100-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-rue-alfred-de-musset-94100-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-avenue-de-l-alma-94210-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.alexandrecordani.com/prices/prix_immobilier-impasse-de-l-alma-94210-saint-maur-des-fosses</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.alexandrecordani.com</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/pages/photo</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/pages/realtor</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-avenue-albert-1er-94210-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-avenue-alexis-pessot-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-avenue-alphonse-karr-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-avenue-de-l-alma-94210-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-avenue-des-ailantes-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-avenue-du-4-septembre-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-impasse-de-l-alma-94210-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-adam-94210-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-adrien-jacques-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-albert-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-albert-de-mun-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-alexandre-dumas-94210-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-alfred-de-musset-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-d-alsace-lorraine-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-de-l-abbaye-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-des-2-boulevards-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-des-alouettes-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/prices/prix_immobilier-rue-des-trois-yvonne-94100-saint-maur-des-fosses</loc>
+    </url>
+    <url>
+        <loc>https://www.alexandrecordani.com/users/sign_in</loc>
+    </url>
 </urlset>
