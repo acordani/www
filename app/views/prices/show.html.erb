@@ -100,20 +100,17 @@
 					<div class="modal-content">
 				    	<div class="modal-header">
 				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        	<h4 class="modal-title" id="myModalLabel">Je souhaite une estimation de mon bien</h4>
+				        	<h4 class="modal-title" id="myModalLabel">Je souhaite une estimation gratuite de mon bien</h4>
 				      	</div>
 				      	<div class="modal-body">
 				        	<%= simple_form_for @contact do |contact| %>
-				        		<%= contact.input :name %>
-				        		<%= contact.input :phone %>
-				        		<%= contact.input :mail %>
+				        		<%= contact.input :name, label: false, input_html: { class: 'no-border border-bottom', placeholder: 'Votre nom complet ' } %>
+				        		<%= contact.input :phone, label: false, input_html: { class: 'no-border border-bottom', placeholder: 'Votre telephone ' }%>
+				        		<%= contact.input :mail, label: false, input_html: { class: 'no-border border-bottom', placeholder: 'Votre adresse mail ' } %>
 				        		<%= contact.submit 'Me contacter', class:"navbar-wagon-button center " %>
 				        	<% end %>
 				      	</div>
-				      	<div class="modal-footer">
-				        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        	<button type="button" class="btn btn-primary">Save changes</button>
-				      	</div>
+				      	
 				    </div>
 				</div>
 			</div>
