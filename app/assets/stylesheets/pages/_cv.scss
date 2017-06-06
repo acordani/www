@@ -1,0 +1,72 @@
+.image_rounded_big {
+	overflow:hidden;
+  	-webkit-border-radius:125px;
+  	-moz-border-radius:125px;
+  	border-radius:125px;
+  	width:250px;
+  	height:250px;
+  	box-shadow: 0 0 5px #0989ff;
+  	margin-left: 30px;
+}
+
+.borderless td, .borderless th .borderless tr {
+	border: none;
+
+}
+
+.border-top-less {
+	border: none !important;
+}
+
+.color_blue {
+	color: #0989ff;
+}
+
+h1.name {
+	font-size:46px !important;
+	text-align:center;
+}
+
+h2.serial {
+	font-size:18px !important;
+	color:#777;
+	margin-top:0;
+	text-align:center;
+}
+
+h1.experiences {
+	font-size:25px;
+}
+
+.subtitle-experiences {
+	color:#777;
+	border-bottom:solid 2px #777;
+	margin-bottom:30px;
+}
+
+.color_black_to_link {
+	color:black;
+}
+
+.title-experiences {
+	color:#0989ff;
+	display:inline;
+	padding-right:10px;
+}
+
+
+
+.date-experiences{
+	display:inline;
+	color:#777;
+}
+
+.date-education {
+	color:#0989ff;
+	
+
+}
+
+.logo-lewagon {
+	width:60px;
+}
