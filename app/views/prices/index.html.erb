@@ -15,7 +15,11 @@
 						<tr> 
 							<th data-field="street" data-sortable="true">Rues </th>
 							<th data-sortable="true">Quartiers</th>
-							<th>Voir<th>
+							<th>Voir</th>
+							<% if current_user.try(:admin?) %>
+								<th>Effacer Modifier</th>
+							<% end %>
+							
 							
 						</tr>
 					</thead>
@@ -23,19 +27,18 @@
 						<% @prices.each do |price| %>
 							<tr>
 							
-							<td><%= price.type_of_street %>
-							<%= price.address %></td>
-							<td><%= price.neighborhood %></td>
-							<td><%= link_to "voir", price_path(price) %></td>
-							<td>
+								<td><%= price.type_of_street %>
+									<%= price.address %></td>
+								<td><%= price.neighborhood %></td>
+								<td><%= link_to "voir", price_path(price) %></td>
 								<% if current_user.try(:admin?) %>
-               						<%= link_to "Effacer", price_path(price), method: :delete %>
-               						<%= link_to "Modifier", edit_price_path(price) %>
+									<td>
+								
+               							<%= link_to "Effacer", price_path(price), method: :delete %>
+               							<%= link_to "Modifier", edit_price_path(price) %>
+              						</td>
               					<% end %>
-              				</td>
 							</tr>
-
-							</p>
 						<% end %>
 					</tbody>
 				</table>
