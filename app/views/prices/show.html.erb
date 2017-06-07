@@ -22,18 +22,18 @@
 	<% if @price.price_min_apartment || @price.price_average_apartment || @price.price_max_apartment || @price.price_min_house || @price.price_average_house || @price.price_max_house != nil %>
 		<div class="card">
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="col-md-1">					
+				<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+					<div class="col-md-1 col-xs-1">					
 					</div>
-					<div class="col-md-3">					
+					<div class="col-md-3 col-xs-3">					
 					</div>
-					<div class="col-md-2 text-center">
+					<div class="col-md-2 col-xs-2 text-center">
 						Prix m2 bas
 					</div>
-					<div class="col-md-2 text-center">
+					<div class="col-md-2 col-xs-2 text-center">
 						Prix m2 moyen
 					</div>
-					<div class="col-md-2 text-center">
+					<div class="col-md-2 col-xs-2 text-center">
 						Prix m2 haut
 					</div>
 				</div>
@@ -41,20 +41,20 @@
 			<div class="mb-30"></div>
 			<% if @price.price_min_apartment && @price.price_average_apartment && @price.price_max_apartment != nil %>
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<div class="col-md-1">
+					<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+						<div class="col-md-1 hidden-xs">
 							<i class="fa fa-building fs-40"></i> 
 						</div>
-						<div class="col-md-3 pt-8">
+						<div class="col-md-3 col-xs-3 pt-8">
 							Prix m2 appartement
 						</div>
-						<div class="col-md-2 text-center pt-8 price_mini_maxi">
+						<div class="col-md-2 col-xs-2 text-center pt-8 price_mini_maxi">
 							<%= @price.price_min_apartment %> €
 						</div>
-						<div class="col-md-2 text-center pt-8 price_average">
+						<div class="col-md-2 col-xs-2 text-center pt-8 price_average">
 							<%= @price.price_average_apartment %> €
 						</div>
-						<div class="col-md-2 text-center pt-8 price_mini_maxi">
+						<div class="col-md-2 col-xs-2 text-center pt-8 price_mini_maxi">
 							<%= @price.price_max_apartment %> €
 						</div>
 					
@@ -64,27 +64,27 @@
 			<div class="mb-30"></div>
 			<% if @price.price_min_house && @price.price_average_house && @price.price_max_house != nil %>
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 mb-30">
-						<div class="col-md-1">
+					<div class="col-md-10 col-md-offset-1  col-xs-10 col-xs-offset-1 mb-30">
+						<div class="col-md-1 hidden-xs">
 							<i class="fa fa-home fs-40"></i> 
 						</div>
-						<div class="col-md-3 pt-8">
+						<div class="col-md-3 col-xs-3 pt-8">
 							</i> Prix m2 maison
 						</div>
-						<div class="col-md-2 text-center pt-8 price_mini_maxi">
+						<div class="col-md-2 col-xs-2 text-center pt-8 price_mini_maxi">
 							<%= @price.price_min_house %> €
 						</div>
-						<div class="col-md-2 text-center pt-8 price_average">
+						<div class="col-md-2 col-xs-2 text-center pt-8 price_average">
 							<%= @price.price_average_house %> €
 						</div>
-						<div class="col-md-2 text-center pt-8 price_mini_maxi">
+						<div class="col-md-2 col-xs-2 text-center pt-8 price_mini_maxi">
 							<%= @price.price_max_house %> €
 						</div>
 					</div>
 				</div>
 			<% end %>
 			<div class="row">
-				<div class="col-md-2 col-md-offset-5">
+				<div class="col-md-2 col-md-offset-5 col-xs-2 col-xs-offset-5">
 					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 					  Estimer mon bien
 					</button>
