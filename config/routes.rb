@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'pages/photo', as: 'photo'
   get 'pages/concept', as: 'concept'
   get 'pages/cv', as: 'cv'
+  get 'pages/nl'
 
   get "blog", to: 'posts#index', as: :blog
   get "blog/:slug", to: 'posts#show', as: :post
