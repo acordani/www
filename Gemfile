@@ -29,6 +29,7 @@ gem 'bootstrap-table-rails'
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
+  gem 'rails-assets-classnames'
 end
 
 gem 'sass-rails'
@@ -41,6 +42,9 @@ gem 'autoprefixer-rails'
 
 gem 'friendly_id', '~> 5.1.0'
 gem 'sitemap_generator'
+
+gem 'js-routes', '~> 1.3'
+gem 'react-rails', '~> 1.8'
 
 group :development, :test do
   gem 'binding_of_caller'

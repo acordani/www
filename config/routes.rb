@@ -27,5 +27,7 @@ Rails.application.routes.draw do
 
   resources :clients
 
+  get "/sitemap.xml" => "sitemap#index", :format => "xml", :as => :sitemap
+
 
 end
