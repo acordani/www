@@ -7,8 +7,7 @@
 //= require bootstrap-table
 //= require underscore
 //= require gmaps/google
-//= require react
-//= require react_ujs
+
 //= require components
 //= require_tree .
 
@@ -17,12 +16,4 @@ $('.image_link').hover(
   function(){ $(this).stop().animate({ opacity : '1' }); }
  );
 
-$(document).ready(function() {
-  $('.hire_me').on('click', function() {
-    $('.modal').addClass('is-active')
-  })
 
-  $('.modal').on('click', function() {
-    $(this).removeClass('is-active')
-  })
-})
