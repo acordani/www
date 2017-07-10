@@ -43,7 +43,7 @@ gem 'autoprefixer-rails'
 gem 'friendly_id', '~> 5.1.0'
 gem 'sitemap_generator'
 
-gem 'js-routes', '~> 1.3'
+
 
 
 group :development, :test do
