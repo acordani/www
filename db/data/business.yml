@@ -1,0 +1,10 @@
+- image_file: dev.jpg
+  profession: Developpeur Web Ruby Junior
+  link: realtor
+- image_file: immo.jpg
+  profession: Agent Immobilier
+  link: realtor
+- image_file: opportunity.jpg
+  profession: Opportunity Manager Nl International
+  link: realtor
+  

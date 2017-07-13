@@ -175,3 +175,63 @@ body {
 	color:#2380d0;
 }
 
+.card {
+  height: 204px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-top:0 !important;
+
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+
+.card:hover .card-hover {
+  opacity: 1;
+  color: white;
+  border-radius: 5px;
+}
+.card-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.53);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 5px;
+    h2 {
+      color: white;
+      text-align: center;
+      opacity: 1;
+    }
+    p {
+      color: white;
+      text-align: center;
+      opacity: 1;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
+
+.link_all {
+  display:block;
+  height:100%;
+}
+
+.style_profession {
+	padding:30px;
+}
+

@@ -39,28 +39,23 @@
 		<div class="container mt-100">
 			<h3 class="rowHeader">Mes compétences</h3>
 			<div class="row">
-				<div class="col-md-4 col-xs-12 mb-50">
-					<div class="image">
-						<%= link_to root_url do %>
-	 						<%=image_tag("dev.jpg", class:"image_link", alt:"Developper Ruby Junior")%>
-	 						<span class="text_image"><span>Developpeur Web Ruby Junior</span></span>
-						<%end%>
-					</div>
-
-				</div>
-				<div class="col-md-4 col-xs-12 mb-50">
-					<%= link_to agent_immobilier_path do %>
- 						<%=image_tag("immo.jpg",width: 350, height:200, class:"image_link", alt:"Agent Immobilier Saint Maur Des Fossés")%>
- 						<span class="text_image"><span>Agent Immobilier </span></span>
-					<%end%>
-				</div>
-				<div class="col-md-4 col-xs-12 mb-50">
-					<%= link_to root_url do %>
- 						<%=image_tag("opportunity.jpg",width: 350, height:200, class:"image_link", alt:"Opportunity Manager au sein de NL International, representant de la marque Beauty Sané")%>
- 						<span class="text_image">Opportunity Manager Nl International</span>
-					<%end%>
-				</div>
-			</div>
+				<% YAML.load(File.open("#{Rails.root}/db/data/business.yml")).each do |business| %>
+			    	<div class="business">
+			   			<div class="business-photo">
+			      			<div class="col-md-4 col-xs-12 mb-50">
+			       				<div class="card">
+			       					<%= link_to "pages/#{business['link']}", class: "link_all" do %>
+			       						<%= image_tag "/assets/#{business['image_file']}" %>	
+			       						<div class="card-hover">
+			       							<p class="style_profession"><%= business['profession'] %></p>
+			       						</div>
+       								<% end %>
+       							</div>
+      						</div>
+   						</div>
+   					</div>
+				<% end %>
+ 			</div>
 		</div>
-	</div>
+	</div>		
 </div>
