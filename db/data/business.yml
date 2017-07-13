@@ -1,10 +1,13 @@
 - image_file: dev.jpg
+  alt: Developpeur Web Ruby Junior
   profession: Developpeur Web Ruby Junior
   link: realtor
 - image_file: immo.jpg
+  alt: Agent Immobilier sur Saint Maur Des Fossés
   profession: Agent Immobilier
   link: realtor
 - image_file: opportunity.jpg
+  alt: Coach en Developpement de Micro Entreprises
   profession: Opportunity Manager Nl International
   link: realtor
   
