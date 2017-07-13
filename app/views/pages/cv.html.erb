@@ -92,27 +92,21 @@
 			<h1 class="experiences"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"> EDUCATION</i></h1>
 			<h4 class="subtitle-experiences"> EDUCATION IS VERY IMPORTANT</h4>
 			<div class="row">
-				<div class="col-md-2">
-					<div class="date-education ">2015</div>
-					<div class="hidden-xs">
-						<%=image_tag("logo_lewagon.png", class:"logo-lewagon mt-30", alt:"logo-lewagon")%>
+				<% YAML.load(File.open("#{Rails.root}/db/data/education.yml")).each do |education| %>
+					<div class="col-md-2">
+						<div class="date-education "><%= education['date'] %> </div>
+						<div class="hidden-xs">
+							<%=image_tag("#{education['logo']}", class:"logo-lewagon mt-30", alt: "#{education['alt']}")%>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-10">
-					<p>Penser autrement, acquérir des compétences en codes qui vont me permettre de coder mes propres projets numériques.</p>
-					<p>Le wagon m'a apporté un nouveau mindset.</p>
-					<p>Penser comme un développeur, voir les problématiques sous un nouvel angle et libérer ma créativité grâce au code.</p>
-					<p>9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript, jQuery, SQL, git, GitHub, Heroku and Ruby on Rails. Designed, Implemented and Shipped to production a clone of AirBnB and a Rails prototype of a website.</p>
-				</div>
-			</div>
-			<div class="mb-30"></div>
-			<div class="row">
-				<div class="col-md-2">
-					<div class="date-education">1994</div>
-				</div>
-				<div class="col-md-10">
-					<p>BTS Force de Vente</p>
-				</div>
+					<div class="col-md-10"> 
+						<p><%= education['detail1'] %></p>
+						<p><%= education['detail2'] %></p>
+						<p><%= education['detail3'] %></p>
+						<p><%= education['detail4'] %></p>
+						<p><%= education['detail5'] %></p>
+					</div>
+				<% end %>
 			</div>
 		</div>
 	</div>
