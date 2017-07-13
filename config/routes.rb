@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   mount Attachinary::Engine => "/attachinary"
   devise_for :users
   root to: 'pages#home'
+  match "*path", to: "application#render_404", via: :all
 
 
   # config/static_routes.yml
