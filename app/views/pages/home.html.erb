@@ -57,6 +57,45 @@
    					</div>
 				<% end %>
  			</div>
+ 			<h3 class="rowHeader">Mes citations</h3>
+ 			
+ 			<div class="row">
+ 			<div id="carousel">
+  				<div class="btn-bar">
+    				<div id="buttons">
+    					<a id="prev" href="#"><</a>
+    					<a id="next" href="#">></a>
+    				</div>
+    			</div>
+ 				<div id="slides">
+        			<ul>
+ 						<% YAML.load(File.open("#{Rails.root}/db/data/citations.yml")).each do |citation| %>
+            				<li class="slide">
+                				<div class="quoteContainer">
+                    				<p class="quote-phrase">
+ 										<div class="col-md-10">
+ 											<h5> 
+												<span class="quote-marks">"</span>
+ 												<%= citation['citation'] %>
+ 												<span class="quote-marks">"</span>
+ 											</h5>
+ 										</div>
+										<div class="col-md-2"></div>
+									</p>
+                				</div>
+                				<div class="authorContainer">
+                    				<p class="quote-author">
+										<div class="col-md-8"></div>
+				 						<div class="col-md-4">
+				 							<%= citation['name'] %>
+				 						</div>
+									</p>
+								</div>
+            				</li>
+            			<% end %>
+            		</ul>
+            	</div>
+ 			</div>
 		</div>
 	</div>		
 </div>
