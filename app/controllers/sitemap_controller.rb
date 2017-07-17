@@ -3,7 +3,7 @@ class SitemapController < ApplicationController
 
   def index
 
-    @pages = ['', 'concept', 'cv', 'nl', 'photo', 'realtor']
+    @pages = ['', 'concept', 'cv', 'nl', 'photo', 'realtor', 'plandusite']
 
     @prices = Price.all
 

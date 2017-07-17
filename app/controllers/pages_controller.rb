@@ -15,5 +15,9 @@ class PagesController < ApplicationController
   def nl
   end
 
+  def plandusite
+    @prices = Price.all
+  end
+
 
 end

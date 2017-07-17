@@ -1,0 +1,11 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h4>Les rues de Saint-Maur-Des-Fossés</h4>
+			<% @prices.each do |price| %>
+				<p><%= link_to price.address, price_path(price) %></p>
+			<% end %>
+		</div>
+	</div>
+	
+</div>
