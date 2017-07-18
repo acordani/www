@@ -25,7 +25,7 @@ gem "gmaps4rails"
 gem 'pygmentize'
 gem 'redcarpet'
 
-gem 'toastr-rails'
+
 
 
 gem 'bootstrap-table-rails'

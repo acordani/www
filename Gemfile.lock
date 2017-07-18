@@ -213,8 +213,6 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.5)
-    toastr-rails (1.0.3)
-      railties (>= 3.1.0)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
     uglifier (3.0.4)
@@ -264,7 +262,6 @@ DEPENDENCIES
   sass-rails
   simple_form
   spring
-  toastr-rails
   uglifier
 
 RUBY VERSION

@@ -1,28 +1,47 @@
 <div class="container">
-	<div class="col-md-10">
-		<h1 class="title"><%= @sale.title %></h1>	
+	<div class="row">
+		<div class="col-md-10">
+			<h1 class="title"><%= @sale.title %></h1>	
+		</div>
+		<div class="col-md-2">
+			<div class="label">
+				<% if @sale.active == true %>
+					A VENDRE
+				<% else %>
+					VENDU
+				<% end %>
+			</div>	
+		</div>
 	</div>
-	<div class="col-md-2">
-		<div class="label">
-			<% if @sale.active == true %>
-				A VENDRE
-			<% else %>
-				VENDU
-			<% end %>
-		</div>	
-	</div>
-		
+	<div class="mb-30"></div>
 	
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<% if @sale.photos.present? %>
-				<%= cl_image_tag @sale.photos.first.path, width:400, crop: :fill, class:"photo_sale" %>
+				<div class="col-md-12">
+					<!-- Carousel -->
+      				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        				<!-- Wrapper for slides -->
+        				<div class="carousel-inner" role="listbox">
+          					<div class="item active">
+            					<%= cl_image_tag @sale.photos.first.path, width: 470, height: 350, crop: :fill %>
+          					</div>
+          					<% @sale.photos[1...@sale.photos.size].each do |photo| %>
+          	 					<div class="item">
+          							<%= cl_image_tag photo.path, width: 470, height: 350, crop: :fill %>
+            					</div>
+          					<% end %>
+        				</div>
+       					
+					</div>
+				</div>
 			<% end %>
 		</div>
 		<div class="col-md-6 justify">
 			<%= @sale.description %>
 		</div>
 	</div>
+	
 	<div class="mb-50"></div>
 	<div class="row">
 			<h3>LES INFOS ESSENTIELLES</h3>
