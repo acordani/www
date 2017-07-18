@@ -1,7 +1,8 @@
 <div class="container">
+<div class="mt-20"></div>
 	<div class="row">
 		<div class="col-md-10">
-			<h1 class="title"><%= @sale.title %></h1>	
+			<h1 class="title"><%= @sale.title.upcase %></h1>	
 		</div>
 		<div class="col-md-2">
 			<div class="label">
@@ -13,8 +14,17 @@
 			</div>	
 		</div>
 	</div>
-	<div class="mb-30"></div>
 	
+	<div class="mb-30"></div>
+	<div class="row">
+		<div class="col-md-2">
+			<p><%= @sale.bedroom %> Chambres</p>
+		</div>
+		<div class="col-md-2">
+			<p class="bold"><%= @sale.price %> €</p>
+		</div>
+	</div>
+	<div class="mb-30"></div>
 	<div class="row">
 		<div class="col-md-4">
 			<% if @sale.photos.present? %>
@@ -38,9 +48,12 @@
 			<% end %>
 		</div>
 		<div class="col-md-6 justify">
+			<h4>Description</h4>
 			<%= @sale.description %>
 		</div>
 	</div>
+	<div class="mb-50"></div>
+	<div class="horizontal-line"></div>
 	
 	<div class="mb-50"></div>
 	<div class="row">
