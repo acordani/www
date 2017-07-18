@@ -61,6 +61,11 @@
 			<%= @sale.price %>€
 	</div>
 	<div class="mb-50"></div>
+	<div class="row">
+		<div class="col-md-6">
+			<%= render 'sales/shared/dpe' %>
+		</div>
+	</div>
 	<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 text-center">
 		<% @sale.photos.each do |photo| %>
   			<p><%= cl_image_tag photo.path, width: 800, height: 600, crop: :fill, class:"photo_sale" %></p>

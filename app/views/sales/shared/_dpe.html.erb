@@ -1,0 +1,40 @@
+<div class="col-md-6 col-md-offset-3">
+  <% if @sale.class_energy == "A" %>
+    <div class="fleche fleche_a_active"> A </div> <span class="ok">OK</span><br>
+  <% else %>
+    <div class="fleche fleche_a"> A </div><br>
+  <% end %>
+  <% if @sale.class_energy == "B" %>
+    <div class="fleche fleche_b_active"> B </div><span class="ok">OK</span><br>
+  <% else %>
+    <div class="fleche fleche_b"> B </div></br>
+  <% end %>
+  <% if @sale.class_energy == "C" %>
+    <div class="fleche fleche_c_active"> C </div><span class="ok">OK</span><br>
+  <% else %>
+    <div class="fleche fleche_c"> C </div><br>
+  <% end %>
+  <% if @sale.class_energy == "D" %>
+    <div class="fleche fleche_d_active"> D </div><span class="ok">OK</span><br>
+  <% else %>
+    <div class="fleche fleche_d"> D </div><br>
+  <% end %>
+  <% if @sale.class_energy == "E" %>
+    <div class="fleche fleche_e_active"> E </div><span class="ok">OK</span><br>
+  <% else %>
+    <div class="fleche fleche_e"> E </div><br>
+  <% end %>
+  <% if @sale.class_energy == "F" %>
+    <div class="fleche fleche_f_active"> F </div><span class="ok">OK</span><br>
+  <% else %>
+    <div class="fleche fleche_f"> F </div><br>
+  <% end %>
+  <% if @sale.class_energy == "G" %>
+    <div class="fleche fleche_g_active"> G </div><span class="ok">OK</span><br>
+  <% else %>
+    <div class="fleche fleche_g"> G </div><br>
+  <% end %>
+  <% if @sale.class_energy == "" %>
+    <h5> Il n'y a pas de DPE pour le moment</h5>
+  <% end %>
+</div>
