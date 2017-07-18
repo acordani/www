@@ -1,5 +1,6 @@
 //= require jquery
 //= require jquery_ujs
+//= require toastr
 //= require jquery-fileupload/basic
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
@@ -9,6 +10,7 @@
 //= require gmaps/google
 
 //= require components
+
 //= require_tree .
 
 $('.image_link').hover(
