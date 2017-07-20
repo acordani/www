@@ -1,0 +1,73 @@
+.sale-card {
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 0;
+  position: relative;
+  display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  &:hover {
+    background-color: white;
+    opacity: 0.8;
+  }
+  
+}
+.sale-card-header {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  
+  
+
+  
+  h3 {
+    font-size: 30px;
+    margin: 0;
+  }
+}
+.sale-card-infos {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+  color: white;
+  font-weight: 500;
+}
+.general-infos {
+  padding: 0.75rem 1rem;
+}
+.disponibility {
+  text-align: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  flex: 0 0 25%;
+  &.occupied {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &.free {
+    background-color: #fff;
+  }
+}
+.infos-sub-header {
+  font-size: 16px;
+}
+.infos-subtitle {
+  font-size: 12px;
+  font-weight: 400;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

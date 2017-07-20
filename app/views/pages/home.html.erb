@@ -106,6 +106,25 @@
     </div>	
 </div>
 <div class="container">
+	<div class="mb-100 mt-100"></div>
+	<% if @sales.exists %>
+		<div class="row">
+		    <% @sales.each do |sale| %>
+				<div class="col-md-4">
+					<div class="sale-card" style="background-image: linear-gradient(135deg, rgba(150,109,105,0.2), rgba(150,109,105,0.4)), url('<%= cl_image_path sale.photos.first.path %>');">
+		       			<div class="sale-card-header">
+		       				<h3><%= sale.title %></h3>
+		       				<br>
+		       				<p><%= sale.city %></p>
+		       			</div>
+		       		</div>
+				<%= link_to "", sale_path(sale), class: "card-link" %>
+		        </div>
+		    <% end %>
+		</div>
+	<% end %>
+</div>
+<div class="container">
 	<div class="mt-100"></div>
 	<h2 class="rowHeader mb-30">Ma ville: Saint-Maur-Des-Fossés</h2>
 </div>
