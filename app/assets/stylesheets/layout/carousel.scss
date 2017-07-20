@@ -1,0 +1,41 @@
+#full-carousel-example-generic {
+  width: auto !important;
+}
+#full-wrapper-for-full-screen-carousel {
+  z-index: 1000;
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+#close-full-screen-carousel {
+  position: fixed;
+  top: 25px;
+  right: 40px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.open-full-screen-carousel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  cursor: pointer;
+}
+#full-screen-display {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  bottom: 50px;
+  left: 50px;
+  width: auto !important;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

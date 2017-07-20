@@ -1,0 +1,10 @@
+$('#close-full-screen-carousel').click(function(){
+  $('#full-screen-display').addClass('hidden');
+  $('#full-carousel-example-generic').addClass('hidden');
+  $('#full-wrapper-for-full-screen-carousel').addClass('hidden');
+})
+$('.open-full-screen-carousel').click(function(){
+  $('#full-screen-display').removeClass('hidden');
+  $('#full-carousel-example-generic').removeClass('hidden');
+  $('#full-wrapper-for-full-screen-carousel').removeClass('hidden');
+})
