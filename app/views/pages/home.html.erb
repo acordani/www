@@ -106,8 +106,9 @@
     </div>	
 </div>
 <div class="container">
-	<div class="mb-100 mt-100"></div>
+	
 	<% if @sales.exists %>
+        <div class="mb-100 mt-100"></div>
 		<div class="row">
 		    <% @sales.each do |sale| %>
 				<div class="col-md-4">
@@ -126,181 +127,60 @@
 </div>
 <div class="container">
 	<div class="mt-100"></div>
-	<h2 class="rowHeader mb-30">Ma ville: Saint-Maur-Des-Fossés</h2>
+	
 </div>
  
 <div class="container-fluid">			
 	<div class="row">
- 		<div id="map" class="hidden-xs" style="width: 100%; height: 400px;"></div>
+        <div class="container-map">
+     		<div id="map-home" class="hidden-xs" style="width: 100%; height: 400px;"></div>
+            <div class="container-information">
+            	<div class="section-info">
+	                <div class="row">
+	                    <div class="col-md-12">
+
+	                        <p>Alexandre Cordani</p>
+	                        <br>
+	                        <p class="titre-coordonnees">Adresse</p>
+	                        <div class="contact-form-infos">
+	                        	<p>17 Av des Perdrix 94100 Saint-Maur-Des-Fossés</p>
+	                        	<p>94210 La Varenne Saint-Hilaire</p>
+	                        </div>
+	                        <p class="titre-coordonnees">Téléphone</p>
+	                        <p class="contact-form-infos">06 98 85 38 74</p>
+	                        
+	                    </div>
+	                </div>
+	            </div>
+            </div>
+        </div>
+        
+
 	</div>
 	<div class="mb-50"></div>
 </div>
 
 
 
-<% content_for(:after_js) do %>
 
 
-    <script type="text/javascript">
-    var myLatlng = new google.maps.LatLng(48.799999,2.5);
-    var myOptions = {
-      zoom: 13,
-      center: myLatlng,
-      scrollwheel: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: [
-    {
-        "elementType": "labels",
-        "stylers": [
+    <% content_for(:after_js) do %>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      var handler = Gmaps.build('Google');
+      var styles = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]}]
+      handler.buildMap({ provider: { scrollwheel: false, styles: styles }, internal: { id: 'map-home' } }, function(){
+         markers = handler.addMarkers([
             {
-                "visibility": "on"
-            },
-            {
-                "color": "white"
+              "lat": 48.7877442,
+              "lng": 2.4938655999999355,
+              "infowindow": "<h1></h1>"
             }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "stylers": [
-            {
-                "color": "#f9ddc5"
-            },
-            {
-                "lightness": -7
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "stylers": [
-            {
-                "color": "#813033"
-            },
-            {
-                "lightness": 43
-            }
-        ]
-    },
-    
-    {
-        "featureType": "water",
-        "stylers": [
-            {
-                "color": "#1994bf"
-            },
-            {
-                "saturation": -69
-            },
-            {
-                "gamma": 0.99
-            },
-            {
-                "lightness": 43
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#f19f53"
-            },
-            {
-                "weight": 1.3
-            },
-            {
-                "visibility": "on"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {
-        "elementType": "labels"
-    },
-    {
-        "featureType": "poi.sports_complex",
-        "stylers": [
-            {
-                "color": "#9e5916"
-            },
-            {
-                "lightness": 32
-            }
-        ]
-    },
-    {},
-    {
-        "featureType": "poi.government",
-        "stylers": [
-            {
-                "color": "#9e5916"
-            },
-            {
-                "lightness": 46
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.line",
-        "stylers": [
-            {
-                "color": "#813033"
-            },
-            {
-                "lightness": 22
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "stylers": [
-            {
-                "lightness": 38
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#f19f53"
-            },
-            {
-                "lightness": -10
-            }
-        ]
-    },
-    {},
-    {},
-    {}
-] // TODO: replace [] by array from https://snazzymaps.com/
-    };
-    var map = new google.maps.Map(document.getElementById('map'), myOptions);
-    
-    </script>
-    <% end %>
+          ]);
+        handler.bounds.extendWith(markers);
+        handler.fitMapToBounds();
+        handler.getMap().setZoom(14);
+      });
+    });
+  </script>
+<% end %>

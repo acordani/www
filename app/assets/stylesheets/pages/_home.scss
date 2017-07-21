@@ -339,3 +339,44 @@ width: 100%;
   background-color:#FAFAFA;
 }
 
+#map-home {
+  position:relative;
+  ocerflow:hidden;
+}
+
+.container-map {
+  position:relative;
+}
+
+.container-information {
+  position:absolute;
+  background-color: white;
+  opacity: 0.9;
+  top: 4rem;
+  left: 4rem;
+  bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.section-info {
+  padding: 0 4em;
+}
+
+.titre-coordonnees {
+  color: #30445D;
+}
+
+.contact-form-infos{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    color: #9e9e9e;
+}
