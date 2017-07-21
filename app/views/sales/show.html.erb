@@ -2,7 +2,8 @@
 <div class="mt-20"></div>
 	<div class="row">
 		<div class="col-md-10">
-			<h1 class="title"><%= @sale.title.upcase %></h1>	
+			<h1 class="title"><%= @sale.title.upcase %></h1>
+			<h3><%= @sale.city %></h3>
 		</div>
 		<div class="col-md-2">
 			<div class="label">
@@ -67,8 +68,22 @@
 	
 	<div class="mb-50"></div>
 	<div class="row">
+		<div class="col-md-6">
 			<h3>LES INFOS ESSENTIELLES</h3>
 			<%= @sale.price %>€
+		</div>
+		<div class="col-md-2">
+			<%=image_tag("photo_identitee_alex.jpg", class:"image_rounded-show", alt:"Alexandre Cordani")%>
+		</div>
+		<div class="col-md-4">
+			<div class="carte-nego">
+
+				<h3> Alexandre Cordani</h3>
+				<p>Négociateur Immobilier</p>
+				<p>06 98 85 38 74</p>
+				<p>alcordani@gmail.com</p>
+			</div>
+		</div>
 	</div>
 	<div class="mb-50"></div>
 	<div class="row">
