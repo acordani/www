@@ -9,8 +9,7 @@ require "attachinary/orm/active_record"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-config.action_mailer.delivery_method = :postmark
-config.action_mailer.postmark_settings = { :api_token => "082f3a76-bc80-4d9c-8437-2bc13c9457a5" }
+
 
 
 
