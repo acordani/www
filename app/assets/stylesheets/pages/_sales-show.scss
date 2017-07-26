@@ -45,3 +45,13 @@ and (max-device-width : 1366px) {
   margin-left: 30px;
   margin-top: 35px;
 }
+
+.photo-full-width {
+    
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
