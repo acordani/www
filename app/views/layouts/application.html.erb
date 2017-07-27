@@ -12,7 +12,7 @@
     <meta name="description" content="<%= (yield(:meta_description) || "").squish %>">
     
   </head>
-  <body>
+  <body id="<%= "#{controller_path.gsub('/', '_')}_#{action_name}" %>">
     <%= render 'shared/navbar' %>
 
     <%= render 'shared/flashes' %>
