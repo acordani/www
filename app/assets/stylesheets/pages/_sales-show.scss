@@ -1,69 +1,72 @@
-@media (max-width: 600px) {
-    
-    .photo_sale {
-    height:164px;
-    width:230px;
+#sales_show{
 
-    }
-}
+  @media (max-width: 600px) {
+      
+      .photo_sale {
+      height:164px;
+      width:230px;
 
-@media only screen and (min-width:650px) and (max-width: 800px)  {
+      }
+  }
 
-    
-    .photo_sale {
-    height:428px;
-    width:600px;
-    
-    }
-}
+  @media only screen and (min-width:650px) and (max-width: 800px)  {
 
-@media only screen 
-and (min-device-width : 1000px) 
-and (max-device-width : 1366px) { 
+      
+      .photo_sale {
+      height:428px;
+      width:600px;
+      
+      }
+  }
 
-    
-    .photo_sale {
-    height:571px;
-    width:800px;
-    
-    }
-}
+  @media only screen 
+  and (min-device-width : 1000px) 
+  and (max-device-width : 1366px) { 
 
-.bold {
-    font-weight:900;
-    font-size:20px;
-}
+      
+      .photo_sale {
+      height:571px;
+      width:800px;
+      
+      }
+  }
 
-.image_rounded-show {
-  overflow:hidden;
-  -webkit-border-radius:50px;
-  -moz-border-radius:50px;
-  border-radius:50px;
-  width:100px;
-  height:100px;
-  box-shadow: 0 0 5px #0e0e0e;
-  margin-left: 30px;
-  margin-top: 35px;
-}
+  .bold {
+      font-weight:900;
+      font-size:20px;
+  }
 
-.photo-full-width {
-    
-    width:100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+  .image_rounded-show {
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:100px;
+    height:100px;
+    box-shadow: 0 0 5px #0e0e0e;
+    margin-left: 30px;
+    margin-top: 35px;
+  }
+
+  .photo-full-width {
+      
+      width:100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .container-fluid {
+    position: relative;
+    height: auto;
+  }
+
+  .photo-full-width {
+    position: absolute;
+    width: 100%;
+    height: 400px;
     background-size: cover;
-}
+  }
 
-.container-fluid {
-  position: relative;
-  height: auto;
 }
-
-.photo-full-width {
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-}
-
