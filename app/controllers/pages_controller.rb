@@ -18,6 +18,7 @@ class PagesController < ApplicationController
 
   def plandusite
     @prices = Price.all
+    @sales = Sale.all
   end
 
 
