@@ -7,6 +7,8 @@ class SitemapController < ApplicationController
 
     @prices = Price.all
 
+    @sales = Sale.all
+
     respond_to do |format|
       format.xml
     end
