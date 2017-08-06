@@ -77,11 +77,12 @@
 		</div>
 		<div class="col-md-4">
 			<div class="carte-nego">
-
-				<h3> Alexandre Cordani</h3>
-				<p>Négociateur Immobilier</p>
-				<p>06 98 85 38 74</p>
-				<p>alcordani@gmail.com</p>
+				<% YAML.load(File.open("#{Rails.root}/db/data/realtor.yml")).each do |realtor| %>
+					<h3><%= realtor['firstname'] %> <%= realtor['lastname'] %></h3>
+					<p><%= realtor['title'] %></p>
+					<p><%= realtor['phone-number'] %></p>
+					<p><%= realtor['mail'] %></p>
+				<% end %>
 			</div>
 		</div>
 	</div>
