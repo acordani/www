@@ -1,8 +1,12 @@
+<% content_for :meta_title, "A vendre sur #{@sale.city}, #{@sale.description}  " %>
+
+<% content_for :meta_description, "Nouveau bien à vendre sur #{@sale.city}, #{@sale.bedroom} chambres, #{@sale.description}"%>
+
 <div class="container">
 	<div class="mt-20"></div>
 	<div class="row">
 		<div class="col-md-10">
-			<h1 class="title"><%= @sale.title.upcase %></h1>
+			<h1 class="title"><%= @sale.title %></h1>
 			<h3><%= @sale.city %></h3>
 		</div>
 		<div class="col-md-2">
