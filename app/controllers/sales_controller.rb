@@ -7,11 +7,10 @@ class SalesController < ApplicationController
 	end
 
 	def show
-		@markers = Gmaps4rails.build_markers(@sale) do |sale, marker|
-    		marker.lat sale.latitude
-    		marker.lng sale.longitude
+		
+    	@markers = {lng: @sale.longitude, lat: @sale.latitude, radius: 800}
       # marker.infowindow render_to_string(partial: "/sales/map_box", locals: { sale: sale })
-    end
+   
 		#on va chercher la vente âr son id
 	end
 
@@ -37,7 +36,7 @@ class SalesController < ApplicationController
 	private
 
 	def sale_params
-		params.require(:sale).permit(:title, :price, :description, :active, :bedroom, :class_energy, :latitude, :longitude, :address,  photos: [])
+		params.require(:sale).permit(:title, :price, :description, :active, :bedroom, :class_energy, :latitude, :longitude, :address, :zip_code, :city,  photos: [])
 	end
 
 	def set_sale
