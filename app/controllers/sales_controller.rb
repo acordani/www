@@ -36,7 +36,7 @@ class SalesController < ApplicationController
 	private
 
 	def sale_params
-		params.require(:sale).permit(:title, :price, :description, :active, :bedroom, :class_energy, :latitude, :longitude, :address, :zip_code, :city,  photos: [])
+		params.require(:sale).permit(:title, :price, :description, :active, :bedroom, :living, :class_energy, :latitude, :longitude, :address, :zip_code, :city,  photos: [])
 	end
 
 	def set_sale
