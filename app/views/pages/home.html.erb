@@ -34,28 +34,25 @@
 		</div>
 	</div>
 </div>
-<div class="content">
+<!-- <div class="content">
 	<div class="container-fluid">
 		<div class="container mt-100">
 			<h3 class="rowHeader">Mes compétences</h3>
 			<div class="row">
+				
 				<% YAML.load(File.open("#{Rails.root}/db/data/business.yml")).each do |business| %>
-			    	<div class="business">
-			   			<div class="business-photo">
-			      			<div class="col-md-4 col-xs-12 mb-50 col-sm-6 col-sm-offset-3">
-			       				<div class="card">
-			       					<%= link_to "pages/#{business['link']}", class: "link_all" do %>
-			       						<%= image_tag("#{business['image_file']}", alt: "#{business['alt']}") %>
-			       						<div class="card-hover">
-			       							<p class="style_profession"><%= business['profession'] %></p>
-			       						</div>
-       								<% end %>
-       							</div>
-       							<p class="hidden-lg hidden-md"> <%= business['profession'] %> </p>
-      						</div>
-   						</div>
-   					</div>
-				<% end %>
+					<div class="col-md-4 col-xs-8 col-xs-offset-2 mb-30">
+			   			<div class="card">
+			       			<%= link_to "pages/#{business['link']}", class: "link_all" do %>
+			   					<%= image_tag("#{business['image_file']}", alt: "#{business['alt']}") %>
+			   					<p><%= business['profession'] %></p>
+			   					
+       						<% end %>
+       					</div>
+       				</div>
+       				
+      			<% end %>
+      		</div>
 				<div class="mb-50"></div>
  			</div>
  			<h3 class="rowHeader">Mes citations</h3>
@@ -74,7 +71,7 @@
 	            				<li class="slide">
 	                				<div class="quoteContainer">
 	                    				<p class="quote-phrase">
-	 										<div class="col-md-10">
+	 										<div class="col-md-10 col-xs-10">
 	 											<h5> 
 													<span class="quote-marks">"</span>
 	 												<%= citation['citation'] %>
@@ -101,7 +98,7 @@
  			<div class="mt-30"></div>	
 		</div>
 	</div>		
-</div>	
+</div>	 -->
 
 <div class="container mt-100">
 	<h3 class="rowHeader">Mes biens immobiliers à vendre</h3>

@@ -143,12 +143,7 @@
   	}
   }
 
-  .card {
-  	border: 1px solid #ddd;
-  	padding-top:30px;
-  	margin-top:30px;
-  	padding-bottom:30px;
-  }
+  
 
   .fil_ariane  {
   	font-size:14px;
@@ -179,11 +174,11 @@
 
   .card {
     height: 204px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    
     background-size: cover !important;
     color: white;
     position: relative;
-    border-radius: 5px;
+    
     margin-bottom: 20px;
     padding-top:0 !important;
 
@@ -381,6 +376,17 @@
       margin-bottom:20px;
     }
    }
+
+
+   .business-photo {
+   display:flex;
+   justify-content:space-between;
+
+   &:hover {
+    background-color: white;
+    opacity: 0.8;
+  }
+   }
 }
   .section-info {
     padding: 0 4em;
@@ -398,8 +404,4 @@
   }
 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .sale-card {
-      height:540px;
-    }
-   }
+
