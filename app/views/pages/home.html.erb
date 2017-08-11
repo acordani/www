@@ -42,10 +42,10 @@
 				<% YAML.load(File.open("#{Rails.root}/db/data/business.yml")).each do |business| %>
 			    	<div class="business">
 			   			<div class="business-photo">
-			      			<div class="col-md-4 col-xs-12 mb-50">
+			      			<div class="col-md-4 col-xs-12 mb-50 col-sm-6 col-sm-offset-3">
 			       				<div class="card">
 			       					<%= link_to "pages/#{business['link']}", class: "link_all" do %>
-			       						<%= image_tag("#{business['image_file']}", alt: "#{business['alt']}") %>	
+			       						<%= image_tag("#{business['image_file']}", alt: "#{business['alt']}") %>
 			       						<div class="card-hover">
 			       							<p class="style_profession"><%= business['profession'] %></p>
 			       						</div>
