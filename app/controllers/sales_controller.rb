@@ -8,10 +8,10 @@ class SalesController < ApplicationController
 
 	def show
 		
-    	@markers = {lng: @sale.longitude, lat: @sale.latitude, radius: 800}
-      # marker.infowindow render_to_string(partial: "/sales/map_box", locals: { sale: sale })
-   
-		#on va chercher la vente âr son id
+    	@markers = Gmaps4rails.build_markers(@sale) do |sale, marker|
+      		marker.lat sale.latitude + 0.001
+      		marker.lng sale.longitude + 0.001
+		end
 	end
 
 	def new

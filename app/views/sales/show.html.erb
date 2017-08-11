@@ -100,6 +100,7 @@
 		</div>
 	</div>
 	<div id="map" class="mb-30 mt-30" style="width: 100%; height: 600px;"></div>
+	<p>La géolocalisation est approximative</p>
 </div>
 
 <div class="container-fluid">
@@ -139,15 +140,28 @@
   	</div>
 </div>
 <div id="full-wrapper-for-full-screen-carousel" class="hidden"></div>
-<script type="text/javascript">
-	circle = [{lng: <%= @sale.longitude %>, lat: <%= @sale.latitude %>, radius: 200}]
-    circle_options = { strokeColor:"#FECC1F",strokeOpacity: 1, strokeWeight: 3, fillColor: 'transparent' }
-	handler = Gmaps.build('Google');
-	handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-    markers = handler.addCircle(circle, circle_options);
-    handler.bounds.extendWith(markers);
-    handler.fitMapToBounds(markers);
-    handler.getMap().setZoom(15);
-  });
-</script>
+
+<% content_for(:after_js) do %>
+  <%= javascript_tag do %>
+    $(document).ready(function() {
+		circle = [{lng: <%= @sale.longitude %>, lat: <%= @sale.latitude %>, radius: 200}]
+     	circle_options = { strokeColor:"#FECC1F",strokeOpacity: 1, strokeWeight: 3, fillColor: 'transparent' }
+
+      	var handler = Gmaps.build('Google');
+      	handler.buildMap({ internal: { id: 'map' } }, function() {
+
+      
+        markers = handler.addMarkers(<%= raw @markers.to_json %>);
+        handler.bounds.extendWith(markers);
+        
+        handler.fitMapToBounds();
+        if (markers.length == 0) {
+          handler.getMap().setZoom(2);
+        } else if (markers.length == 1) {
+          handler.getMap().setZoom(14);
+        }
+      });
+    });
+  <% end %>
+<% end %>
 
