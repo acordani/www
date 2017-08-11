@@ -12,6 +12,7 @@
 							<th>Biens Immobilier </th>
 							
 							<th>Voir<th>
+							<th>Modifier</th>
 						</th>
 					</thead>
 					<tbody>
@@ -25,6 +26,12 @@
 							<td>
 								<% if current_user.try(:admin?) %>
                						<%= link_to "Effacer", sale_path(sale), method: :delete %>
+              					<% end %>
+              				</td>
+
+              				<td>
+								<% if current_user.try(:admin?) %>
+               						<%= link_to "Modifier", edit_sale_path(sale) %>
               					<% end %>
               				</td>
 							</tr>

@@ -1,0 +1,24 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<%= simple_form_for @sale do|f| %>
+				<%= f.input :title %>
+				<%= f.input :description %>
+				<%= f.input :address %>
+				<%= f.input :zip_code %>
+				<%= f.input :city %>
+				<%= f.input :bedroom %>
+				<%= f.input :living %>
+				<%= f.input :price %>
+				<%= f.input :active,     as: :radio_buttons %>
+				<%= f.input :class_energy %>
+				<%= f.input :photos, as: :attachinary %>
+				<%= f.button :submit %>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+<%= content_for(:after_js) do %>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyAM4X7NgRcGvTeQDuodHhdS5bgt7vGvcBU"></script>
+<% end %>
