@@ -4,6 +4,8 @@ class Sale < ApplicationRecord
   	after_validation :geocode, if: :address_changed?
   	
 	has_attachments :photos, maximum: 10
+
+	HEATING = %w(Gaz Electrique Sol Fioul)
 	
 
 	extend FriendlyId

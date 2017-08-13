@@ -1,3 +1,4 @@
+<!-- SEO -->
 <% content_for :meta_title, "A vendre sur #{@sale.city}, #{@sale.description}  " %>
 
 <% content_for :meta_description, "Nouveau bien à vendre sur #{@sale.city}, #{@sale.bedroom} chambres, #{@sale.description}"%>
@@ -7,6 +8,8 @@
 <%= content_for(:facebook_meta_description) do %>
 	<%= "Nouveau bien à vendre sur #{@sale.city}, #{@sale.bedroom} chambres, #{@sale.description}" %>
 <% end %>
+
+<!-- FIN SEO -->
 
 <div class="container">
 	<div class="mt-20"></div>
@@ -36,7 +39,7 @@
 		<div class="hidden-lg hidden-md col-xs-12">
 			<p><%= @sale.price%> € - <%= pluralize(@sale.bedroom, "Chambre") %></p>
 		</div>
-		<div class="col-md-2 hidden-xs">
+		<div class="col-md-2 hidden-xs  hidden-sm">
 			<p class="bold"><%= @sale.price %> €</p>
 		</div>
 	</div>
@@ -104,6 +107,9 @@
 			<h3>LES INFOS ESSENTIELLES</h3>
 			<p>Prix: <%= @sale.price %>€</p>
 			<p><%= pluralize(@sale.bedroom, "Chambre") %></p>
+			<p>Taxe Foncière: <%= @sale.taxe %> €</p>
+			<p>Chauffage: <%= @sale.heating %></p>
+			<p>Exposition: <%= @sale.exposition %></p>
 		</div>
 		<div class="col-md-2">
 			<%=image_tag("photo_identitee_alex.jpg", class:"image_rounded-show", alt:"Alexandre Cordani")%>
@@ -131,12 +137,12 @@
 	<p>La géolocalisation est approximative</p>
 </div>
 
-<div class="container-fluid">
+<!-- <div class="container-fluid">
 	<div class="row">
 		<div class="photo-full-width" style="background-image: linear-gradient(135deg, rgba(150,109,105,0.2), rgba(150,109,105,0.4)), url('<%= cl_image_path @sale.photos.first.path %>');">
 		</div>
 	</div>
-</div>
+</div> -->
 
 
 <!-- FULL SCREEN CAROUSEL -->

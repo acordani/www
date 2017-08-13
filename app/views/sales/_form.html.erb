@@ -15,6 +15,9 @@
 				<%= f.input :number_class_energy %>
 				<%= f.input :gaz_serre %>
 				<%= f.input :number_gaz_serre %>
+				<%= f.input :heating, collection: Sale::HEATING %>
+				<%= f.input :exposition %>
+				<%= f.input :taxe %>
 				<%= f.input :photos, as: :attachinary %>
 				<%= f.button :submit %>
 			<% end %>
