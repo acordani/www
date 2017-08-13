@@ -1,0 +1,10 @@
+
+
+	<div class="carte-nego">
+		<% YAML.load(File.open("#{Rails.root}/db/data/realtor.yml")).each do |realtor| %>
+			<h3><%= realtor['firstname'] %> <%= realtor['lastname'] %></h3>
+			<p><%= realtor['title'] %></p>
+			<p><%= realtor['phone-number'] %></p>
+			<p><%= realtor['mail'] %></p>
+		<% end %>
+	</div>

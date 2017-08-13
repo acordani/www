@@ -109,38 +109,41 @@
 		<div class="col-xs-12 hidden-lg hidden-md hidden-sm">
 			<h4 style="border:1px solid #999999; text-transform:uppercase; color:#006666; padding:10px;">Les infos essentielles</h4>
 		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
 			<p>Prix: <%= @sale.price %>€</p>
 			<p><%= pluralize(@sale.bedroom, "Chambre") %></p>
 			<p>Taxe Foncière: <%= @sale.taxe %> €</p>
 			<p>Chauffage: <%= @sale.heating %></p>
 			<p>Exposition: <%= @sale.exposition %></p>
 		</div>
-		<div class="col-md-2">
-			<%=image_tag("photo_identitee_alex.jpg", class:"image_rounded-show", alt:"Alexandre Cordani")%>
+		<div class="col-md-2 hidden-xs hidden-sm">
+			<%= render 'sales/shared/photo_conseiller' %>
 		</div>
-		<div class="col-md-4">
-			<div class="carte-nego">
-				<% YAML.load(File.open("#{Rails.root}/db/data/realtor.yml")).each do |realtor| %>
-					<h3><%= realtor['firstname'] %> <%= realtor['lastname'] %></h3>
-					<p><%= realtor['title'] %></p>
-					<p><%= realtor['phone-number'] %></p>
-					<p><%= realtor['mail'] %></p>
-				<% end %>
-			</div>
+		<div class="col-md-4 hidden-xs hidden-sm ">
+			<%= render 'sales/shared/conseiller' %>
 		</div>
 	</div>
 	<div class="mb-50"></div>
 </div>
 <div class="container">
 	<div class="row">
-		<div class="col-md-6">
-			
+		<div class="col-md-12">
+			<div id="map" class="mb-30 mt-30" style="width: 100%; height: 600px;"></div>
+			<p>La géolocalisation est approximative</p>
 		</div>
+	</div>	
+	<div class="col-md-12">
+		<div class="horizontal-line"></div>
 	</div>
-	<div id="map" class="mb-30 mt-30" style="width: 100%; height: 600px;"></div>
-	<p>La géolocalisation est approximative</p>
+	<div class="col-xs-12 hidden-md">
+		<%= render 'sales/shared/photo_conseiller' %>
+	</div>
+	<div class="col-xs-12 hidden-md ">
+		<%= render 'sales/shared/conseiller' %>
+	</div>
 </div>
-
 <!-- <div class="container-fluid">
 	<div class="row">
 		<div class="photo-full-width" style="background-image: linear-gradient(135deg, rgba(150,109,105,0.2), rgba(150,109,105,0.4)), url('<%= cl_image_path @sale.photos.first.path %>');">
