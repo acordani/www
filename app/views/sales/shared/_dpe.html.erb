@@ -1,35 +1,35 @@
+<!-- Affichage ecran computer -->
 <div class="row">
-    <div class="col-md-4 hidden-xs">
-      
-      <h4>CONSOMMATION ENERGETIQUE</h4>
-    </div>
-      
-    <div class="col-xs-12 hidden-lg hidden-md hidden-sm">
-      <p class="title-conso-energy">CONSOMMATION ENERGETIQUE</p>
-    </div>
+  <div class="col-md-4 hidden-xs">
+    <h4>CONSOMMATION ENERGETIQUE</h4>
+  </div>
+  <div class="col-md-4 hidden-xs">
+    <h4>EMISSION DE GAZ EFFET DE SERRE</h4>
+  </div>  
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-      <div class="conso_energetique">
-        <% if @sale.class_energy == "A" %>
-          <p class="energy color-a"> 50 - A </p>
-        <% elsif @sale.class_energy == "B" %>
-          <p class="energy color-b"> DE 51 A 90 - B </p>
-        <% elsif @sale.class_energy == "C" %>
-          <p class="energy color-c"> DE 91 A 150 - C </p>
-        <% elsif @sale.class_energy == "D" %>
-          <p class="energy color-d"> DE 151 A 230 - D </p>
-        <% elsif @sale.class_energy == "E" %>
-          <p class="energy color-e"> DE 231 A 330 - E </p>
-        <% elsif @sale.class_energy == "F" %>
-          <p class="energy color-f"> DE 331 A 450 - F </p>
-        <% elsif @sale.class_energy == "G" %>
-          <p class="energy color-g"> > 450 - G </p>
-        <% else  %>
-          <p style="margin-bottom:0;">  DPE VIERGE </p>       
-        <% end %>
-        <p class="number_class_energy"><%= @sale.number_class_energy %>(KWh/m²/an)</p>
-      </div>
-    </div>
+  <div class="col-md-4 hidden-xs">
+    <%= render 'sales/shared/conso_energetique' %>  
+  </div>
+
+  <div class="col-md-4 hidden-xs">
+    <%= render 'sales/shared/gaz_serre' %>
+  </div>
+</div>
+<!-- FIN Affichage ecran computer -->
+
+<!-- Affichage ecran smartphone -->
+<div class="row">
+  <div class="col-xs-12 hidden-lg hidden-md hidden-sm">
+    <p class="title-conso-energy">CONSOMMATION ENERGETIQUE</p>
+    <%= render 'sales/shared/conso_energetique' %>
+    <div class="mb-20"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 hidden-lg hidden-md hidden-sm">
+    <p class="title-conso-energy">EMISSION DE GAZ EFFET DE SERRE</p>
+    <%= render 'sales/shared/gaz_serre' %>
+  </div>
 </div>

@@ -1,0 +1,20 @@
+<div class="conso_energetique">
+        <% if @sale.gaz_serre == "A" %>
+          <p class="energy color-a2"> <= 5 - A </p>
+        <% elsif @sale.gaz_serre == "B" %>
+          <p class="energy color-b2"> DE 6 A 10 - B </p>
+        <% elsif @sale.gaz_serre == "C" %>
+          <p class="energy color-c2"> DE 11 A 20 - C </p>
+        <% elsif @sale.gaz_serre == "D" %>
+          <p class="energy color-d2"> DE 21 A 35 - D </p>
+        <% elsif @sale.gaz_serre == "E" %>
+          <p class="energy color-e2"> DE 36 A 55 - E </p>
+        <% elsif @sale.gaz_serre == "F" %>
+          <p class="energy color-f2"> DE 56 A 80 - F </p>
+        <% elsif @sale.gaz_serre == "G" %>
+          <p class="energy color-g2"> > 80 - G </p>
+        <% else  %>
+          <p style="margin-bottom:0;">  DPE VIERGE </p>       
+        <% end %>
+        <p class="number_class_energy"><%= @sale.number_gaz_serre %>(KgCO2/m²/an)</p>
+</div>
