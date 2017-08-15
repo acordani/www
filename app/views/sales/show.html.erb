@@ -159,13 +159,14 @@
 	</div>
 </div> -->
 
-<!--
-<%= simple_form_for [@sale, @link_partner] do |f| %>
-        <%= f.input :link %>
-        <%= f.association :partner %>
+<% if current_user.try(:admin?) %>
+	<%= simple_form_for [@sale, @link_partner] do |f| %>
+	    <%= f.input :link %>
+	    <%= f.association :partner %>
+	    <%= f.submit %>
+	<% end %>
+<% end %>
 
-        <%= f.submit %>
-      <% end %>
  <% @sale.link_partners.each do |link_partner| %>
  	<li><%= link_partner.partner.name%></li>
  	<%= link_to "#{link_partner.link}" do  %>
@@ -175,7 +176,7 @@
  	<li><%= link_partner.link %>
  	
  <% end %>
--->
+
 
 <!-- FULL SCREEN CAROUSEL -->
 <div id="full-screen-display" class="hidden">
