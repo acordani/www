@@ -1,0 +1,5 @@
+<%= @partner.name %>
+<% if @partner.photo.present? %>
+  <%= cl_image_tag @partner.photo.path, width: 100, height: 100, crop: :fill %>
+ <% end %>
+

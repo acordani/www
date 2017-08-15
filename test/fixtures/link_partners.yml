@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sale: one
+  partner: one
+  link: MyString
+  active: false
+
+two:
+  sale: two
+  partner: two
+  link: MyString
+  active: false

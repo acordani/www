@@ -7,7 +7,8 @@ class SalesController < ApplicationController
 	end
 
 	def show
-		
+		@partner = Partner.new
+		@link_partner = LinkPartner.new
     	@markers = Gmaps4rails.build_markers(@sale) do |sale, marker|
       		marker.lat sale.latitude + 0.001
       		marker.lng sale.longitude + 0.001

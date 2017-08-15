@@ -24,8 +24,11 @@ Rails.application.routes.draw do
   get "blog/:slug", to: 'posts#show', as: :post
 
   resources :prices
+  resources :partners
 
-  resources :sales
+  resources :sales do
+    resources :link_partners
+  end
 
   resources :clients
 

@@ -159,6 +159,22 @@
 	</div>
 </div> -->
 
+<%= simple_form_for [@sale, @link_partner] do |f| %>
+        <%= f.input :link %>
+        <%= f.association :partner %>
+
+        <%= f.submit %>
+      <% end %>
+ <% @sale.link_partners.each do |link_partner| %>
+ 	<li><%= link_partner.partner.name%></li>
+ 	<%= link_to href: link_partner.link do  %>
+    	<%= cl_image_tag link_partner.partner.photo.path, width: 136, height: 67%>
+	<% end %>
+ 	
+ 	<li><%= link_partner.link %>
+ 	
+ <% end %>
+
 
 <!-- FULL SCREEN CAROUSEL -->
 <div id="full-screen-display" class="hidden">
@@ -174,6 +190,8 @@
 				</div>
       		<% end %>
       	</div>
+
+
 
    
     	<!-- Controls -->
