@@ -1,4 +1,5 @@
 class PartnersController < ApplicationController
+	before_action :authenticate_user!, only: [:index, :show, :new], raise: false
 	before_action :set_partner, only: [:show, :destroy, :edit, :update]
 	def index
 		@partners = Partner.all
