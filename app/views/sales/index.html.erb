@@ -11,32 +11,56 @@
 						<tr> 
 							<th>Biens Immobilier </th>
 							
-							<th>Voir<th>
-							<th>Modifier</th>
-						</th>
+							<th>Voir</th>
+							<th>
+								<% if current_user.try(:admin?) %>
+									Modifier
+								<% end %>
+							</th>
+							<th>
+								<% if current_user.try(:admin?) %>
+									Effacer
+								<% end %>
+							</th>
+
+							<th>
+								<% if current_user.try(:admin?) %>
+									Nbre Partenaires
+								<% end %>
+							</th>
+						</tr>
 					</thead>
 					<tbody>
 						<% @sales.each do |sale| %>
 							<tr>
 							
-							<td><%= sale.title %>
-							<%= sale.city %></td>
-							<td><%= link_to "voir", sale_path(sale) %></td>
-							
-							<td>
-								<% if current_user.try(:admin?) %>
-               						<%= link_to "Effacer", sale_path(sale), method: :delete %>
-              					<% end %>
-              				</td>
+								<td>
+									<%= sale.title %> à
+									<%= sale.city %>
+								</td>
+								<td>
+									<%= link_to "voir", sale_path(sale) %>
+								</td>
+								<td>
+									<% if current_user.try(:admin?) %>
+               							<%= link_to "Effacer", sale_path(sale), method: :delete %>
+              						<% end %>
+              					</td>
 
-              				<td>
-								<% if current_user.try(:admin?) %>
-               						<%= link_to "Modifier", edit_sale_path(sale) %>
-              					<% end %>
-              				</td>
+              					<td>
+									<% if current_user.try(:admin?) %>
+               							<%= link_to "Modifier", edit_sale_path(sale) %>
+              						<% end %>
+              					</td>
+              					<td>
+              						<% if current_user.try(:admin?) %>
+              							<%= sale.link_partners.count %>
+              						<% end %>
+              					</td>
+
 							</tr>
 
-							</p>
+							
 						<% end %>
 					</tbody>
 				</table>

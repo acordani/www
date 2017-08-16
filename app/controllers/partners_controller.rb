@@ -1,7 +1,11 @@
 class PartnersController < ApplicationController
-	
+	before_action :set_partner, only: [:show, :destroy, :edit, :update]
+	def index
+		@partners = Partner.all
+		
+	end
 	def show
-		@partner = Partner.find(params[:id])
+		
 	end
 
 	def new
@@ -18,11 +22,20 @@ class PartnersController < ApplicationController
 		end
 	end
 
+	def destroy
+		@partner.destroy
+		redirect_to partners_path
+	end
+
 
 
 	private
 
 	def partner_params
 		params.require(:partner).permit(:photo, :name)
+	end
+
+	def set_partner
+		@partner = Partner.find(params[:id])
 	end
 end

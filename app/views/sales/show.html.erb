@@ -166,16 +166,23 @@
 	    <%= f.submit %>
 	<% end %>
 <% end %>
+<div class="container">
+	<div class="row">
+		<% if @sale.link_partners.count >=4 %>
+			<% @sale.link_partners.each do |link_partner| %>
+				<div class="col-md-3">
+			 		<!--<li><%= link_partner.partner.name%></li> -->
+			 		<%= link_to "#{link_partner.link}" do  %>
+			    		<%= cl_image_tag link_partner.partner.photo.path, width: 136, height: 67%>
+					<% end %>
+			 		<!-- <li><%= link_partner.link %></li> -->
+			 	</div>
+			<% end %>
+		<% end %>
+	</div>
 
- <% @sale.link_partners.each do |link_partner| %>
- 	<li><%= link_partner.partner.name%></li>
- 	<%= link_to "#{link_partner.link}" do  %>
-    	<%= cl_image_tag link_partner.partner.photo.path, width: 136, height: 67%>
-	<% end %>
- 	
- 	<li><%= link_partner.link %>
- 	
- <% end %>
+</div>
+
 
 
 <!-- FULL SCREEN CAROUSEL -->

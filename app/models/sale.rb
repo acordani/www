@@ -11,7 +11,7 @@ class Sale < ApplicationRecord
 	extend FriendlyId
   	friendly_id :title, use: :slugged
 
-  	has_many :link_partners
+  	has_many :link_partners, dependent: :destroy
   	has_many :partners, through: :link_partners
 
 end

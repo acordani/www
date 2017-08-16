@@ -4,6 +4,8 @@ class SalesController < ApplicationController
 
 	def index
 		@sales = Sale.all
+		@partner = Partner.new
+		@link_partner = LinkPartner.new
 	end
 
 	def show

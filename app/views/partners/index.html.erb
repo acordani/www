@@ -1,1 +1,55 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+		<h1>Partenaires de parutions internets</h1>
+			<% if @partners.count >=1 %>
+				<table class="table table-striped">
+					<thead>
+						<tr> 
+							<th>Partenaires </th>
+							
+							<th>Voir<th>
+							<th>Modifier</th>
+							
+						</th>
+					</thead>
+					<tbody>
+						<% @partners.each do |partner| %>
+							<tr>
+							
+								<td><%= partner.name %>
+									<%= cl_image_tag partner.photo.path, width: 136, height: 67 %>
+								</td>
+								<td><%= link_to "voir", partner_path(partner) %></td>
+							
+								<td>
+									<% if current_user.try(:admin?) %>
+               							<%= link_to "Effacer", partner_path(partner), method: :delete %>
+              						<% end %>
+              					</td>
+
+              					<td>
+									<% if current_user.try(:admin?) %>
+               							<%= link_to "Modifier", edit_partner_path(partner) %>
+              						<% end %>
+              					</td>
+							</tr>
+
+							</p>
+						<% end %>
+					</tbody>
+				</table>
+			<% else %>
+				<p> Il n' y a pas encore de biens à vendre. </p>
+			<% end %>
+		</div>
+	</div>
+	<% if current_user.try(:admin?) %>
+		<div class="row">
+			<div class="col-md-2 col-md-offset-5">
+				<%= link_to "Ajouter une affaire" , new_partner_path, class:"btn btn-danger mb-30"%>
+			</div>
+		</div>
+	<% end %>
+</div>
 
