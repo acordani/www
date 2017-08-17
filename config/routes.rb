@@ -30,6 +30,10 @@ Rails.application.routes.draw do
     resources :link_partners
   end
 
+  namespace :admin do
+    resources :lands
+  end
+
   resources :clients
 
   get "/sitemap.xml" => "sitemap#index", :format => "xml", :as => :sitemap
