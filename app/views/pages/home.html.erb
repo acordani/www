@@ -153,6 +153,18 @@
 	</div>
 	<div class="mb-50"></div>
 </div>
+<div class="col-md-6 col-md-offset-3">
+	<% if current_user.try(:admin?) %>
+		<h2 class="text-center fw-100">Import Lands</h2>
+		<%= form_tag import_lands_path, multipart: true do %>
+			<span class="btn btn-large btn-warning btn-file">
+				Choose File
+				<%= file_field_tag :file %>
+			</span>
+			<%= submit_tag "Upload Lands", class: "btn btn-primary" %>
+		<% end %>
+	<% end %>
+</div>
 
 
 

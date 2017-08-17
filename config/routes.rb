@@ -34,6 +34,10 @@ Rails.application.routes.draw do
     resources :lands
   end
 
+  resources :lands, only: [:index, :show, :destroy] do
+    collection { post :import }
+  end
+
   resources :clients
 
   get "/sitemap.xml" => "sitemap#index", :format => "xml", :as => :sitemap
