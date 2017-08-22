@@ -29,58 +29,125 @@
 # 	},
 
 # 	{
-# 		name:       "94210 LA Varenne Saint-Hilaire"
+# 		name:       "94210 La Varenne Saint-Hilaire"
 # 	}
 # ]
 
-citysearch_attributes = [
-	{
-		name:       "Saint-Maur-Des-Fossés",
+# citysearch_attributes = [
+# 	{
+# 		name:       "Saint-Maur-Des-Fossés",
 
-	}
-]
+# 	}
+# ]
 
-neighborhood_attributes = [
-	{
-		name:       "Le Vieux Saint-Maur",
+# neighborhood_attributes = [
+# 	{
+# 		name:       "Le Vieux Saint-Maur",
 
-	},
+# 	},
 
-	{
-		name:       "Le Parc Saint-Maur"
-	},
+# 	{
+# 		name:       "Le Parc Saint-Maur"
+# 	},
 
-	{
-		name:       "Champignol"
-	},
+# 	{
+# 		name:       "Champignol"
+# 	},
 
-	{
-		name:       "La Varenne Saint-Hilaire"
-	},
+# 	{
+# 		name:       "La Varenne Saint-Hilaire"
+# 	},
 
-	{
-		name:       "Les Mûriers"
-	},
+# 	{
+# 		name:       "Les Mûriers"
+# 	},
 
-	{
-		name:       "La Pie"
-	},
+# 	{
+# 		name:       "La Pie"
+# 	},
 
-	{
-		name:       "Adamville"
-	},
+# 	{
+# 		name:       "Adamville"
+# 	},
 
-	{
-		name:       "Saint-Maur Creteil"
-	}
-]
+# 	{
+# 		name:       "Saint-Maur Creteil"
+# 	}
+# ]
 
 # puts "Creation city"
 # city_attributes.each { |params| City.create!(params) }
-puts "Creation citysearch"
-citysearch_attributes.each { |params| Citysearch.create!(params) }
-puts "Creation neighborhood"
-neighborhood_attributes.each { |params| Neighborhood.create!(params) }
+# puts "Creation citysearch"
+# citysearch_attributes.each { |params| Citysearch.create!(params) }
+# puts "Creation neighborhood"
+# neighborhood_attributes.each { |params| Neighborhood.create!(params) }
 
 
+Sample.destroy_all
+sample_attributes = [
+	{
+		house:       "maison",
+		estimation: "Estimation"
+
+	},
+
+	{
+		house:       "demeure",
+		estimation: "Evaluation"
+
+	},
+
+	{
+		house:       "bien immobilier",
+		estimation: "Expertise"
+
+	},
+
+	{
+		house:       "appartement",
+		estimation: "Estimation"
+	},
+
+	{
+		house:       "home",
+		estimation: "Evaluation"
+	},
+
+	{
+		house:       "terrain",
+		estimation: "Expertise"
+	},
+
+	{
+		house:       "foyer",
+		estimation: "Estimation"
+	},
+
+	{
+		house:       "logement",
+		estimation: "Evaluation"
+	},
+
+	{
+		house:       "domicile",
+		estimation: "Expertise"
+	},
+
+	{
+		house:       "villa",
+		estimation: "Estimation"
+
+	},
+
+	{
+		house:       "chez-vous",
+		estimation: "Evaluation"
+	}
+
+]
+
+
+
+puts "Creation sample"
+sample_attributes.each { |params| Sample.create!(params) }
 

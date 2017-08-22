@@ -1,6 +1,7 @@
 require_relative 'boot'
 
 require 'rails/all'
+require 'csv'
 
 require "sprockets/railtie"
 require "attachinary/orm/active_record"

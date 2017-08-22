@@ -39,6 +39,7 @@ Rails.application.routes.draw do
   end
 
   resources :clients
+  resources :estimations
 
   get "/sitemap.xml" => "sitemap#index", :format => "xml", :as => :sitemap
 
