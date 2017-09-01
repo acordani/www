@@ -168,15 +168,11 @@
 <% end %>
 <div class="container">
 	<div class="row">
-		
+		<% if @sale.link_partners.count >=4 %>
 			<div class="col-md-6 hidden-xs">
 				<h3>NOS PRINCIPAUX PARTENAIRES</h3>
 				<div class="mb-50"></div>
 			</div>
-		
-	</div>
-	<div class="row">
-		<% if @sale.link_partners.count >=4 %>
 			<% @sale.link_partners.each do |link_partner| %>
 				<div class="col-md-3 hidden-xs">
 			 		<!--<li><%= link_partner.partner.name%></li> -->
