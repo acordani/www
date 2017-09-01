@@ -168,11 +168,12 @@
 <% end %>
 <div class="container">
 	<div class="row">
-		<div class="col-md-6 hidden-xs">
-			<h3>NOS PRINCIPAUX PARTENAIRES</h3>
-			<div class="mb-50"></div>
+		<% if @sale.link_partners.count >=1 %>
+			<div class="col-md-6 hidden-xs">
+				<h3>NOS PRINCIPAUX PARTENAIRES</h3>
+				<div class="mb-50"></div>
+			</div>
 		</div>
-
 	</div>
 	<div class="row">
 		<% if @sale.link_partners.count >=4 %>

@@ -18,4 +18,10 @@ $('.image_link').hover(
   function(){ $(this).stop().animate({ opacity : '1' }); }
  );
 
+$(document).ready(function () {
+	$(".container-map-estimation-interieur" ).mouseenter(function() {
+  		console.log("ff");
+	});
+)};
+
 

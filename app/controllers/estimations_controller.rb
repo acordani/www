@@ -12,4 +12,6 @@ class EstimationsController < ApplicationController
 		end
 		
 	end
+
+	
 end
