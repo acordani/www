@@ -22,68 +22,68 @@
 # Client.create(firstname:'elise', lastname:'lucet', mail:'elisel@gmail.com', skype:'eliselucet', website:'eliselucet.fr', job:'journaliste')
 
 
-# city_attributes = [
-# 	{
-# 		name:       "94100 Saint-Maur-Des-Fossés",
+city_attributes = [
+	{
+		name:       "94100 Saint-Maur-Des-Fossés",
 
-# 	},
+	},
 
-# 	{
-# 		name:       "94210 La Varenne Saint-Hilaire"
-# 	}
-# ]
+	{
+		name:       "94210 La Varenne Saint-Hilaire"
+	}
+]
 
-# citysearch_attributes = [
-# 	{
-# 		name:       "Saint-Maur-Des-Fossés",
+citysearch_attributes = [
+	{
+		name:       "Saint-Maur-Des-Fossés",
 
-# 	}
-# ]
+	}
+]
 
-# neighborhood_attributes = [
-# 	{
-# 		name:       "Le Vieux Saint-Maur",
+neighborhood_attributes = [
+	{
+		name:       "Le Vieux Saint-Maur",
 
-# 	},
+	},
 
-# 	{
-# 		name:       "Le Parc Saint-Maur"
-# 	},
+	{
+		name:       "Le Parc Saint-Maur"
+	},
 
-# 	{
-# 		name:       "Champignol"
-# 	},
+	{
+		name:       "Champignol"
+	},
 
-# 	{
-# 		name:       "La Varenne Saint-Hilaire"
-# 	},
+	{
+		name:       "La Varenne Saint-Hilaire"
+	},
 
-# 	{
-# 		name:       "Les Mûriers"
-# 	},
+	{
+		name:       "Les Mûriers"
+	},
 
-# 	{
-# 		name:       "La Pie"
-# 	},
+	{
+		name:       "La Pie"
+	},
 
-# 	{
-# 		name:       "Adamville"
-# 	},
+	{
+		name:       "Adamville"
+	},
 
-# 	{
-# 		name:       "Saint-Maur Creteil"
-# 	}
-# ]
+	{
+		name:       "Saint-Maur Creteil"
+	}
+]
 
-# puts "Creation city"
-# city_attributes.each { |params| City.create!(params) }
-# puts "Creation citysearch"
-# citysearch_attributes.each { |params| Citysearch.create!(params) }
-# puts "Creation neighborhood"
-# neighborhood_attributes.each { |params| Neighborhood.create!(params) }
+puts "Creation city"
+city_attributes.each { |params| City.create!(params) }
+puts "Creation citysearch"
+citysearch_attributes.each { |params| Citysearch.create!(params) }
+puts "Creation neighborhood"
+neighborhood_attributes.each { |params| Neighborhood.create!(params) }
 
 
-Sample.destroy_all
+# Sample.destroy_all
 sample_attributes = [
 	{
 		house:       "maison",
