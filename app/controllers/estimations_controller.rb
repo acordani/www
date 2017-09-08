@@ -5,6 +5,7 @@ class EstimationsController < ApplicationController
 		@land = Land.find(params[:id])
 		@samples = Sample.all.sample
 		@cities = City.all.sample
+		@sales = Sale.all.limit(3)
 
 		@markers = Gmaps4rails.build_markers(@land) do |land, marker|
       		marker.lat land.latitude
