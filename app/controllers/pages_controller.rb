@@ -4,7 +4,8 @@ class PagesController < ApplicationController
 
   def home
   	@contact = Contact.new
-    @sales = Sale.all
+    @sales = Sale.all.limit(3)
+    
   end
 
   def realtor
