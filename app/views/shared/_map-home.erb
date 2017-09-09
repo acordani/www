@@ -1,0 +1,50 @@
+<div class="container-fluid">			
+	<div class="row">
+        <div class="container-map">
+     		<div id="map-home" class="hidden-xs" style="width: 100%; height: 400px;"></div>
+            <div class="container-information">
+            	<div class="section-info">
+	                <div class="row">
+	                    <div class="col-md-12 hidden-xs">
+
+	                        <p>Alexandre Cordani</p>
+	                        <br>
+	                        <p class="titre-coordonnees">Adresse</p>
+	                        <div class="contact-form-infos">
+	                        	<p>17 Av des Perdrix 94100 Saint-Maur-Des-Fossés</p>
+	                        	<p>94210 La Varenne Saint-Hilaire</p>
+	                        </div>
+	                        <p class="titre-coordonnees">Téléphone</p>
+	                        <p class="contact-form-infos">06 98 85 38 74</p>
+	                        
+	                    </div>
+	                </div>
+	            </div>
+            </div>
+        </div>
+        
+
+	</div>
+	<div class="mb-50"></div>
+</div>
+
+<% content_for(:after_js) do %>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      var handler = Gmaps.build('Google');
+      var styles = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]}]
+      handler.buildMap({ provider: { scrollwheel: false, styles: styles }, internal: { id: 'map-home' } }, function(){
+         markers = handler.addMarkers([
+            {
+              "lat": 48.7877442,
+              "lng": 2.4938655999999355,
+              "infowindow": "<h1></h1>"
+            }
+          ]);
+        handler.bounds.extendWith(markers);
+        handler.fitMapToBounds();
+        handler.getMap().setZoom(14);
+      });
+    });
+  </script>
+<% end %>

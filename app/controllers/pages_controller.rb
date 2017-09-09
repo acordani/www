@@ -22,5 +22,9 @@ class PagesController < ApplicationController
     @sales = Sale.all
   end
 
+  def agenceimmobiliere
+    @sales = Sale.all.limit(3)
+  end
+
 
 end

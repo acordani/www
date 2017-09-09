@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get 'pages/cv', as: 'cv'
   get 'pages/nl'
   get 'pages/plandusite'
+  get 'pages/agenceimmobiliere'
 
   get "blog", to: 'posts#index', as: :blog
   get "blog/:slug", to: 'posts#show', as: :post
