@@ -4,7 +4,7 @@ RailsAdmin.config do |config|
   config.authorize_with do |controller|
     redirect_to main_app.root_path unless current_user && current_user.admin
   end
-  config.included_models = ["Sale", "Neighborhood", "Sample", "Land", "City", "Citysearch"]
+  config.included_models = ["Sale", "Neighborhood", "Sample", "Land", "City", "Citysearch", "Estimation"]
 
   ### Popular gems integration
 

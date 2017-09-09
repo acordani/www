@@ -84,70 +84,70 @@ neighborhood_attributes.each { |params| Neighborhood.create!(params) }
 
 
 # Sample.destroy_all
-sample_attributes = [
-	{
-		house:       "maison",
-		estimation: "Estimation"
+# sample_attributes = [
+# 	{
+# 		house:       "maison",
+# 		estimation: "Estimation"
 
-	},
+# 	},
 
-	{
-		house:       "demeure",
-		estimation: "Evaluation"
+# 	{
+# 		house:       "demeure",
+# 		estimation: "Evaluation"
 
-	},
+# 	},
 
-	{
-		house:       "bien immobilier",
-		estimation: "Expertise"
+# 	{
+# 		house:       "bien immobilier",
+# 		estimation: "Expertise"
 
-	},
+# 	},
 
-	{
-		house:       "appartement",
-		estimation: "Estimation"
-	},
+# 	{
+# 		house:       "appartement",
+# 		estimation: "Estimation"
+# 	},
 
-	{
-		house:       "home",
-		estimation: "Evaluation"
-	},
+# 	{
+# 		house:       "home",
+# 		estimation: "Evaluation"
+# 	},
 
-	{
-		house:       "terrain",
-		estimation: "Expertise"
-	},
+# 	{
+# 		house:       "terrain",
+# 		estimation: "Expertise"
+# 	},
 
-	{
-		house:       "foyer",
-		estimation: "Estimation"
-	},
+# 	{
+# 		house:       "foyer",
+# 		estimation: "Estimation"
+# 	},
 
-	{
-		house:       "logement",
-		estimation: "Evaluation"
-	},
+# 	{
+# 		house:       "logement",
+# 		estimation: "Evaluation"
+# 	},
 
-	{
-		house:       "domicile",
-		estimation: "Expertise"
-	},
+# 	{
+# 		house:       "domicile",
+# 		estimation: "Expertise"
+# 	},
 
-	{
-		house:       "villa",
-		estimation: "Estimation"
+# 	{
+# 		house:       "villa",
+# 		estimation: "Estimation"
 
-	},
+# 	},
 
-	{
-		house:       "chez-vous",
-		estimation: "Evaluation"
-	}
+# 	{
+# 		house:       "chez-vous",
+# 		estimation: "Evaluation"
+# 	}
 
-]
+# ]
 
 
 
-puts "Creation sample"
-sample_attributes.each { |params| Sample.create!(params) }
+# puts "Creation sample"
+# sample_attributes.each { |params| Sample.create!(params) }
 

@@ -9,6 +9,8 @@ class SitemapController < ApplicationController
 
     @sales = Sale.all
 
+    @lands = Land.all
+
     respond_to do |format|
       format.xml
     end

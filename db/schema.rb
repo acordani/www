@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170909092030) do
+ActiveRecord::Schema.define(version: 20170909161014) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -86,6 +86,24 @@ ActiveRecord::Schema.define(version: 20170909092030) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "mail"
+  end
+
+  create_table "estimations", force: :cascade do |t|
+    t.string   "number"
+    t.integer  "surface"
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "file"
+    t.integer  "neighborhood_id"
+    t.integer  "city_id"
+    t.integer  "citysearch_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "slug"
+    t.index ["city_id"], name: "index_estimations_on_city_id", using: :btree
+    t.index ["citysearch_id"], name: "index_estimations_on_citysearch_id", using: :btree
+    t.index ["neighborhood_id"], name: "index_estimations_on_neighborhood_id", using: :btree
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -224,6 +242,9 @@ ActiveRecord::Schema.define(version: 20170909092030) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "estimations", "cities"
+  add_foreign_key "estimations", "citysearches"
+  add_foreign_key "estimations", "neighborhoods"
   add_foreign_key "lands", "cities"
   add_foreign_key "lands", "citysearches"
   add_foreign_key "lands", "neighborhoods"

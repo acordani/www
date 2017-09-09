@@ -41,6 +41,10 @@ Rails.application.routes.draw do
     collection { post :import }
   end
 
+  resources :estimations, only: [:index, :show, :destroy] do
+    collection { post :import }
+  end
+
   resources :clients
   resources :estimations
 

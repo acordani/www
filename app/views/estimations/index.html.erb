@@ -1,0 +1,4 @@
+<% @estimations.each do |estimation| %>
+	<p><%= estimation.address%></p>
+	<p><%= link_to "voir", estimation_path(estimation) %></p>
+<% end %>

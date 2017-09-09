@@ -5,5 +5,6 @@ xml.tag! 'urlset', 'xmlns' => 'http://www.sitemaps.org/schemas/sitemap/0.9', 'xm
   xml << (render :partial => 'sitemap/common')
   xml << (render :partial => 'sitemap/prices')
   xml << (render :partial => 'sitemap/sales')
+  xml << (render :partial => 'sitemap/estimations')
 
 end
