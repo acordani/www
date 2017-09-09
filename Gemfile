@@ -23,13 +23,15 @@ gem "gmaps4rails"
 
 #Paginate
 gem 'will_paginate', '~> 3.0.6'
+
 gem 'will_paginate-bootstrap'
 
 
 gem 'pygmentize'
 gem 'redcarpet'
 
-
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
 
 
 gem 'bootstrap-table-rails'

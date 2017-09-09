@@ -11,7 +11,9 @@
 
 //= require components
 
-//= require_tree .
+//= require ./google_maps_autocomplete
+//= require ./init_attachinary
+//= require ./components
 
 $('.image_link').hover(
   function(){ $(this).stop().animate({ opacity : '0.5' }); },
