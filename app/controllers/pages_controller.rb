@@ -20,6 +20,7 @@ class PagesController < ApplicationController
   def plandusite
     @prices = Price.all
     @sales = Sale.all
+    @estimations = Estimation.all
   end
 
   def agenceimmobiliere
