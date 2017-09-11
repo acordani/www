@@ -1,8 +1,8 @@
 base_url = "http://#{request.host_with_port}"
 
-@lands.each do |land|
+@estimations.each do |estimation|
   xml.url do
-    xml.loc base_url+(land_path(land))
+    xml.loc base_url+(estimation_path(estimation))
   end
 
 end
