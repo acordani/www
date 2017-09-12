@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 
   def home
   	@contact = Contact.new
-    @sales = Sale.all.limit(3)
+    @sales = Sale.last(3)
     
   end
 
