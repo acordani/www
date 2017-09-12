@@ -74,12 +74,12 @@
 							<p><%= sales.price %> €</p>
   							
 						</div>
-					<div class="sale-card-header">
+					<div class="sale-card-header mt-80">
 		       			<h3><%= sales.title %></h3>
 		       			<br>
 		       			<p><%= sales.city %></p>
 		       		</div>	
-					<%= link_to "", sales_path(sales), class: "card-link" %>
+					<%= link_to "", sale_path(sales), class: "card-link" %>
 				</div>
 			</div>
 		<% end %>
