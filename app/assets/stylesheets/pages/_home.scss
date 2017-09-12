@@ -377,5 +377,33 @@
 .flex-site {
   display:flex;
   justify-content:space-around;
-  
+
 }
+
+.ribbon {
+  background-color: #a00;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  left: -50px;
+  top: 40px;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 99;
+
+}
+.ribbon p {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 1px 0;
+  padding: 10px 80px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  top:0;
+} 

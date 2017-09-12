@@ -23,10 +23,14 @@
 		</div>
 		<div class="col-md-2 hidden-xs hidden-md hidden-sm">
 			<div class="label-sale text-center">
-				<% if @sale.active == true %>
+				<% if @sale.phase == "A VENDRE" %>
 					A VENDRE
-				<% else %>
+				<% elsif @sale.phase == "COMPROMIS" %>
+					COMPROMIS
+				<% elsif @sale.phase == "VENDU" %>
 					VENDU
+				<% else %>
+					A VENDRE
 				<% end %>
 			</div>	
 		</div>

@@ -68,6 +68,7 @@ class SalesController < ApplicationController
 			:taxe,
   			:exposition,
   			:heating,
+  			:phase,
 			photos: []
 			)
 	end

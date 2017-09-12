@@ -6,6 +6,7 @@ class Sale < ApplicationRecord
 	has_attachments :photos, maximum: 10
 
 	HEATING = %w(Gaz Electrique Sol Fioul)
+	PHASE = ["A VENDRE", "VENDU", "COMPROMIS"]
 	
 
 	extend FriendlyId
