@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'pages/nl'
   get 'pages/plandusite'
   get 'pages/agenceimmobiliere'
+  get 'pages/estimationgratuite'
 
   get "blog", to: 'posts#index', as: :blog
   get "blog/:slug", to: 'posts#show', as: :post

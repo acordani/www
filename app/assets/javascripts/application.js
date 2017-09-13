@@ -13,7 +13,10 @@
 
 //= require ./google_maps_autocomplete
 //= require ./init_attachinary
+//= require ./typed_home
 //= require ./components
+
+//= require typed
 
 $('.image_link').hover(
   function(){ $(this).stop().animate({ opacity : '0.5' }); },

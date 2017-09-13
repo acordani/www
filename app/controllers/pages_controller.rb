@@ -27,5 +27,9 @@ class PagesController < ApplicationController
     @sales = Sale.all.limit(3)
   end
 
+  def estimationgratuite
+    
+  end
+
 
 end
