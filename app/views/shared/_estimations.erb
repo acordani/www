@@ -1,0 +1,9 @@
+<div class="row">
+		<% if @random.count >= 5 %>	
+			<% @random.each do |random| %>
+				<div class="col-md-4">
+					<p><%= link_to random.full_street_address, estimation_path(random) %></p>
+				</div>
+			<% end %>
+		<% end %>
+	</div>

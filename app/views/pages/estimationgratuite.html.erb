@@ -27,14 +27,11 @@
 </div>
 <div class="container">
 	<div class="row">
-		<% if @random.count >= 5 %>	
-			<% @random.each do |random| %>
-				<div class="col-md-4">
-					<p><%= link_to random.full_street_address, estimation_path(random) %></p>
-				</div>
-			<% end %>
-		<% end %>
+		<div class="col-md-12">
+			<h3 class="mb-50">Accedez directement à quelques adresses estimées sur Saint-Maur-Des-Fossés</h3>
+		</div>
 	</div>
+	<%= render 'shared/estimations' %>
 </div>
 
 

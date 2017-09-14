@@ -12,6 +12,8 @@ class EstimationsController < ApplicationController
 		@cities = City.all.sample
 		@sales = Sale.all.limit(3)
 
+		@random = Estimation.all.shuffle[0..30]
+
 		@markers = Gmaps4rails.build_markers(@estimation) do |estimation, marker|
       		marker.lat estimation.latitude
       		marker.lng estimation.longitude
