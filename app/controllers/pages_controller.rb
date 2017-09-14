@@ -28,6 +28,9 @@ class PagesController < ApplicationController
   end
 
   def estimationgratuite
+    @contact = Contact.new
+    @estimations = Estimation.all
+    @random = Estimation.all.shuffle[0..30]
     
   end
 

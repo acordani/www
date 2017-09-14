@@ -40,7 +40,7 @@ gem 'bootstrap-table-rails'
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
-  
+ 
 end
 
 gem 'sass-rails'

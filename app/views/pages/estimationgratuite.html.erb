@@ -7,7 +7,45 @@
     	<h1>Quelle est la valeur de votre <span class="element"></span></h1>
     	<h2>Alexandre Cordani</h2>
    		<h3>Mandataire immobilier à Saint-Maur-Des-Fossés</h3> 
-   		<div class="mt-100"></div> 
+   		<div class="mt-150"></div> 
    		<h1> 06 98 85 38 74 </h1>
+   		<div class="container">
+   			<div class="row">
+   				<div class="col-md-4 col-md-offset-4">
+   					<div class="estimation">
+    					<a href="#form_estimation">
+      						JE DEMANDE UNE ESTIMATION
+    					</a>
+  					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
+<div id="form_estimation">
+	<%= render 'shared/contact' %>
+</div>
+<div class="container">
+	<div class="row">
+		<% if @random.count >= 5 %>	
+			<% @random.each do |random| %>
+				<div class="col-md-4">
+					<p><%= link_to random.full_street_address, estimation_path(random) %></p>
+				</div>
+			<% end %>
+		<% end %>
+	</div>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+        $('.estimation > a').click(function(e) {
+            $('html, body').animate({
+                scrollTop: $('#form_estimation').offset().top
+            }, 10000);
+            e.preventDefault();
+        });
+    });
+</script>
+
