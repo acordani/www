@@ -33,7 +33,16 @@
     	margin: 2.1rem 0 1.68rem 0;
 
   	}
-}
+  }
+
+  .picto {
+  width:175px;
+  }
+
+  .align-picto {
+    display:flex;
+    justify-content:space-around;
+  }
 
 
 }
