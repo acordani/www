@@ -31,16 +31,25 @@
   		text-align: center;
   		z-index: 10;
   		h1 {
+        @media (max-width: $small-screen) {
+          margin-top:20px;
+        }
+      }
+
     		@media (max-width: $medium-screen) {
-      		font-size: 3rem;
-    	}
-    	h2 {
-    		font-size:3rem;
-    	}
-    	font-size: 4.5rem;
-    	line-height: 110%;
-    	letter-spacing: 0.1rem;
-    	margin: 2.1rem 0 1.68rem 0;
+      		
+          h1 {
+            font-size: 3rem;
+          }
+      
+
+          h2 {
+    		    font-size:3rem;
+          }
+          font-size: 4.5rem;
+          line-height: 110%;
+          letter-spacing: 0.1rem;
+          margin: 2.1rem 0 1.68rem 0;
 
   	}
   }
