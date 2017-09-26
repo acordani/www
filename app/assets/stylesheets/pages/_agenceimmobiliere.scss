@@ -12,6 +12,11 @@
       background-repeat:no-repeat;
       background-size: cover;
     }
+    @media (max-width: $medium-plus-screen-up) {
+      background: image-url('header-ipad.jpg');
+      background-repeat:no-repeat;
+      background-size: cover;
+    }
   	position: absolute;
   	width: 100%;
   	height: 100%;
