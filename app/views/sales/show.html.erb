@@ -57,12 +57,12 @@
         				<!-- Wrapper for slides -->
         				<div class="carousel-inner" role="listbox">
           					<div class="item active">
-            					<%= cl_image_tag @sale.photos.first.path, width: 470, height: 350, crop: :fill %>
+            					<%= cl_image_tag @sale.photos.first.path, width: 470, height: 350, :quality=>"auto:eco", crop: :fill %>
             					<div class="open-full-screen-carousel"></div>
           					</div>
           					<% @sale.photos[1...@sale.photos.size].each do |photo| %>
           	 					<div class="item">
-          							<%= cl_image_tag photo.path, width: 470, height: 350, crop: :fill %>
+          							<%= cl_image_tag photo.path, width: 470, height: 350, :quality=>"auto:eco", crop: :fill %>
           							<div class="open-full-screen-carousel"></div>
             					</div>
           					<% end %>
