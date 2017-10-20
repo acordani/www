@@ -12,7 +12,7 @@ class Land < ApplicationRecord
 	belongs_to :citysearch
 	belongs_to :user
 
-	Geocoding
+	#Geocoding
 	geocoded_by :full_street_address
   	after_validation :geocode, if: :address_changed?
 
