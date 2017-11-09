@@ -28,6 +28,10 @@ gem 'will_paginate', '~> 3.0.6'
 
 gem 'will_paginate-bootstrap'
 
+#React
+gem 'js-routes'
+gem 'react-rails'
+
 
 gem 'pygmentize'
 gem 'redcarpet'
@@ -40,6 +44,7 @@ gem 'bootstrap-table-rails'
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
+  gem 'rails-assets-classnames'
  
 end
 

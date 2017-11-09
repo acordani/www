@@ -9,12 +9,12 @@
 //= require underscore
 //= require gmaps/google
 
-//= require components
+
 
 //= require ./google_maps_autocomplete
 //= require ./init_attachinary
 //= require ./typed_home
-//= require ./components
+
 
 //= require typed
 
@@ -26,3 +26,6 @@ $('.image_link').hover(
 
 
 
+//= require react
+//= require react_ujs
+//= require components
