@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   	@contact = Contact.new
     @sales = Sale.last(3)
 
-    url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJpznqg-8M5kcRF7J8skRko7c&key=AIzaSyCQREarS7azb8LQAkkyhbd8wlDO2mk1RQA"
+    url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJpznqg-8M5kcRF7J8skRko7c&key=#{ENV['GOOGLE_API_SERVER_KEY']}"
     # http_call = open(url).read
     # response = JSON.parse(http_call, {:symbolize_names => true})
     @location = response = JSON.load(open(url))
