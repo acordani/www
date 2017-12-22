@@ -2,12 +2,14 @@
 <div class="row">
 	<div class="col-md-4">
 		<%= prop :review do %>
-			<%= prop :itemReviewed, "Alexandre Cordani" %>
+			<div class="transparent-name">
+				<%= prop :itemReviewed, "Alexandre Cordani" %>
+			</div>
 			<div class="reviews-card">
 				<div class="row">
 					<div class="col-md-8">
 						<p style="font-weight:bold;padding:20px;">
-							<%= prop :name, @base[0]["author_name"] %>
+							<%= prop :author, @base[0]["author_name"] %>
 						</p>
 					</div>
 					<div class="col-md-4">
@@ -24,40 +26,54 @@
 		<% end %>
 	</div>
 	<div class="col-md-4">
-		<div class="reviews-card">
-			<div class="row">
-				<div class="col-md-8">
-					<p style="font-weight:bold;padding:20px;"><%= @base[1]["author_name"]%></p>
-				</div>
-				<div class="col-md-4">
-					<%= link_to @base[1]["author_url"] do %>
-						<%= image_tag @base[1]["profile_photo_url"], style: 'height:50px;width:50px;' %>
-					<% end %>
-				</div>
+		<%= prop :review do %>
+			<div class="transparent-name">
+				<%= prop :itemReviewed, "Alexandre Cordani" %>
 			</div>
-			<div class="mb-20"></div>
-			<p><%= @base[1]["text"].truncate(300)%></p>
-			<div class="mb-20"></div>
-			<%= link_to "En savoir plus", @base[1]["author_url"]  %>
-		</div>	
+			<div class="reviews-card">
+				<div class="row">
+					<div class="col-md-8">
+						<p style="font-weight:bold;padding:20px;">
+							<%= prop :author, @base[1]["author_name"] %>
+						</p>
+					</div>
+					<div class="col-md-4">
+						<%= link_to @base[1]["author_url"] do %>
+							<%= image_tag @base[1]["profile_photo_url"], style: 'height:50px;width:50px;' %>
+						<% end %>
+					</div>
+				</div>
+				<div class="mb-20"></div>
+				<p><%= prop :comment, @base[1]["text"].truncate(300) %></p>
+				<div class="mb-20"></div>
+				<%= link_to "En savoir plus", @base[1]["author_url"]  %>
+			</div>
+		<% end %>
 	</div>
 	<div class="col-md-4">
-		<div class="reviews-card">
-			<div class="row">
-				<div class="col-md-8">
-					<p style="font-weight:bold;padding:20px;"><%= @base[2]["author_name"]%></p>
-				</div>
-				<div class="col-md-4">
-					<%= link_to @base[2]["author_url"] do %>
-						<%= image_tag @base[2]["profile_photo_url"], style: 'height:50px;width:50px;' %>
-					<% end %>
-				</div>
+		<%= prop :review do %>
+			<div class="transparent-name">
+				<%= prop :itemReviewed, "Alexandre Cordani" %>
 			</div>
-			<div class="mb-20"></div>
-			<p><%= @base[2]["text"].truncate(300)%></p>
-			<div class="mb-20"></div>
-			<%= link_to "En savoir plus", @base[2]["author_url"]  %>
-		</div>	
+			<div class="reviews-card">
+				<div class="row">
+					<div class="col-md-8">
+						<p style="font-weight:bold;padding:20px;">
+							<%= prop :author, @base[2]["author_name"] %>
+						</p>
+					</div>
+					<div class="col-md-4">
+						<%= link_to @base[2]["author_url"] do %>
+							<%= image_tag @base[2]["profile_photo_url"], style: 'height:50px;width:50px;' %>
+						<% end %>
+					</div>
+				</div>
+				<div class="mb-20"></div>
+				<p><%= prop :comment, @base[2]["text"].truncate(300) %></p>
+				<div class="mb-20"></div>
+				<%= link_to "En savoir plus", @base[2]["author_url"]  %>
+			</div>
+		<% end %>
 	</div>
 </div>
 
