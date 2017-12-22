@@ -2,28 +2,28 @@
 <div class="row">
 	<div class="col-md-4">
 		<%= prop :review do %>
-			<div class="reviews-card">
-				<div class="row">
-					<div class="col-md-8">
-						<p style="font-weight:bold;padding:20px;">
-							<div class="author_name">
+			<span class="item">
+				<span class="fn">Alexandre Cordani</span>
+				<div class="reviews-card">
+					<div class="row">
+						<div class="col-md-8">
+							<p style="font-weight:bold;padding:20px;">
 								<%= prop :author, @base[0]["author_name"] %>
-							</div>
-						</p>
+							</p>
+						</div>
+						<div class="col-md-4">
+							<%= link_to @base[0]["author_url"] do %>
+								<%= image_tag @base[0]["profile_photo_url"], style: 'height:50px;width:50px;' %>
+							<% end %>
+						</div>
 					</div>
-					<div class="col-md-4">
-						<%= link_to @base[0]["author_url"] do %>
-							<%= image_tag @base[0]["profile_photo_url"], style: 'height:50px;width:50px;' %>
-						<% end %>
-					</div>
-				</div>
-				<div class="mb-20"></div>
-				<div class="comment">
+					<div class="mb-20"></div>
 					<p><%= prop :comment, @base[0]["text"].truncate(300) %></p>
+					<div class="mb-20"></div>
+					<%= link_to "En savoir plus", @base[0]["author_url"]  %>
 				</div>
-				<div class="mb-20"></div>
-				<%= link_to "En savoir plus", @base[0]["author_url"]  %>
-			</div>
+			</span>
+			
 		<% end %>
 	</div>
 	<div class="col-md-4">
