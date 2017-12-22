@@ -1,6 +1,10 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <%= link_to "Alexandre Cordani", root_path, class:"logo"  %>
+  <%= scope :name, tag: :span, class: "a-class" do %>
+    <%= link_to "Alexandre Cordani", root_path, class:"logo"  %>
+  <% end %>
+  
+  
   
 
   <!-- Right Navigation -->

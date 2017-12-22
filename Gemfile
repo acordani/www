@@ -33,6 +33,7 @@ gem 'js-routes'
 gem 'react-rails'
 
 
+gem 'item'
 
 gem 'pygmentize'
 gem 'redcarpet'
