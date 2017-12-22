@@ -6,7 +6,9 @@
 				<div class="row">
 					<div class="col-md-8">
 						<p style="font-weight:bold;padding:20px;">
-							<%= prop :author, @base[0]["author_name"] %>
+							<div class="author_name">
+								<%= prop :author, @base[0]["author_name"] %>
+							</div>
 						</p>
 					</div>
 					<div class="col-md-4">
@@ -16,7 +18,9 @@
 					</div>
 				</div>
 				<div class="mb-20"></div>
-				<p><%= prop :comment, @base[0]["text"].truncate(300) %></p>
+				<div class="comment">
+					<p><%= prop :comment, @base[0]["text"].truncate(300) %></p>
+				</div>
 				<div class="mb-20"></div>
 				<%= link_to "En savoir plus", @base[0]["author_url"]  %>
 			</div>
