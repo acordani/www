@@ -1,19 +1,10 @@
-
-        <div class="mt-100"></div>
+ <div class="mt-100"></div>
 		<div class="row">
-		    <% @sales.each do |sale| %>
+		    <% @sold.each do |sale| %>
 				<div class="col-md-4">
 					<div class="sale-card" style="background-image: linear-gradient(135deg, rgba(150,109,105,0.2), rgba(150,109,105,0.4)), url('<%= cl_image_path sale.photos.first.path %>');">
 						<div class="ribbon">
-							<% if sale.phase == "A VENDRE" %>
-								<p>A VENDRE</p>
-							<% elsif sale.phase == "COMPROMIS" %>
-								<p>COMPROMIS</p>
-							<% elsif sale.phase == "VENDU" %>
-								<p>VENDU</p>
-							<% else %>
-								<p>A VENDRE</p>
-							<% end %>
+							<p>VENDU</p>
   							
 						</div>
 		       			<div class="sale-card-header mt-80">
@@ -26,5 +17,11 @@
 		        </div>
 		    <% end %>
 		</div>
-		
 		<div class="mb-100"></div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<%= link_to "Voir toutes mes annonces", sales_path, class:"btn-sales" %>
+			</div>
+		</div>
+		<div class="mb-100"></div>
+		
