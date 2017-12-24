@@ -3,7 +3,8 @@ class SalesController < ApplicationController
 	before_action :set_sale, only: [:show, :destroy, :edit, :update]
 
 	def index
-		@sales = Sale.all
+		@all_sales = Sale.all
+		@sales = Sale.where(phase: 'A VENDRE').or(Sale.where(phase: 'COMPROMIS')).or(Sale.where(phase: 'VENDU'))
 		@partner = Partner.new
 		@link_partner = LinkPartner.new
 	end

@@ -5,11 +5,12 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h1>Annonces Immobilières à Saint-Maur-Des-Fossés</h1>
-				<% if @sales.count >=1 %>
+				<% if @all_sales.count >=1 %>
 					<table class="table table-striped">
 						<thead>
 							<tr> 
 								<th>Biens Immobilier </th>
+								<th>Phase</th>
 								<th>Voir</th>
 								<th>
 									Modifier
@@ -24,12 +25,15 @@
 							</tr>
 						</thead>
 						<tbody>
-							<% @sales.each do |sale| %>
+							<% @all_sales.each do |sale| %>
 								<tr>
 								
 									<td>
 										<%= sale.title %> à
 										<%= sale.city %>
+									</td>
+									<td>
+										<%= sale.phase %>
 									</td>
 									<td>
 										<%= link_to "voir", sale_path(sale) %>
