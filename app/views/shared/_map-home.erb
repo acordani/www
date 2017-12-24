@@ -6,16 +6,18 @@
             	<div class="section-info">
 	                <div class="row">
 	                    <div class="col-md-12 hidden-xs">
+                        <%= prop :organization do %>
 
-	                        <p>Alexandre Cordani</p>
-	                        <br>
-	                        <p class="titre-coordonnees">Adresse</p>
-	                        <div class="contact-form-infos">
-	                        	<p>17 Av des Perdrix 94100 Saint-Maur-Des-Fossés</p>
-	                        	<p>94210 La Varenne Saint-Hilaire</p>
-	                        </div>
-	                        <p class="titre-coordonnees">Téléphone</p>
-	                        <p class="contact-form-infos">06 98 85 38 74</p>
+  	                        <p><%= prop :name, "Alexandre Cordani" %></p>
+  	                        <br>
+  	                        <p class="titre-coordonnees">Adresse</p>
+  	                        <div class="contact-form-infos">
+  	                        	<p><%= prop :address, "17 Av des Perdrix 94100 Saint-Maur-Des-Fossés" %></p>
+  	                        	<p>94210 La Varenne Saint-Hilaire</p>
+  	                        </div>
+  	                        <p class="titre-coordonnees">Téléphone</p>
+  	                        <p class="contact-form-infos"><%= prop :telephone, "06 98 85 38 74" %></p>
+                        <% end %>
 	                        
 	                    </div>
 	                </div>
