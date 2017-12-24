@@ -3,8 +3,8 @@
 	<div class="carte-nego">
 		<% YAML.load(File.open("#{Rails.root}/db/data/realtor.yml")).each do |realtor| %>
 			<%= prop :RealEstateAgent do %>
-				<h3> <%= realtor['firstname'] %> <%= prop :familyName, realtor['lastname'] %></h3>
-				<p><%= prop :brand, realtor['title'] %></p>
+				<h3> <%= realtor['firstname'] %> <%= prop :name, realtor['lastname'] %></h3>
+				<p><%= realtor['title'] %></p>
 				<p><%= prop :telephone,realtor['phone-number'] %></p>
 				<p><%= prop :email, realtor['mail'] %></p>
 
