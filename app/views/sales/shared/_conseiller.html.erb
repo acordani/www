@@ -1,13 +1,19 @@
-
-
-	<div class="carte-nego">
-		<% YAML.load(File.open("#{Rails.root}/db/data/realtor.yml")).each do |realtor| %>
-			<%= prop :RealEstateAgent do %>
+<%= prop :RealEstateAgent do %>
+	<div class="col-md-4">
+		<%= prop :image, image_tag("photo_identitee_alex.jpg", class:"image_rounded-show", alt:"Alexandre Cordani")%>
+	</div>
+	<div class="col-md-8">
+		<div class="carte-nego">
+			<% YAML.load(File.open("#{Rails.root}/db/data/realtor.yml")).each do |realtor| %>
+				
 				<h3> <%= realtor['firstname'] %> <%= prop :name, realtor['lastname'] %></h3>
 				<p><%= realtor['title'] %></p>
 				<p><%= prop :telephone,realtor['phone-number'] %></p>
+				<p><%= prop :address, realtor['address'] %></p>
 				<p><%= prop :email, realtor['mail'] %></p>
 
 			<% end %>
-		<% end %>
+			
+		</div>
 	</div>
+<% end %>
