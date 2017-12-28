@@ -7,12 +7,12 @@
 			</div>
 			<div class="reviews-card">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-md-8 col-xs-9">
 						<p style="font-weight:bold;padding:20px;">
 							<%= prop :author, @base[0]["author_name"] %>
 						</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-3">
 						<%= link_to @base[0]["author_url"] do %>
 							<%= image_tag @base[0]["profile_photo_url"], style: 'height:50px;width:50px;' %>
 						<% end %>
@@ -32,12 +32,12 @@
 			</div>
 			<div class="reviews-card">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-md-8 col-xs-9">
 						<p style="font-weight:bold;padding:20px;">
 							<%= prop :author, @base[1]["author_name"] %>
 						</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-3">
 						<%= link_to @base[1]["author_url"] do %>
 							<%= image_tag @base[1]["profile_photo_url"], style: 'height:50px;width:50px;' %>
 						<% end %>
@@ -57,12 +57,12 @@
 			</div>
 			<div class="reviews-card">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-md-8 col-xs-9">
 						<p style="font-weight:bold;padding:20px;">
 							<%= prop :author, @base[2]["author_name"] %>
 						</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-3">
 						<%= link_to @base[2]["author_url"] do %>
 							<%= image_tag @base[2]["profile_photo_url"], style: 'height:50px;width:50px;' %>
 						<% end %>
