@@ -70,6 +70,8 @@ class SalesController < ApplicationController
   			:exposition,
   			:heating,
   			:phase,
+  			:fees,
+  			:seller_buyer,
 			photos: []
 			)
 	end
