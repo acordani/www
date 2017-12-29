@@ -92,7 +92,7 @@
 			<p style="text-align:justify"><%= @sale.description %></p>
 		</div>
 	</div>
-	<% if @saler_buyer.present? %>
+	<% if @sale.seller_buyer.present? %>
 		<div class="mt-30">
 			<% if @sale.seller_buyer == "Commission Charge ACHETEUR" %>
 						<p>Honoraires inclus dans le prix Charge Acheteur d'un montant de <%= @sale.fees %> €</p>
