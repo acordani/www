@@ -3,7 +3,11 @@
 		<div class="row">
 		    <% @sales.each do |sale| %>
 				<div class="col-md-4">
-					<div class="sale-card" style="background-image: linear-gradient(135deg, rgba(150,109,105,0.2), rgba(150,109,105,0.4)), url('<%= cl_image_path sale.photos.first.path %>');">
+					<% if sale.photos.present? %>
+						<div class="sale-card" style="background-image: linear-gradient(135deg, rgba(150,109,105,0.2), rgba(150,109,105,0.4)), url('<%= cl_image_path sale.photos.first.path %>');">
+					<% else %>
+						<%= image_tag(("no-image.png"), class:"sale-card") %>
+					<% end %>
 						<div class="ribbon">
 							<% if sale.phase == "A VENDRE" %>
 								<p>A VENDRE</p>

@@ -7,6 +7,7 @@ class Sale < ApplicationRecord
 
 	HEATING = %w(Gaz Electrique Sol Fioul)
 	PHASE = ["A VENDRE", "VENDU", "COMPROMIS", "ARCHIVE"]
+	SELLER_BUYER = ["Commission Charge ACHETEUR", "Commission Charge VENDEUR"]
 	
 
 	extend FriendlyId

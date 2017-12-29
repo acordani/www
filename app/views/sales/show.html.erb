@@ -44,7 +44,9 @@
 			<p><%= @sale.price%> € - <%= pluralize(@sale.bedroom, "Chambre") %></p>
 		</div>
 		<div class="col-md-2 hidden-xs  hidden-sm">
-			<p class="bold"><%= @sale.price %> €</p>
+			<p class="bold">
+				<%= @sale.price %> € 
+			</p>
 		</div>
 	</div>
 	<div class="mb-30"></div>
@@ -90,6 +92,15 @@
 			<p style="text-align:justify"><%= @sale.description %></p>
 		</div>
 	</div>
+	<% if @saler_buyer.present? %>
+		<div class="mt-30">
+			<% if @sale.seller_buyer == "Commission Charge ACHETEUR" %>
+						<p>Honoraires inclus dans le prix Charge Acheteur d'un montant de <%= @sale.fees %> €</p>
+			<% else %>
+						<p>Honoraires inclus dans le prix </p>
+			<% end %>
+		</div>
+	<% end %>
 	<div class="mb-50"></div>
 	<div class="horizontal-line"></div>
 	

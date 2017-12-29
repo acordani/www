@@ -10,6 +10,8 @@
 				<%= f.input :bedroom %>
 				<%= f.input :living %>
 				<%= f.input :price %>
+				<%= f.input :fees %>
+				<%= f.input :seller_buyer, collection: Sale::SELLER_BUYER %>
 				<%= f.input :active,     as: :radio_buttons %>
 				<%= f.input :phase, collection: Sale::PHASE %>
 				<%= f.input :class_energy %>
