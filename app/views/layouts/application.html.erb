@@ -38,15 +38,18 @@
     
 
   <%= yield(:after_js) %>
+
   <script>
+    
     $('.star-rating').raty({
       path: '/assets/',
       readOnly: true,
       score: function() {
-            return $(this).attr('data-score');
+        return $(this).attr('data-score');
     }
   });
-</script>
+  </script>
+
 
   </body>
 </html>
