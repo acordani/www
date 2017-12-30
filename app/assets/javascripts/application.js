@@ -1,4 +1,5 @@
 //= require jquery
+
 //= require jquery_ujs
 
 //= require jquery-fileupload/basic
@@ -11,9 +12,11 @@
 
 
 
+
 //= require ./google_maps_autocomplete
 //= require ./init_attachinary
 //= require ./typed_home
+//= require jquery.raty
 
 
 //= require typed

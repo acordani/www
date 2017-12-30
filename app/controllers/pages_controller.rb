@@ -15,6 +15,8 @@ class PagesController < ApplicationController
     # response = JSON.parse(http_call, {:symbolize_names => true})
     @location = response = JSON.load(open(url))
     @base = @location["result"]["reviews"]
+    @review = @location["result"]
+    @avg_rating = @location["result"]["rating"]
     # @location = response[:results]
     
   end
