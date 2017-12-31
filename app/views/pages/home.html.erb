@@ -29,7 +29,7 @@
 				
 			</div>
 			<div class="col-md-6 hidden-sm hidden-xs">
-				<%= image_tag(("moi.png"), class:"pl-270") %>
+				<%= image_tag(("moi.png"), class:"pl-270", alt:"Agence Immobilière Saint Maur Des Fossés") %>
 			</div>
 		</div>
 	</div>
@@ -121,11 +121,19 @@
 	<div class="color-section-reviews">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<h3 class="rowHeader pt-20">Les mieux placés pour en parler, c'est vous.</h3>
-				</div>
-				<div class="col-md-4 pt-45">
-					<div class="star-rating" data-score= <%= @avg_rating %> ></div>
+				<div>
+					<%= prop :aggregateRating do %>
+						<div class="col-md-6">
+							<h3 class="rowHeader pt-20">Les mieux placés pour en parler, c'est vous.</h3>
+						</div>
+						<div class="col-md-2">
+							<%= image_tag(("google_place.png"), width:"150px", class:"pt-25") %>
+						</div>
+						<div class="col-md-4 pt-45">
+							<div class="star-rating" data-score= <%= @avg_rating %> ></div>
+							<div style="color:#F7F8FA;"><%= prop :ratingValue, @avg_rating %></div>
+						</div>
+					<% end %>
 				</div>
 			</div>
 
