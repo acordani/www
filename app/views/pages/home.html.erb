@@ -127,11 +127,12 @@
 							<h3 class="rowHeader pt-20">Les mieux placés pour en parler, c'est vous.</h3>
 						</div>
 						<div class="col-md-2">
-							<%= image_tag(("google_place.png"), width:"150px", class:"pt-25") %>
+							<%= prop :image, image_tag(("google_place.png"), width:"150px", class:"pt-25") %>
 						</div>
 						<div class="col-md-4 pt-45">
 							<div class="star-rating" data-score= <%= @avg_rating %> ></div>
-							<div style="color:#F7F8FA;"><%= prop :ratingValue, @avg_rating %></div>
+							<div style="color:#F7F8FA;"><%= prop :ratingValue, @avg_rating %><%= prop :reviewCount, "13" %><%= prop :author, "Alexandre Cordani" %></div>
+
 						</div>
 					<% end %>
 				</div>
