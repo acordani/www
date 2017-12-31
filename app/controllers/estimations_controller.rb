@@ -10,7 +10,7 @@ class EstimationsController < ApplicationController
 		
 		@samples = Sample.all.sample
 		@cities = City.all.sample
-		@sales = Sale.all.limit(3)
+		@sales = Sale.where(phase: 'A VENDRE').or(Sale.where(phase: 'COMPROMIS')).last(3)
 
 		@random = Estimation.all.shuffle[0..30]
 
