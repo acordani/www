@@ -9,6 +9,13 @@
 $base-font: "Open Sans", "Helvetica", "sans-serif";
 $header-font: "Raleway", "Helvetica", "sans-serif";
 
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+.font-draw {
+	font-family: 'Shadows Into Light', cursive;
+	font-size:23px;
+}
+
 // Local fonts (uncomment following lines)
 // @font-face {
 //   font-family: "Font Name";
