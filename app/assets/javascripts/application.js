@@ -21,6 +21,10 @@
 
 //= require typed
 
+//= require react
+//= require react_ujs
+//= require components
+
 
 $('.image_link').hover(
   function(){ $(this).stop().animate({ opacity : '0.5' }); },
@@ -29,6 +33,4 @@ $('.image_link').hover(
 
 
 
-//= require react
-//= require react_ujs
-//= require components
+/
