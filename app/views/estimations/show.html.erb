@@ -13,8 +13,9 @@
 				<div id="close-container-map"><i class="fa fa-times" aria-hidden="true"></i></div>
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 text-center">
-							<h1 class="title"><%= @samples.estimation %> Immobilière de votre <%= @samples.house %> </h1>
-							<h3 style="margin: 30px 0;"><%= @estimation.full_street_address.downcase %></h3>
+							<h1 style="margin: 30px 0;"><%= @estimation.full_street_address.downcase %></h1>
+							<h3 class="title"><%= @samples.estimation %> Immobilière de votre <%= @samples.house %> </h3>
+							
 							<h4>Le prix moyen au <%= @estimation.full_street_address.downcase %> est de <%= (rand(0.8...1)* 6000).round %> €</h4>
 							<p style="font-size:12px; color:#9b9696">Ce prix correspond à un prix déjà constaté sur la ville de Saint Maur Des Fossés. Il ne peut s'agir du prix exact de votre bien.<p>
 							<p style="font-size:24px; color:#9b9696; margin-top:30px;"">Si vous souhaitez un prix correspondant à la réalité, </p>

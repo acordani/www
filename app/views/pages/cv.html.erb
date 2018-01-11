@@ -68,7 +68,7 @@
 		</div>
 		<div class="col-md-8">
 			<div class="experience">
-				<h1 class="experiences"><i class="fa fa-suitcase fa-lg" aria-hidden="true"> EXPERIENCES</i></h1>
+				<h2 class="experiences"><i class="fa fa-suitcase fa-lg" aria-hidden="true"> EXPERIENCES</i></h1>
 				<h4 class="subtitle-experiences"> MANY EXPERIENCES ... FOR A GOOD LIFE</h4>
 				<% YAML.load(File.open("#{Rails.root}/db/data/experiences.yml")).each do |experience| %>
 					<div class="france_immo">
@@ -89,7 +89,7 @@
 				
 				<div class="mt-70"></div>
 			</div>
-			<h1 class="experiences"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"> EDUCATION</i></h1>
+			<h2 class="experiences"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"> EDUCATION</i></h1>
 			<h4 class="subtitle-experiences"> EDUCATION IS VERY IMPORTANT</h4>
 			<div class="row">
 				<% YAML.load(File.open("#{Rails.root}/db/data/education.yml")).each do |education| %>

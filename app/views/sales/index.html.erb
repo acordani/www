@@ -1,4 +1,15 @@
- 
+<!-- SEO -->
+<% content_for :meta_title, "Tous nos biens immobiliers à vendre ou vendus  " %>
+
+<% content_for :meta_description, "Voici tous nos biens immobiliers à Vendre ou Vendus principalement en region parisienne"%>
+<%= content_for(:facebook_meta_title) do %>
+	<%= "Tous nos biens immobiliers à vendre ou vendus" %>
+<% end %>
+<%= content_for(:facebook_meta_description) do %>
+	<%= "Voici tous nos biens immobiliers à Vendre ou Vendus principalement en region parisienne" %>
+<% end %>
+
+<!-- FIN SEO --> 
 
 <% if current_user.try(:admin?) %> 
 	<div class="container">
