@@ -3,6 +3,11 @@
   <head>
     
     <%= csrf_meta_tags %>
+
+    <title><%= content_for?(:meta_title) ? yield(:meta_title).squish : "Alexandre Cordani" %></title>
+    <meta name="description" content="<%= (yield(:meta_description) || "").squish %>">
+
+    <%= canonical_tag -%>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -26,10 +31,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
 
-    <title><%= content_for?(:meta_title) ? yield(:meta_title).squish : "Alexandre Cordani" %></title>
-    <meta name="description" content="<%= (yield(:meta_description) || "").squish %>">
-
-    <%= canonical_tag -%>
+    <meta name="p:domain_verify" content="1dca93071dce474ead1751a7a7c2bbd8"/>
     
   </head>
   <body id="<%= "#{controller_path.gsub('/', '_')}_#{action_name}" %>">
