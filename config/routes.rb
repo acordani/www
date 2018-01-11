@@ -51,5 +51,8 @@ Rails.application.routes.draw do
 
   get "/sitemap.xml" => "sitemap#index", :format => "xml", :as => :sitemap
 
+  # SEO
+  get 'robots', to: 'pages#robots'
+
 
 end

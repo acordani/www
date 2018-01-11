@@ -1,0 +1,8 @@
+<% if Rails.env.production? %>
+User-Agent: *
+Allow: /
+Sitemap: https://www.alexandrecordani.com/sitemap.xml
+<% else %>
+User-Agent: *
+Disallow: /
+<% end %>
