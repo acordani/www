@@ -28,6 +28,8 @@
 
     <title><%= content_for?(:meta_title) ? yield(:meta_title).squish : "Alexandre Cordani" %></title>
     <meta name="description" content="<%= (yield(:meta_description) || "").squish %>">
+
+    <%= canonical_tag -%>
     
   </head>
   <body id="<%= "#{controller_path.gsub('/', '_')}_#{action_name}" %>">

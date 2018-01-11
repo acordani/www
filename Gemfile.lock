@@ -7,6 +7,13 @@ GIT
       rails (>= 3.2)
 
 GIT
+  remote: git://github.com/jumph4x/canonical-rails.git
+  revision: caedc2380da6cbb1b3ad9b1e0972912d01870455
+  specs:
+    canonical-rails (0.2.0)
+      rails (>= 4.1, < 5.2)
+
+GIT
   remote: git://github.com/mshibuya/remotipart.git
   revision: cd653ddc43bb09767b8f2802d6e27b3e00ef992f
   specs:
@@ -308,6 +315,7 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass
   bootstrap-table-rails
+  canonical-rails!
   cloudinary
   coffee-rails
   devise
@@ -350,4 +358,4 @@ RUBY VERSION
    ruby 2.3.0p0
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

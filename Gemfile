@@ -62,6 +62,8 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'postmark-rails'
 
+gem 'canonical-rails', github: 'jumph4x/canonical-rails'
+
 
 
 
