@@ -29,6 +29,8 @@
 					COMPROMIS
 				<% elsif @sale.phase == "VENDU" %>
 					VENDU
+				<% elsif @sale.phase == "ARCHIVE" %>
+					VENDU
 				<% else %>
 					A VENDRE
 				<% end %>
