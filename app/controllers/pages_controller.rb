@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   def home
   	@contact = Contact.new
     # @sales = Sale.last(3)
-    @sales = Sale.where(phase: 'A VENDRE').or(Sale.where(phase: 'COMPROMIS')).last(3)
+    @sales = Sale.where(phase: 'A VENDRE').or(Sale.where(phase: 'COMPROMIS')).or(Sale.where(phase: 'OFFRE EN COURS')).last(3)
     @sold = Sale.where(phase: "VENDU")
 
     url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJpznqg-8M5kcRF7J8skRko7c&key=#{ENV['GOOGLE_API_SERVER_KEY']}"
