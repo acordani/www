@@ -6,7 +6,7 @@ class Sale < ApplicationRecord
 	has_attachments :photos, maximum: 10
 
 	HEATING = %w(Gaz Electrique Sol Fioul)
-	PHASE = ["A VENDRE", "VENDU", "COMPROMIS", "ARCHIVE"]
+	PHASE = ["A VENDRE", "VENDU", "COMPROMIS", "ARCHIVE", "OFFRE EN COURS"]
 	SELLER_BUYER = ["Commission Charge ACHETEUR", "Commission Charge VENDEUR"]
 	
 
