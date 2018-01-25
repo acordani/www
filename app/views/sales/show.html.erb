@@ -31,6 +31,8 @@
 					VENDU
 				<% elsif @sale.phase == "ARCHIVE" %>
 					VENDU
+				<% elsif @sale.phase == "OFFRE EN COURS" %>
+					OFFRE EN COURS
 				<% else %>
 					A VENDRE
 				<% end %>
