@@ -1,32 +1,42 @@
-.jumbotron {
-  position: relative;
-  background-image: image-url('interieur.jpg');
-  height:800px;
-  margin:0px;
-  background-position: center;
-  background-size:cover;
- }
+#pages_photo {
 
 
- .title-photo {
- font-size:50px;
- font-weight:700;
- color:white;
- text-shadow: 0 0 2px black;
- margin-top:100px;
- }
 
- .subtitle-photo {
- font-size:30px;
- font-weight:600;
- color:white;
- text-shadow: 0 0 2px black;
- margin-top:100px;
- }
+	.jumbotron {
+	  position: relative;
+	  background-image: image-url('interieur.jpg');
+	  height:800px;
+	  margin:0px;
+	  background-position: center;
+	  background-size:cover;
+	 }
 
- .bandeau {
- background-color: #333;
- 
- color: #33CCCC;
 
- }
+	h1 {
+		font-size: 40px;
+	}
+
+	 .title-photo {
+	 
+	 font-weight:700;
+	 color:white;
+	 text-shadow: 0 0 2px black;
+	 margin-top:100px;
+	 }
+
+	 .subtitle-photo {
+	 font-size:30px;
+	 font-weight:600;
+	 color:white;
+	 text-shadow: 0 0 2px black;
+	 margin-top:100px;
+	 }
+
+	 .bandeau {
+	 background-color: #333;
+	 
+	 color: #33CCCC;
+
+	 }
+
+}
