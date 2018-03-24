@@ -1,5 +1,6 @@
 .blog-post {
   padding-bottom: 4em;
+  text-align:justify;
   h1 {
     font-size: 27px;
     font-weight: bold;
@@ -8,6 +9,7 @@
     line-height: 24px;
     font-weight: 200;
     color: $gray-darker;
+
   }
   h2 {
     font-size: 19px;
@@ -142,4 +144,14 @@
 
 .medium-postcard {
   text-align: left; // <a /> while loading.
+}
+
+.image_rounded-show {
+    overflow: hidden;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 5px #0e0e0e;
+    margin-left: 30px;
+    margin-top: 35px;
 }
