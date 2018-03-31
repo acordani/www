@@ -95,7 +95,7 @@ Pour moi, cette technique n'est pas vraiment utilisable pour une estimation clas
 
 >Donc si vous souhaitez une estimation précise de votre bien immobilier, n'hésitez pas à passer par un **professionnel de l'immobilier**.
 
->Cette estimation étant gratuite, c'est un bon moyen de rencontrer l'agent immobilier.
+>Cette estimation étant gratuite, c'est un bon moyen de rencontrer l'agent immobilier de votre quartier.
 
 >Si le contact est bon et l'estimation vous paraît sérieuse, alors **confiez lui votre bien à la vente en exclusivité**.
 

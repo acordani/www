@@ -18,6 +18,8 @@ class PagesController < ApplicationController
     @review = @location["result"]
     @avg_rating = @location["result"]["rating"]
     # @location = response[:results]
+
+  
     
   end
 
