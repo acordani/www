@@ -35,7 +35,7 @@ Prendre un bien immobilier à la vente est une étape importante pour tout agent
 On doit **visiter le bien**, **prendre les mesures**, **recupérer toutes les informations et documents importants(procès verbaux, relevés de charges)**
 On doit **prendre des photos de qualité professionnelle**. Cette étape est cruciale car l'annonce publicitaire qui sera faite sur la plupart des sites connus(seloger.com, leboncoin.fr, logic-immo.com,...)devra être parfaite afin d'attirer le plus possible d'acheteurs potentiels.
 
-Et surtout nous devons **prévoir un plan de commercialisation** avec les propriétaires. J'y reviendrai dans un prochain article.
+Et surtout nous devons **[prévoir un plan de commercialisation](http://localhost:3000/blog/QuelEstLePlanMarketingDeCommercialisationdUneAgenceImmobiliere)** avec les propriétaires. J'y reviendrai dans un prochain article.
 
 Sans oublier, **le boîtage**, la **relance des clients potentiels** qui pourraient être intéressés, **les visites**, **les comptes rendus de visite**.
 
