@@ -97,7 +97,7 @@ Pour moi, cette technique n'est pas vraiment utilisable pour une estimation clas
 
 >Cette estimation étant gratuite, c'est un bon moyen de rencontrer l'agent immobilier de votre quartier.
 
->Si le contact est bon et l'estimation vous paraît sérieuse, alors **confiez lui votre bien à la vente en exclusivité**.
+>Si le contact est bon et l'estimation vous paraît sérieuse, alors **confiez lui votre bien à la vente en [exclusivité](https://www.alexandrecordani.com/blog/DevenirCollectionneurDeBiensImmobiliers)**.
 
 ##**Vous pouvez m'appeler pour toute évaluation de votre appartement ou de votre maison sur Paris et les communes limitrophes à Saint-Maur-Des-Fossés et de La Varenne Saint-Hilaire.**##
 

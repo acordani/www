@@ -70,7 +70,7 @@ Votre négociateur immobilier doit vous parler de stratégie.
 ```
 
 
-##**Si vous souhaitez des informations supplémentaires sur une mise en place d'un stratégie afin de vendre votre bien immobilier au meilleur prix  sur Paris ou sur les communes limitrophes à Saint-Maur-Des-Fossés et de La Varenne Saint-Hilaire.**##
+##**Si vous souhaitez des informations supplémentaires sur une mise en place d'une stratégie afin de vendre votre bien immobilier au meilleur prix  sur Paris ou sur les communes limitrophes à Saint-Maur-Des-Fossés et de La Varenne Saint-Hilaire.**##
 
 ##**Mon numéro de téléphone est le 06 98 85 38 74.**##
 
