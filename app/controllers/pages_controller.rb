@@ -32,6 +32,9 @@ class PagesController < ApplicationController
   def nl
   end
 
+  def formation
+  end
+
   def plandusite
     @prices = Price.all
     @sales = Sale.all
