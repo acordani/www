@@ -2,6 +2,7 @@
 <% content_for :meta_title, "A vendre sur #{@sale.city}, #{@sale.description.truncate(60)}  " %>
 
 <% content_for :meta_description, "Nouveau bien à vendre sur #{@sale.city}, #{@sale.bedroom} chambres, #{@sale.description.truncate(150)}"%>
+<% content_for :meta_image, cl_image_path(@sale.photos.first.path)%>
 <%= content_for(:facebook_meta_title) do %>
 	<%= "A vendre sur #{@sale.city}, #{@sale.description}" %>
 <% end %>

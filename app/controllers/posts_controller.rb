@@ -5,6 +5,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Blog.new.all
+    
   end
 
   def rss
