@@ -440,3 +440,26 @@
   position: relative;
   top:0;
 } 
+
+
+.color-section-banner-contact {
+  background-color: #C2413B;
+  
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 10px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon .fa {
+  color:white;
+}
+
+.icon li {
+  list-style-type: none;
+}

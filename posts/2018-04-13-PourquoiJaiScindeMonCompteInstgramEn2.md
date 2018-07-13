@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 13 Avril 2018
-meta_title:  "Pourquoi j'ai scindé mon compte instagram en 2 ?"
+meta_title:  "Pourquoi jai scindé mon compte instagram en 2 ?"
 author: Alex
 labels:
   - Immobilier

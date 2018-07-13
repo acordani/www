@@ -49,9 +49,11 @@ Mais n'ayons pas peur des mots.  **Un mandat exclusif est donc un contrat bilat�
 
 > Selon larousse.fr, un Contrat est une  Convention, accord de volontés ayant pour but d'engendrer une obligation d'une ou de plusieurs personnes envers une ou plusieurs autres. (Quatre conditions sont nécessaires pour la validité du contrat : le consentement des parties, la capacité de contracter, un objet certain, une cause licite.)
 
-Pour moi, il ne peut pas y avoir **contrat sans confiance**. Donc, il ne peut pas y avoir de signature de mandat sans Confiance.
+Pour moi, il ne peut pas y avoir **[contrat sans confiance](https://www.alexandrecordani.com/blog/PourquoiJeDoisAvoirConfianceEnMoiDansLImmobilier)**. Donc, il ne peut pas y avoir de signature de mandat sans Confiance.
 
 ### Et si il y a Confiance, il y a Exclusivité.###
+
+
 
 
 
