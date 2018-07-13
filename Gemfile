@@ -64,6 +64,8 @@ gem 'postmark-rails'
 
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 
+gem 'sprockets', '~>3.7.2'
+
 
 
 
