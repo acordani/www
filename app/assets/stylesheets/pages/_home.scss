@@ -456,10 +456,21 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon {
+	display:flex;
+ 	justify-content:space-around;
+ 	align-items:center;
+ 	margin-top:0;
+ 	margin-bottom:0;
+ 	padding-bottom:0;
+ 	padding-top:10px;
+}
+
 .icon .fa {
   color:white;
 }
 
 .icon li {
   list-style-type: none;
+  
 }
