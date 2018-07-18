@@ -117,7 +117,7 @@ J'en ai profité pour emmener mes enfants. On joint l'utile à l'agréable.
 
 "Vous venez de Paris pour accompagner votre client ?"
 
-***"Et oui, maître, ça fait effectivement parti de mes engagements ;-)"***
+***"Et oui, maître, ça fait effectivement partie de mes engagements ;-)"***
 
 
 
