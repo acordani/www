@@ -56,7 +56,7 @@ Je leur ai demandé d'aller voir l'agence et de mettre fin au contrat d'exclusiv
 Quelques jours après, nous signions un  ***mandat Exclusif***. Mais cette fois-ci, j'avais la ferme intention de leur montrer  que toutes les agences ne se valent pas.
 
 
-J'ai mis en place ***de vraies Stratégies***: De belles photos, une campagne de publicités sur les réseaux sociaux, une annonce bien réalisée.
+J'ai mis en place ***de vraies Stratégies***, **[un plan de commercialisation](https://www.alexandrecordani.com/blog/QuelEstLePlanMarketingDeCommercialisationdUneAgenceImmobiliere)**: De belles photos, une campagne de publicités sur les réseaux sociaux, une annonce bien réalisée.
 
 Quelques jours après, les premières visites, suivies des premières offres.
 
