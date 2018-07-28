@@ -5,7 +5,7 @@ meta_title:  "Tout est possible dans l'immobilier ?"
 author: Alex
 labels:
   - Immobilier
-thumbnail: instagram.jpg
+thumbnail: appartement_sud.jpg
 description: "Vendre un bien immobilier à 1000 kms de son bureau, c'est possible."
 ---
 

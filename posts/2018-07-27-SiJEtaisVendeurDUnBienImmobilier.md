@@ -71,6 +71,7 @@ Ici, nous parlerons ***d’engagement, de parole, de posture***.
 
 
 Si cet article vous a intéressé, n’hésitez pas à le ***partager*** car peut-être que vous avez des amis ou des proches intéressés.
+
 ***Si vous souhaitez me rencontrer afin que je vous presente ma façon de travailler, vous pouvez m’appeler sur mon portable au 06 98 85 38 74.***
 A très bientôt
 

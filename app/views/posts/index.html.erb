@@ -1,9 +1,25 @@
-<% @posts.each_slice(3) do |pp| %>
-	<% pp.each do |post| %>
-		<h1><%= post.metadata[:meta_title].html_safe %></h1>
-		<%= post.metadata[:description] %>
-		
-		<%=  image_tag post.metadata[:thumbnail] %>
 
-	<% end %>
-<% end %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 mb-50">
+
+			<% YAML.load(File.open("#{Rails.root}/db/data/blog.yml")).each do |blog| %>
+				<div class="post-thubnail">
+					<div class="col-md-4">
+						<%= link_to image_tag("#{blog['image']}", alt: "#{blog['alt']}", class:"vignettearticle"), blog['article'] %>
+						
+					</div>
+					<div class="col-md-6">
+					
+						<p class="post-category"><%= blog['category'] %></p>
+				
+						<h4><%= blog['title'] %></h4>
+						<p class="post-text"> <%= blog['text'].truncate(200) %> </p>
+						<%= link_to '<button type="button" class="btn btn-danger">LIRE LA SUITE</button>'.html_safe,  blog['article'] %>
+					</div>
+				</div>
+					
+			<% end %>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,42 @@
+#posts_index {
+
+	.btn-danger {
+		background: #C2413B;
+	}
+	
+	.vignettearticle {
+		height:300px;
+		width:300px;
+		background-size: cover;
+	}
+
+	.post-thubnail {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2em;
+    min-height: 240px;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 6px 16px 0px rgba(0,0,0,0.1);
+    box-shadow: 3px 6px 16px 0px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    border-left: 7px solid #C2413B;
+    overflow: hidden;
+    margin-top:18px;
+
+    }
+    .post-category {
+    	padding: 3px 5px 1px;
+    	margin-right: 10px;
+    	background-color: #C2413B;
+    	border-radius: 2px;
+    	color: white;
+    	font-size: 0.7em;
+    	text-transform: capitalize;
+    }
+
+    .post-text {
+    	text-align: justify;
+    	text-justify: inter-word;
+    }
+}

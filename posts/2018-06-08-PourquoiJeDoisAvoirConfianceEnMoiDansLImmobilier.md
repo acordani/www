@@ -5,7 +5,7 @@ meta_title:  "Pourquoi je dois avoir confiance en moi dans l'immobilier ?"
 author: Alex
 labels:
   - Immobilier
-thumbnail: instagram.jpg
+thumbnail: confiance.jpg
 description: "Découvrez pourquoi la confiance en soi est le plus important dans l'immobilier."
 ---
 
