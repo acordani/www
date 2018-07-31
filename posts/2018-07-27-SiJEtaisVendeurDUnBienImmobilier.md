@@ -76,6 +76,9 @@ Si cet article vous a intéressé, n’hésitez pas à le ***partager*** car peu
 A très bientôt
 
 
+[![Voici la vidéo](blog_image_path video_aout.jpg)](https://www.youtube.com/watch?v=dRYGnCOymo8& "Si j'étais propriétaire")
+
+
 
 
 

@@ -1,25 +1,64 @@
 
+
 <div class="container">
 	<div class="row">
-		<div class="col-md-10 mb-50">
+		<div class="col-md-9 mb-50 mt-50">
 
 			<% YAML.load(File.open("#{Rails.root}/db/data/blog.yml")).each do |blog| %>
 				<div class="post-thubnail">
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<%= link_to image_tag("#{blog['image']}", alt: "#{blog['alt']}", class:"vignettearticle"), blog['article'] %>
 						
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-5">
 					
 						<p class="post-category"><%= blog['category'] %></p>
 				
 						<h4><%= blog['title'] %></h4>
-						<p class="post-text"> <%= blog['text'].truncate(200) %> </p>
+						<p class="post-text"> <%= blog['text'].truncate(150) %> </p>
+						
+					</div>
+					<div class="col-md-2">
 						<%= link_to '<button type="button" class="btn btn-danger">LIRE LA SUITE</button>'.html_safe,  blog['article'] %>
+					</div>
+					<div class="col-md-2">
+						<p class="post-date"><%= blog['date'] %></p>
 					</div>
 				</div>
 					
 			<% end %>
+		</div>
+		<div class="col-md-3 mt-50">
+				<div class="post-author">
+					<h4>Alexandre Cordani</h4>
+					<div class="line"></div>
+					<p>Engagé Exclusivement Pour Vous</p>
+					<p>Au service d'une négociation immobilière réussie</p>
+					<p>Vous cherchez à acheter ou vendre votre bien immobilier, contactez-moi.</p>
+					<p> Agent immobilier puis Mandataire Immobilier dans le 94, je m'occuperai de votre bien en vous proposant des prestations haut de gamme </p>
+					<p>Contactez moi par téléphone au <b>0698853874</b></p>
+
+					<div class="line"></div>
+
+					<h4>SUIVEZ MOI SUR INTERNET</h4>
+					<ul class="post-reseaux">
+						<li>
+							<%= link_to 'https://www.facebook.com/alcordani3G' do %>
+  								<%= image_tag('facebook.png') %>
+							<% end %>
+						</li>
+						<li>
+							<%= link_to 'https://www.instagram.com/3gimmobilier_alexandre_cordani/' do %>
+  								<%= image_tag('instagram.png') %>
+							<% end %>
+						</li>
+						<li>
+							<%= link_to 'https://www.youtube.com/user/alcordani' do %>
+  								<%= image_tag('youtube.png') %>
+							<% end %>
+						</li>
+					</ul>
+				</div>
 		</div>
 	</div>
 </div>

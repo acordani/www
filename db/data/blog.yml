@@ -1,45 +1,55 @@
-- title: Devenir collectionneur de biens immobiliers
-  text: Le collectionneur de maisons est un agent immobilier qui souhaite travailler toutes les maisons ou tous les appartements qui sont à vendre dans sa ville par l'intermédiaire de mandats de vente.L'intérêt pour lui est d'avoir à sa disposition une profusion d'offres. En effet, lorsqu'un client l'appelle ou rentre dans son agence immobilière, le négociateur pourra lui proposer énormément de biens à visiter.
-  image: Vitrine.jpg
-  alt: Devenir collectionneur de biens immobiliers
-  category: Mandat
-  article: https://www.alexandrecordani.com/blog/DevenirCollectionneurDeBiensImmobiliers
-- title: Comment estimer son bien immobilier ?
-  text: Beaucoup de personnes se posent cette question. D'ailleurs cela fait partie des services rendus par les agences immobilières. Quelle soit sur internet ou vitrée, toute agence immobilière qui se respecte doit fournir une estimation immobilière gratuite à ses clients propriétaires. Mais comment fait-on pour connaitre le prix du marché ?
-  image: Estimation.jpg
-  alt: Comment estimer son bien immobilier
-  category: Estimation
-  article: https://www.alexandrecordani.com/blog/CommentEstimerSonBienImmobilier
-- title: Quel est le plan marketing de commercialisation d'une agence immobilière ?
-  text: L'agence immobilière que vous allez choisir pour vendre votre bien en exclusivité sera votre véhicule qui vous permettra d'atteindre votre destination. Comme tout véhicule, il aura besoin de carburant, d'un plan de route, et d'un objectif
-  image: Plan_Marketing_Immobilier.jpg
-  alt: Stratégie de commercialisation d'une agence immobilière
-  category: Stratégie
-  article: https://www.alexandrecordani.com/blog/QuelEstLePlanMarketingDeCommercialisationdUneAgenceImmobiliere
-- title: Pourquoi j'ai scindé mon compte instagram en 2
-  text: J’ai toujours aimé communiqué sur instagram car comme le disais Confucius, « 1 image vaut mille mots ». Chaque jour, 70 millions de photos sont partagées sur instagram dans le monde. 70% des membres français se connectent à instagram journellement.
-  image:  instagram.jpg
-  alt: Avoir un compte instagram dans l'immobilier
-  category: Reseaux Sociaux
-  article: https://www.alexandrecordani.com/blog/PourquoiJaiScindeMonCompteInstgramEn2
-- title: Pourquoi je dois avoir confiance en moi dans l'immobilier ?
-  text: Parlons Confiance. Avez-vous confiance en vous ? La Confiance est primordiale. Vous savez, c'est cette sensation de savoir que ce que vous faîtes est la solution ultime. C'est de savoir que vous allez donner le meilleur de vous même en toute circonstance et à tout instant et que vous êtes prêt à déplacer des montagnes.
-  image:  confiance.jpg
-  alt: Pourquoi je dois avoir confiance en moi dans l'immobilier
-  category: Mindset
-  article: https://www.alexandrecordani.com/blog/PourquoiJeDoisAvoirConfianceEnMoiDansLImmobilier
-- title: Tout est possible dans l'immobilier
-  text: L'histoire commence il y a environ 2 ans. Un dimanche matin, l'agence était ouverte. Il faisait chaud ce matin là. Beaucoup de gens sur les trottoires car jour de marché. Il ne faut pas rester à l'intérieur à attendre le client. Donc j'étais sur le pas de la porte. Et je discutais avec quelques personnes qui s'intéressaient aux affiches de la vitrine.
-  image:  appartement_sud.jpg
-  alt: Pourquoi tout est possible dans l'immobilier
-  category: Mindset
-  article: https://www.alexandrecordani.com/blog/ToutEstPossibleDansLImmobilier
 - title: Si j’étais propriétaire d’un bien immobilier que je souhaitais vendre en Août
   text: Dans cette publication, à chaque fois que je vais parler d’agence, vous pourrez comprendre  Agence immobilière, Négociateur immobilier ou Mandataire Immobilier. Beaucoup de personnes se posent la question  « Dois-je vendre en Août ? »
   image:  keys.jpg
   alt: Pourquoi vendre son bien immobilier en aout
   category: Commercialisation
   article: https://www.alexandrecordani.com/blog/SiJEtaisVendeurDUnBienImmobilier
+  date: 27 juillet 2018
+- title: Tout est possible dans l'immobilier
+  text: L'histoire commence il y a environ 2 ans. Un dimanche matin, l'agence était ouverte. Il faisait chaud ce matin là. Beaucoup de gens sur les trottoires car jour de marché. Il ne faut pas rester à l'intérieur à attendre le client. Donc j'étais sur le pas de la porte. Et je discutais avec quelques personnes qui s'intéressaient aux affiches de la vitrine.
+  image:  appartement_sud.jpg
+  alt: Pourquoi tout est possible dans l'immobilier
+  category: Mindset
+  article: https://www.alexandrecordani.com/blog/ToutEstPossibleDansLImmobilier
+  date: 17 juillet 2018
+- title: Pourquoi je dois avoir confiance en moi dans l'immobilier ?
+  text: Parlons Confiance. Avez-vous confiance en vous ? La Confiance est primordiale. Vous savez, c'est cette sensation de savoir que ce que vous faîtes est la solution ultime. C'est de savoir que vous allez donner le meilleur de vous même en toute circonstance et à tout instant et que vous êtes prêt à déplacer des montagnes.
+  image:  confiance.jpg
+  alt: Pourquoi je dois avoir confiance en moi dans l'immobilier
+  category: Mindset
+  article: https://www.alexandrecordani.com/blog/PourquoiJeDoisAvoirConfianceEnMoiDansLImmobilier
+  date: 8 juin 2018
+- title: Pourquoi j'ai scindé mon compte instagram en 2
+  text: J’ai toujours aimé communiqué sur instagram car comme le disais Confucius, « 1 image vaut mille mots ». Chaque jour, 70 millions de photos sont partagées sur instagram dans le monde. 70% des membres français se connectent à instagram journellement.
+  image:  instagram.jpg
+  alt: Avoir un compte instagram dans l'immobilier
+  category: Reseaux Sociaux
+  article: https://www.alexandrecordani.com/blog/PourquoiJaiScindeMonCompteInstgramEn2
+  date: 13 avril 2018
+- title: Quel est le plan marketing de commercialisation d'une agence immobilière ?
+  text: L'agence immobilière que vous allez choisir pour vendre votre bien en exclusivité sera votre véhicule qui vous permettra d'atteindre votre destination. Comme tout véhicule, il aura besoin de carburant, d'un plan de route, et d'un objectif
+  image: Plan_Marketing_Immobilier.jpg
+  alt: Stratégie de commercialisation d'une agence immobilière
+  category: Stratégie
+  article: https://www.alexandrecordani.com/blog/QuelEstLePlanMarketingDeCommercialisationdUneAgenceImmobiliere
+  date: 04 Avril 2018
+- title: Comment estimer son bien immobilier ?
+  text: Beaucoup de personnes se posent cette question. D'ailleurs cela fait partie des services rendus par les agences immobilières. Quelle soit sur internet ou vitrée, toute agence immobilière qui se respecte doit fournir une estimation immobilière gratuite à ses clients propriétaires. Mais comment fait-on pour connaitre le prix du marché ?
+  image: Estimation.jpg
+  alt: Comment estimer son bien immobilier
+  category: Estimation
+  article: https://www.alexandrecordani.com/blog/CommentEstimerSonBienImmobilier
+  date: 28 mars 2018
+- title: Devenir collectionneur de biens immobiliers
+  text: Le collectionneur de maisons est un agent immobilier qui souhaite travailler toutes les maisons ou tous les appartements qui sont à vendre dans sa ville par l'intermédiaire de mandats de vente.L'intérêt pour lui est d'avoir à sa disposition une profusion d'offres. En effet, lorsqu'un client l'appelle ou rentre dans son agence immobilière, le négociateur pourra lui proposer énormément de biens à visiter.
+  image: Vitrine.jpg
+  alt: Devenir collectionneur de biens immobiliers
+  category: Mandat
+  article: https://www.alexandrecordani.com/blog/DevenirCollectionneurDeBiensImmobiliers
+  date: 24 mars 2018
+
+
+
 
 
 
