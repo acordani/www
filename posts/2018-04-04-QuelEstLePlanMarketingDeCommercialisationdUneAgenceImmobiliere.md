@@ -78,6 +78,9 @@ A très bientôt
 
 
 
+![Plan Marketing de Commercialisation](blog_image_path infographie-PlanMarketing.jpg)
+
+
 
 
 

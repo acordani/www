@@ -2,15 +2,15 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-9 mb-50 mt-50">
+		<div class="col-md-9 col-xs-09 mb-50 mt-50">
 
 			<% YAML.load(File.open("#{Rails.root}/db/data/blog.yml")).each do |blog| %>
 				<div class="post-thubnail">
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-12">
 						<%= link_to image_tag("#{blog['image']}", alt: "#{blog['alt']}", class:"vignettearticle"), blog['article'] %>
 						
 					</div>
-					<div class="col-md-5">
+					<div class="col-md-5 col-xs-12">
 					
 						<p class="post-category"><%= blog['category'] %></p>
 				
