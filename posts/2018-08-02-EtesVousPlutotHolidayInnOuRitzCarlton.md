@@ -1,12 +1,12 @@
 ---
 layout: post
-date: 27 Juillet 2018
-meta_title:  "Si j’étais propriétaire d’un bien immobilier que je souhaitais vendre en Août"
+date: 02 Aout 2018
+meta_title:  "Etes-vous plutôt Holiday Inn ou Ritz Carlton ?"
 author: Alex
 labels:
   - Immobilier
 thumbnail: keys.jpg
-description: "Vendre un bien immobilier à 1000 kms de son bureau, c'est possible."
+description: ""
 ---
 
 
