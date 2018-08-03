@@ -2,15 +2,15 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-9 col-xs-09 mb-50 mt-50">
+		<div class="col-md-9 hidden-xs mb-50 mt-50">
 
 			<% YAML.load(File.open("#{Rails.root}/db/data/blog.yml")).each do |blog| %>
 				<div class="post-thubnail">
-					<div class="col-md-3 col-xs-12">
+					<div class="col-md-3">
 						<%= link_to image_tag("#{blog['image']}", alt: "#{blog['alt']}", class:"vignettearticle"), blog['article'] %>
 						
 					</div>
-					<div class="col-md-5 col-xs-12">
+					<div class="col-md-5">
 					
 						<p class="post-category"><%= blog['category'] %></p>
 				
@@ -25,6 +25,16 @@
 						<p class="post-date"><%= blog['date'] %></p>
 					</div>
 				</div>
+					
+			<% end %>
+		</div>
+		<div class="col-xs-12 mb-50 mt-50">
+
+			<% YAML.load(File.open("#{Rails.root}/db/data/blog.yml")).each do |blog| %>
+				
+				<%= link_to image_tag("#{blog['image']}", alt: "#{blog['alt']}", class:"post-vignette-xs"), blog['article'] %>					
+				
+			
 					
 			<% end %>
 		</div>
