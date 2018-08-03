@@ -1,7 +1,7 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= scope :name, tag: :span, class: "a-class" do %>
-    <%= link_to "Alexandre Cordani, votre Agent Immobilier à Domicile", root_path, class:"logo"  %>
+    <%= link_to(image_tag("logo.png"), root_path, class:"logo")  %>
   <% end %>
   
   
