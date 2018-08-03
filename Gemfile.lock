@@ -21,7 +21,7 @@ GIT
 
 GEM
   remote: https://rubygems.org/
-  remote: https://rails-assets.org/
+  remote: http://insecure.rails-assets.org/
   specs:
     actioncable (5.0.0.rc2)
       actionpack (= 5.0.0.rc2)
@@ -361,4 +361,4 @@ RUBY VERSION
    ruby 2.3.0p0
 
 BUNDLED WITH
-   1.16.2
+   1.16.3
