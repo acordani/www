@@ -44,7 +44,7 @@ gem 'rails_admin', '>= 1.0.0.rc'
 
 gem 'bootstrap-table-rails'
 
-source 'https://rails-assets.org' do
+source 'http://rails-assets.org' do
   gem "rails-assets-underscore"
   gem 'rails-assets-classnames'
  
