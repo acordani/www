@@ -32,12 +32,15 @@
 
 			<% YAML.load(File.open("#{Rails.root}/db/data/blog.yml")).each do |blog| %>
 				
-				<%= link_to image_tag("#{blog['image']}", alt: "#{blog['alt']}", class:"post-vignette-xs"), blog['article'] %>					
-				
-			
-					
+					<%= link_to image_tag("#{blog['image']}", alt: "#{blog['alt']}", class:"post-vignette-xs mb-10"), blog['article'] %>
+						<div class="text-post-vignette-xs">
+						<%= blog['title'] %>
+						<div class="mb-50"></div>
+						</div>	
 			<% end %>
 		</div>
+	</div>
+	<div class="row>"
 		<div class="col-md-3 mt-50">
 				<div class="post-author">
 					<h4>Alexandre Cordani</h4>
