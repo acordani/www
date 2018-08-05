@@ -2,8 +2,8 @@
   Alexandre Cordani - <%= @post.metadata[:meta_title] %>
 <% end %>
 
-<% content_for(:description) do %>
-  <%= @post.metadata[:description] %>
+<% content_for(:meta_description) do %>
+  <%= @post.metadata[:meta_description] %>
 <% end %>
 
 <% content_for(:image_url) do %>

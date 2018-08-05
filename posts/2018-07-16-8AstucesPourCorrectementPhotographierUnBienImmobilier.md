@@ -6,7 +6,7 @@ author: Alex
 labels:
   - Immobilier
 thumbnail: instagram.jpg
-description: "Découvrez pourquoi la confiance en soi est le plus important dans l'immobilier."
+meta_description: "Découvrez pourquoi la confiance en soi est le plus important dans l'immobilier."
 ---
 
 

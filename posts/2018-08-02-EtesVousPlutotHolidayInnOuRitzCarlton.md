@@ -4,7 +4,7 @@ date: 02 Aout 2018
 meta_title:  "Etes-vous plutôt Holiday Inn ou Ritz Carlton ?"
 author: Alex
 thumbnail: hotel.jpg
-description: "La difference entre vendre par agence oun vendre par particulier s'appelle le service. Je comprends les personnes qui souhaitent passer entre particuliers. Je vous présente ici mes services."
+meta_description: "La difference entre vendre par agence oun vendre par particulier s'appelle le service. Je comprends les personnes qui souhaitent passer entre particuliers. Je vous présente ici mes services."
 labels:
   - Immobilier
 

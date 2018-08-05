@@ -4,7 +4,7 @@ date: 04 Avril 2018
 meta_title:  "Quel est le Plan Marketing de Commercialisation d'une agence immobilière"
 author: Alex
 thumbnail: Plan_Marketing_Immobilier.jpg
-description: "Découvrez ce qu'une agence immobilière doit vous presenter comme plan afin de vendre votre bien immobilier rapidement."
+meta_description: "Découvrez ce qu'une agence immobilière doit vous presenter comme plan afin de vendre votre bien immobilier rapidement."
 labels:
   - Immobilier
 

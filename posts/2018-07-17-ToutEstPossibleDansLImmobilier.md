@@ -6,7 +6,7 @@ author: Alex
 labels:
   - Immobilier
 thumbnail: appartement_sud.jpg
-description: "Vendre un bien immobilier à 1000 kms de son bureau, c'est possible."
+meta_description: "Vendre un bien immobilier à 1000 kms de son bureau, c'est possible."
 ---
 
 

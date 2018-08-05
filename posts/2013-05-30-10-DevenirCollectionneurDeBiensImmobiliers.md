@@ -6,7 +6,7 @@ author: Alex
 labels:
   - Immobilier
 thumbnail: Vitrine.jpg
-description: "Est-il interessant pour un agent immobilier de travailler tous les biens immobiliers qui sont à vendre dans sa ville."
+meta_description: "Est-il interessant pour un agent immobilier de travailler tous les biens immobiliers qui sont à vendre dans sa ville."
 ---
 
 

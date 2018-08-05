@@ -6,7 +6,7 @@ author: Alex
 labels:
   - Immobilier
 thumbnail: instagram.jpg
-description: "Découvrez mon premier bilan dans le reseau 3G Immobilier sur ces 8 premiers mois de l'année."
+meta_description: "Découvrez mon premier bilan dans le reseau 3G Immobilier sur ces 8 premiers mois de l'année."
 ---
 
 

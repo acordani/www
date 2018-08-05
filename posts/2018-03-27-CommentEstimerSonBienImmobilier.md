@@ -6,7 +6,7 @@ author: Alex
 labels:
   - Immobilier
 thumbnail: Estimation.jpg
-description: "Comment estimer son bien immobilier. La reponse ici."
+meta_description: "Comment estimer son bien immobilier. La reponse ici."
 ---
 
 
