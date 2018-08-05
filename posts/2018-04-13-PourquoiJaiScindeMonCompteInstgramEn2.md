@@ -5,7 +5,7 @@ meta_title:  "Pourquoi jai scindé mon compte instagram en 2 ?"
 author: Alex
 labels:
   - Immobilier
-thumbnail: instagram.jpg
+meta_image: instagram.jpg
 meta_description: "Découvrez mon premier bilan dans le reseau 3G Immobilier sur ces 8 premiers mois de l'année."
 ---
 

@@ -5,7 +5,7 @@ meta_title:  "Si j’étais propriétaire d’un bien immobilier que je souhaita
 author: Alex
 labels:
   - Immobilier
-thumbnail: keys.jpg
+meta_image: keys.jpg
 meta_description: "Vendre un bien immobilier à 1000 kms de son bureau, c'est possible."
 ---
 

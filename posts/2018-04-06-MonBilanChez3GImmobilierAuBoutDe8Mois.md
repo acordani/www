@@ -5,7 +5,7 @@ meta_title:  "Mon Premier Bilan Au Sein Du Reseau 3G Immobilier sur ces 8 premie
 author: Alex
 labels:
   - Immobilier
-thumbnail: Plan_Marketing_Immobilier.jpg
+meta_image: Plan_Marketing_Immobilier.jpg
 meta_description: "Découvrez mon premier bilan dans le reseau 3G Immobilier sur ces 8 premiers mois de l'année."
 ---
 

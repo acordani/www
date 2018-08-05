@@ -5,7 +5,7 @@ meta_title:  "Comment estimer son bien immobilier ?"
 author: Alex
 labels:
   - Immobilier
-thumbnail: Estimation.jpg
+meta_image: Estimation.jpg
 meta_description: "Comment estimer son bien immobilier. La reponse ici."
 ---
 

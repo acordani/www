@@ -5,7 +5,7 @@ meta_title:  "Devenir Collectionneur de Biens Immobiliers"
 author: Alex
 labels:
   - Immobilier
-thumbnail: Vitrine.jpg
+meta_image: Vitrine.jpg
 meta_description: "Est-il interessant pour un agent immobilier de travailler tous les biens immobiliers qui sont à vendre dans sa ville."
 ---
 
