@@ -6,8 +6,8 @@
   <%= @post.metadata[:meta_description] %>
 <% end %>
 
-<% content_for(:image_url) do %>
-  <%= asset_path "blog/#{@post.metadata[:thumbnail]}" if @post.metadata[:thumbnail] %>
+<% content_for(:meta_image) do %>
+  <%= asset_path "blog/#{@post.metadata[:meta_image]}" if @post.metadata[:meta_image] %>
   
 <% end %>
 
