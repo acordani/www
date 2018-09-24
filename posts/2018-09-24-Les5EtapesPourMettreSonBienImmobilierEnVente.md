@@ -28,7 +28,7 @@ Donc, n’hésitez pas à regardez sur internet et vous arrêter sur **les sites
 
 Les détails importants à vérifier: L'agent est-il à l’heure ?  Vous renvoie t-il une bonne image ? 
 Prend-t-il les mesures de votre bien ? Demandez-vous s'il vous a posé toutes les bonnes questions?
-Répond-t-il aux questions de manière professionnel ?…
+Répond-t-il aux questions de manière professionnelle ?…
 
 Passe-t-il son temps à vous parler de lui, ou à vous écouter ? 
 
