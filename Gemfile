@@ -68,7 +68,7 @@ gem 'sprockets', '~>3.7.2'
 
 
 
-
+gem 'heroku-deflater', :group => :production
 
 group :development, :test do
   gem 'binding_of_caller'

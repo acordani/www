@@ -122,6 +122,8 @@ GEM
     haml (5.0.3)
       temple (>= 0.8.0)
       tilt
+    heroku-deflater (0.6.3)
+      rack (>= 1.4.5)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.8.1)
@@ -326,6 +328,7 @@ DEPENDENCIES
   friendly_id (~> 5.1.0)
   geocoder
   gmaps4rails
+  heroku-deflater
   item
   jbuilder (~> 2.0)
   jquery-fileupload-rails
