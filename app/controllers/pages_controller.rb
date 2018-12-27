@@ -2,6 +2,8 @@ class PagesController < ApplicationController
   # skip_before_action :authenticate_user!, only: [ :home ]
   before_action :authenticate_user!,  raise: false, only: [:nl]
 
+ 
+
   
 
   def home
@@ -9,6 +11,9 @@ class PagesController < ApplicationController
     # @sales = Sale.last(3)
     @sales = Sale.where(phase: 'A VENDRE').or(Sale.where(phase: 'COMPROMIS')).or(Sale.where(phase: 'OFFRE EN COURS')).last(3)
     @sold = Sale.where(phase: "VENDU")
+
+
+    
 
     url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJpznqg-8M5kcRF7J8skRko7c&key=#{ENV['GOOGLE_API_SERVER_KEY']}"
     # http_call = open(url).read
