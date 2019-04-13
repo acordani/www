@@ -3,7 +3,7 @@ layout: post
 date: 13 Avril 2019
 meta_title:  "Mon retour du Canada"
 author: Alex
-meta_image: WI4C2TS.gif
+meta_image: montreal.gif
 
 meta_description: "Je reviens de Montreal avec dans ma valise un Mindset qui a évolué, je vous en parle dans cet article."
 labels:
