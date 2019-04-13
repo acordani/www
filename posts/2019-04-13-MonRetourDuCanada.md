@@ -15,7 +15,7 @@ labels:
 
 Voilà 1 semaine que j’ai quitté le **Canada**. Voilà 1 semaine que cette rencontre avec ce pays me fait tourner la tête.
 
-J’y suis allé pour me **reposer**, pour **travailler**(grâce à un séminaire de développement personnel) et pour **rencontrer** des personnes que je trouvent inspirante dans le milieu de l’immobilier.
+J’y suis allé pour me **reposer**, pour **travailler**(grâce à un séminaire de développement personnel) et pour **rencontrer** des personnes que je trouve inspirante dans le milieu de l’immobilier.
 
 1- **Développement Personnel** car pour moi une des clés de la réussite est la Confiance. Si vous avez confiance en vous, rien ne pourra vous déstabiliser. 
 Alors, je travaille sur mon mental, sur la gestion de mes émotions. Et ça fonctionne. 
